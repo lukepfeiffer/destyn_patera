@@ -19,4 +19,17 @@
         = link_to 'Blog', root_path, class: 'navigation-menu-button right'
         = link_to 'Photo', root_path, class: 'navigation-menu-button right'
         = link_to 'Video', root_path, class: 'navigation-menu-button right'
+
     = yield
+
+    %footer.main-footer{:role => "contentinfo"}
+      .main-footer-wrapper
+        .primary-link
+          %ul
+            %li
+              %a{:href => "javascript:void(0)"} 2016 Destyn Patera
+        .footer-secondary-links
+          %ul.footer-social
+            %li= link_to(image_tag('vimeo.png', alt: 'vimeo'), root_path, target: '_blank')
+            %li= link_to(image_tag('instagram.png', alt: 'instagram'), root_path, target: '_blank')
+            %li= link_to(image_tag('facebook.png', alt: 'facebook'), root_path, target: '_blank')
