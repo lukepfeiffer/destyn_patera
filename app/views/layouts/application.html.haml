@@ -9,22 +9,14 @@
   %body#main
 
     %header.navigation{:role => "banner"}
-      .navigation-wrapper
-        = link_to root_path do
+      .left-navigation-wrapper
+        = link_to root_path, class: 'logo' do
           %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
-        %a#js-mobile-menu.navigation-menu-button{:href => "javascript:void(0)"} DESTYN PATERA
-        %nav{role: "navigation"}
-          .right
-            %ul#js-navigation-menu.navigation-menu.show
-              %li.nav-link
-                = link_to 'Video', root_path
-              %li.nav-link
-                = link_to 'Photo', root_path
-              %li.nav-link
-                = link_to 'Blog', root_path
-              %li.nav-link
-                = link_to 'Contat', root_path
-              %li.nav-link
-                = link_to 'X', root_path
-
+          %p Destyn Patera
+      .right-navigation-wrapper
+        = link_to 'X', root_path, class: 'navigation-menu-button right', id: 'cancel'
+        = link_to 'Contat', root_path, class: 'navigation-menu-button right'
+        = link_to 'Blog', root_path, class: 'navigation-menu-button right'
+        = link_to 'Photo', root_path, class: 'navigation-menu-button right'
+        = link_to 'Video', root_path, class: 'navigation-menu-button right'
     = yield

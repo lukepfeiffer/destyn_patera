@@ -18,5 +18,139 @@
  */
 
 #main{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $nav-font-color: #000;
+  $gator-orange: orange;
+  $background-color: #fff;
+
   margin: 0;
+
+  .right{
+    float: right;
+  }
+
+  .left{
+    float: left;
+  }
+
+  header.navigation {
+    $base-border-color: gainsboro !default;
+    $base-border-radius: 3px !default;
+    $action-color: #477DCA !default;
+    $large-screen: 53.75em !default;
+    $font-color: #fff;
+    $navigation-padding: 1em;
+    $navigation-color: transparentize(white, 0.3);
+    $navigation-color-hover: white;
+    $navigation-height: 48px;
+
+
+    min-height: $navigation-height;
+    width: 60%;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+
+    .left-navigation-wrapper, .right-navigation-wrapper{
+      font-size: 14px;
+      font-family: $default-font;
+      font-weight: bold;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .right-navigation-wrapper {
+      float: right;
+      width: 60%;
+    }
+
+    .left-navigation-wrapper {
+      // width: 100%;
+      float: left;
+    }
+
+    .logo {
+      float: left;
+      height: $navigation-height;
+      max-height: $navigation-height;
+      padding-right: 2em;
+
+      img {
+        width: $navigation-height;
+        height: $navigation-height;
+        max-height: $navigation-height;
+      }
+      p{
+        float: right;
+	padding-left: 5px;
+      }
+    }
+
+    #cancel{
+      font-size: 28px;
+    }
+
+    .navigation-menu-button {
+      color: $nav-font-color;
+      display: block;
+      line-height: $navigation-height;
+      margin: 0;
+      padding-right: 1em;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:focus, &:hover {
+        color: darken($nav-font-color, 10%);
+      }
+    }
+
+
+  // Nav menu
+
+    nav {
+      float: none;
+      min-height: $navigation-height;
+      z-index: 9999999;
+    }
+
+    ul.navigation-menu {
+      clear: both;
+      display: none;
+      margin: 0 auto;
+      overflow: visible;
+      padding: 0;
+      width: 100%;
+      z-index: 9999;
+
+      &.show {
+        display: block;
+      }
+
+    }
+
+
+  // The nav items
+
+    ul li.nav-link {
+      display: block;
+      line-height: $navigation-height;
+      overflow: hidden;
+      padding-right: 0.8em;
+      text-align: right;
+      width: 100%;
+      z-index: 9999;
+
+      a {
+        color: $navigation-color;
+        display: inline-block;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+          color: $navigation-color-hover;
+        }
+      }
+    }
+  }
 }
