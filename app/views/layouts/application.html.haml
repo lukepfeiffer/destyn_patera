@@ -6,5 +6,25 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
 
-  %body
+  %body#main
+
+    %header.navigation{:role => "banner"}
+      .navigation-wrapper
+        = link_to root_path do
+          %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
+        %a#js-mobile-menu.navigation-menu-button{:href => "javascript:void(0)"} DESTYN PATERA
+        %nav{role: "navigation"}
+          .right
+            %ul#js-navigation-menu.navigation-menu.show
+              %li.nav-link
+                = link_to 'Video', root_path
+              %li.nav-link
+                = link_to 'Photo', root_path
+              %li.nav-link
+                = link_to 'Blog', root_path
+              %li.nav-link
+                = link_to 'Contat', root_path
+              %li.nav-link
+                = link_to 'X', root_path
+
     = yield
