@@ -15,6 +15,8 @@
   @import "users";
   @import "neat";
   @import "base/base";
+  @import "slick";
+  @import "slick-theme";
  */
 
 #main{
@@ -32,6 +34,27 @@
 
   .left{
     float: left;
+  }
+
+  .slider {
+    width: 400px; height: 300px;
+    overflow: hidden;
+  }
+
+  .slider > ul {
+    position: relative;
+    left: 0;
+    -webkit-transition: 0.5s left;
+    -moz-transition: 0.5s left;
+    -ms-transition: 0.5s left;
+    -o-transition: 0.5s left;
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+
+  .slider > ul > li {
+      float: left;
+      width: 400px; height: 300px;
   }
 
   header.navigation {
