@@ -8,17 +8,18 @@
 
   %body#main
 
-    %header.navigation{:role => "banner"}
-      .left-navigation-wrapper
-        = link_to root_path, class: 'logo' do
-          %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
-          %p Destyn Patera
-      .right-navigation-wrapper
-        = link_to 'X', root_path, class: 'navigation-menu-button right', id: 'cancel'
-        = link_to 'Contat', root_path, class: 'navigation-menu-button right'
-        = link_to 'Blog', root_path, class: 'navigation-menu-button right'
-        = link_to 'Photo', root_path, class: 'navigation-menu-button right'
-        = link_to 'Video', root_path, class: 'navigation-menu-button right'
+    .nav-container
+      %header.navigation{:role => "banner"}
+        .left-navigation-wrapper
+          = link_to root_path, class: 'logo' do
+            %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
+            %p Destyn Patera
+        .right-navigation-wrapper
+          = link_to 'X', root_path, class: 'navigation-menu-button right', id: 'cancel'
+          = link_to 'Contat', root_path, class: 'navigation-menu-button right'
+          = link_to 'Blog', root_path, class: 'navigation-menu-button right'
+          = link_to 'Photo', root_path, class: 'navigation-menu-button right'
+          = link_to 'Video', root_path, class: 'navigation-menu-button right'
 
     = yield
 
