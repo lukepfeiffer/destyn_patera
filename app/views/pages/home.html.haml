@@ -1,10 +1,26 @@
 .clients
+
   %h1 Our Clients
-  .carousel
-    %button Previous
-    %button Next
-    %ul
-      %li 1
-      %li 2
-      %li 3
-      %li 4
+
+  #carousel_container
+    #left_scroll
+      %img{:src => "left.png"}/
+    #carousel_inner
+      %ul#carousel_ul
+        %li
+          %a{:href => "#"}
+            %img{:src => "item1.png"}/
+        %li
+          %a{:href => "#"}
+            %img{:src => "item2.png"}/
+        %li
+          %a{:href => "#"}
+            %img{:src => "item3.png"}/
+        %li
+          %a{:href => "#"}
+            %img{:src => "item4.png"}/
+        %li
+          %a{:href => "#"}
+            %img{:src => "item5.png"}/
+    #right_scroll
+      %img{:src => "right.png"}/
