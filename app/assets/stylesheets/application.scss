@@ -20,7 +20,7 @@
 #main{
   $default-font: arial;
   $default-font-size: 18px;
-  $nav-font-color: #297A8C;
+  $default-color: #297A8C;
   $gator-orange: orange;
   $background-color: #fff;
 
@@ -49,7 +49,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: $nav-font-color;
+    background-color: $default-color;
     outline: 1px solid transparent;
     -webkit-transition-property: background-color, -webkit-transform;
     -moz-transition-property: background-color, -moz-transform;
@@ -101,7 +101,7 @@
       }
 
       .logo-text{
-        color: $nav-font-color;
+        color: $default-color;
         font-weight: bold;
         font-size: 20px;
         text-transform: uppercase;
@@ -151,7 +151,7 @@
       }
 
       .navigation-menu-button {
-        color: $nav-font-color;
+        color: $default-color;
         display: block;
         line-height: $navigation-height;
         margin: 0;
@@ -161,7 +161,7 @@
 
         &:focus, &:hover {
           cursor: pointer;
-          color: darken($nav-font-color, 10%);
+          color: darken($default-color, 10%);
         }
       }
 
@@ -219,14 +219,34 @@
   }
 
   #recent_work{
+    text-align: center;
+    color: $default-color;
+    width: 100%;
+    margin: 0;
+    .top-row, .bottom-row{
+      margin: 0;
+    }
+    .video-container{
+      margin: 0;
+      .thumb-nail{
+        display: inline-block;
+        width: 24.6%;
+        margin: 0;
+        img{
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
   }
+
   #clients{
 
     text-align: center;
     margin-bottom: 2em;
 
     h1{
-      color: $nav-font-color;
+      color: $default-color;
     }
     .container{
       width: 45%;
