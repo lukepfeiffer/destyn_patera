@@ -150,6 +150,8 @@ GEM
     ruby_parser (3.8.3)
       sexp_processor (~> 4.1)
     sass (3.4.22)
+    sass-burger (1.3.1)
+      sass (~> 3.3)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -204,6 +206,7 @@ DEPENDENCIES
   pg
   pry-rails
   rails (= 5.0.0)
+  sass-burger
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   uglifier (>= 1.3.0)

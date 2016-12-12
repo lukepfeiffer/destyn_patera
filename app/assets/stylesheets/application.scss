@@ -15,14 +15,12 @@
   @import "users";
   @import "neat";
   @import "base/base";
-  @import "slick";
-  @import "slick-theme";
  */
 
 #main{
   $default-font: arial;
   $default-font-size: 18px;
-  $nav-font-color: #000;
+  $nav-font-color: #297A8C;
   $gator-orange: orange;
   $background-color: #fff;
 
@@ -35,6 +33,42 @@
 
   .left{
     float: left;
+  }
+
+  .burger-icon {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    top: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .burger-icon, .burger-icon::before, .burger-icon::after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $nav-font-color;
+    outline: 1px solid transparent;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .burger-icon::before, .burger-icon::after {
+    position: absolute;
+    content: "";
+  }
+  .burger-icon::before {
+    top: -8px;
+  }
+  .burger-icon::after {
+    top: 8px;
   }
 
   .nav-container{
@@ -97,6 +131,18 @@
         font-size: 28px;
       }
 
+      .menu-button{
+        float: right;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      .menu-button {
+        display: inline-block;
+        padding: .5em;
+      }
+
       .navigation-menu-button {
         color: $nav-font-color;
         display: block;
@@ -107,10 +153,14 @@
         text-transform: uppercase;
 
         &:focus, &:hover {
+          cursor: pointer;
           color: darken($nav-font-color, 10%);
         }
       }
 
+      .hidden{
+        display: none;
+      }
 
     // Nav menu
 

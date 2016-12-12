@@ -18,11 +18,12 @@
             %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
             %p Destyn Patera
         .right-navigation-wrapper
-          = link_to 'X', root_path, class: 'navigation-menu-button right', id: 'cancel'
-          = link_to 'Contat', root_path, class: 'navigation-menu-button right'
-          = link_to 'Blog', root_path, class: 'navigation-menu-button right'
-          = link_to 'Photo', root_path, class: 'navigation-menu-button right'
-          = link_to 'Video', root_path, class: 'navigation-menu-button right'
+          %span.navigation-menu-button.menu-button
+            %span.right.burger-icon
+          = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
+          = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
+          = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
+          = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
 
     = yield
 
