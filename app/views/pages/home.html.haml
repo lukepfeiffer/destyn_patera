@@ -3,15 +3,15 @@
   .video-container
     = render partial: 'videos'
     .top-row
-      .thumb-nail{data: {id: 1}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
-      .thumb-nail{data: {id: 2}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
-      .thumb-nail{data: {id: 3}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
-      .thumb-nail{data: {id: 4}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
+      .thumb-nail{data: {id: 1}}= image_tag "facebook.png"
+      .thumb-nail{data: {id: 2}}= image_tag "facebook.png"
+      .thumb-nail{data: {id: 3}}= image_tag "facebook.png"
+      .thumb-nail{data: {id: 4}}= image_tag "facebook.png"
     .bottom-row
-      .thumb-nail{data: {id: 5}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
-      .thumb-nail{data: {id: 6}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
-      .thumb-nail{data: {id: 7}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
-      .thumb-nail{data: {id: 8}}= image_tag "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"
+      .thumb-nail{data: {id: 5}}= image_tag "facebook.png"
+      .thumb-nail{data: {id: 6}}= image_tag "facebook.png"
+      .thumb-nail{data: {id: 7}}= image_tag "facebook.png"
+      .thumb-nail{data: {id: 8}}= image_tag "facebook.png"
 #clients
   %h1 Our Clients
   .container
@@ -20,18 +20,13 @@
       #carousel_inner
         %ul#carousel_ul
           %li
-            %a{:href => "#"}
-              %img{:src => "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"}/
+            =link_to(image_tag('facebook.png'), root_path)
           %li
-            %a{:href => "#"}
-              %img{:src => "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"}/
+            =link_to(image_tag('facebook.png'), root_path)
           %li
-            %a{:href => "#"}
-              %img{:src => "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"}/
+            =link_to(image_tag('facebook.png'), root_path)
           %li
-            %a{:href => "#"}
-              %img{:src => "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"}/
+            =link_to(image_tag('facebook.png'), root_path)
           %li
-            %a{:href => "#"}
-              %img{:src => "https://pbs.twimg.com/profile_images/655066410087940096/QSUlrrlm.png"}/
+            =link_to(image_tag('facebook.png'), root_path)
       #right_scroll= image_tag 'right_arrow.png'
