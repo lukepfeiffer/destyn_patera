@@ -228,6 +228,9 @@
     }
     .video-container{
       margin: 0;
+      .hidden{
+        display: none;
+      }
       .thumb-nail{
         display: inline-block;
         width: 24.6%;
