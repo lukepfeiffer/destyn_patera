@@ -15,14 +15,17 @@
   @import "users";
   @import "neat";
   @import "base/base";
+  @import "font-awesome-sprockets";
+  @import "font-awesome";
  */
 
 #main{
   $default-font: arial;
   $default-font-size: 18px;
   $default-color: #297A8C;
-  $gator-orange: orange;
   $background-color: #fff;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
