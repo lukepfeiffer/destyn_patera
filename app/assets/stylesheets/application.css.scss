@@ -10,13 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-  @import "bourbon";
-  @import "home";
-  @import "users";
-  @import "neat";
-  @import "base/base";
   @import "font-awesome-sprockets";
   @import "font-awesome";
+  @import "bourbon";
+  @import "base/base";
  */
 
 #main{
@@ -24,12 +21,13 @@
   $default-font-size: 18px;
   $default-color: #297A8C;
   $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
   $glyphicon-color: #249880;
   $soft-gray-text: #737373;
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
-
   .right{
     float: right;
   }
@@ -311,27 +309,58 @@
     }
   }
 
-  .main-footer{
+  .footer-top{
     $base-spacing: 1.5em !default;
-    $action-color: #477DCA !default;
-    $footer-background: desaturate(darken(#ccc, 20%), 30%);
-    $footer-color: white;
-    $footer-link-color: transparentize($footer-color, 0.6);
-    $footer-disclaimer-color: transparentize($footer-color, 0.6);
+    $footer-background: lighten(#DFDFDF, 10%);
 
-    background: $footer-background;
+    background-color: $footer-background;
+    display: inline-block;
+    padding: $base-spacing;
+    width: 96.8%;
+    height: 6em;
+    margin-top: 4em;
+    color: $glyphicon-color;
+
+    i{
+      line-height: 1.5em;
+      font-size: 2em;
+    }
+
+    .footer-wrapper{
+      width: 65%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .text, a{
+      color: $soft-gray-text;
+      text-decoration: none;
+    }
+
+    .contact-info{
+      text-align: center;
+      display: inline-block;
+      width: 33%;
+    }
+  }
+
+  .footer-bottom{
+    $base-spacing: 1.5em !default;
+    $footer-background: #DFDFDF;
+
+    background-color: $footer-background;
     display: inline-block;
     padding: $base-spacing;
     width: 96.8%;
 
-    .main-footer-wrapper{
+    .footer-wrapper{
+      margin: 1em 0 0 0;
       width: 60%;
       margin-right: auto;
       margin-left: auto;
     }
 
     ul {
-      line-height: 1.5em;
       margin: 0 0 1em 0;
       padding: 0;
     }
@@ -341,37 +370,53 @@
       padding-right: 1em;
     }
 
-    ul li a {
-      color: $footer-link-color;
-      text-decoration: none;
+    ul .text {
+      color: $default-color;
 
       &:focus, &:hover {
-        color: transparentize($footer-color, 0);
+        color: darken($default-color, 4%);
       }
     }
 
     .primary-link{
+      display: inline;
       float: left;
+      i{
+        color: $default-color;
+      }
+      a{
+        text-decoration: none;
+      }
     }
 
     .footer-secondary-links {
-
-      li {
-        font-size: 0.8em;
-      }
-
       ul.footer-social {
-        margin: 1em 0 0 0;
-
-        li {
+        display: inline;
+        float: right;
+        a{
           float: left;
-          font-size: 1em;
-          line-height: 0;
-          margin: 0;
-          padding-right: 0.7em;
+          margin-right: 0.3em;
+          text-decoration: none;
+          img{
+            height: 2em;
+            opacity: 0.4;
+            filter: grayscale(100%);
+            &:hover{
+              filter: none;
+              cursor: pointer;
+              opacity: 1;
+            }
+          }
+          li{
+            color: #fff;
+            margin: 0;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
 
-          &:last-child {
-            padding-right: 0;
+            &:last-child {
+              padding-right: 0;
+            }
           }
         }
 

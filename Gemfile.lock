@@ -63,8 +63,6 @@ GEM
     ffi (1.9.14)
     filepicker-rails (2.1.0)
       rails (>= 3.2)
-    font-awesome-sass (4.7.0)
-      sass (>= 3.2)
     formal (1.0.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -198,7 +196,6 @@ DEPENDENCIES
   bcrypt-ruby
   bourbon
   filepicker-rails
-  font-awesome-sass
   formal
   google-webfonts-rails
   haml-rails

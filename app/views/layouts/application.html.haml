@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 %html
   %head
-    %title>DestynPatera
+    %title DestynPatera
+    %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
@@ -26,14 +27,33 @@
 
     = yield
 
-    %footer.main-footer{:role => "contentinfo"}
-      .main-footer-wrapper
+    %footer.footer-top
+      .footer-wrapper
+        .contact-info
+          %i.fa.fa-mobile
+          %br
+          %span.text 123 456 7890
+        .contact-info
+          %i.fa.fa-envelope
+          %br
+          %span.text info@destynpatera.com
+        .contact-info
+          %i.fa.fa-globe
+          %br
+          %span.text= link_to 'www.destynpatera.com', 'https://www.destynpatera.com'
+    %footer.footer-bottom{:role => "contentinfo"}
+      .footer-wrapper
         .primary-link
           %ul
-            %li
-              %a{:href => "javascript:void(0)"} 2016 Destyn Patera
+            = link_to root_path do
+              %li
+                %i.fa.fa-copyright
+                %span.text 2016 Destyn Patera
         .footer-secondary-links
           %ul.footer-social
-            %li= link_to(image_tag('vimeo.png', alt: 'vimeo'), root_path, target: '_blank')
-            %li= link_to(image_tag('instagram.png', alt: 'instagram'), root_path, target: '_blank')
-            %li= link_to(image_tag('facebook.png', alt: 'facebook'), root_path, target: '_blank')
+            = link_to root_path do
+              %li= image_tag('vimeo.png', alt: 'vimeo')
+            = link_to root_path do
+              %li= image_tag('instagram.png', alt: 'instagram')
+            = link_to root_path do
+              %li= image_tag('facebook.png', alt: 'facebook')
