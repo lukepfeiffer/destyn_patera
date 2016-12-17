@@ -1,0 +1,11 @@
+.form
+  = form_tag sign_in_path, html: {class: 'form-horizontal'} do |f|
+    %fieldset
+      %dl
+        %dt= label_tag :email
+        %dd= text_field_tag :email, nil
+        %dt= label_tag :password
+        %dd= password_field_tag :password, nil
+    %fieldset.actions
+      = submit_tag "Sign In"
+
