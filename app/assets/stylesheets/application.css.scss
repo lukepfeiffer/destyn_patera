@@ -28,6 +28,7 @@
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
+
   .right{
     float: right;
   }
@@ -78,43 +79,10 @@
         border: 1px solid darken(#28AADC, 20%);
       }
     }
-
   }
 
-  .burger-icon {
-    position: relative;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    top: 8px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .burger-icon, .burger-icon::before, .burger-icon::after {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: $default-color;
-    outline: 1px solid transparent;
-    -webkit-transition-property: background-color, -webkit-transform;
-    -moz-transition-property: background-color, -moz-transform;
-    -o-transition-property: background-color, -o-transform;
-    transition-property: background-color, transform;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .burger-icon::before, .burger-icon::after {
-    position: absolute;
-    content: "";
-  }
-  .burger-icon::before {
-    top: -8px;
-  }
-  .burger-icon::after {
-    top: 8px;
+  .fa-bars{
+    font-size: 30px;
   }
 
   #special-nav{
@@ -361,6 +329,19 @@
     }
   }
 
+  #photos{
+    h1{
+      text-align: center;
+    }
+  }
+
+  .footers-wrapper{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
   .footer-top{
     $base-spacing: 1.5em !default;
     $footer-background: lighten(#DFDFDF, 10%);
@@ -404,6 +385,7 @@
     display: inline-block;
     padding: $base-spacing;
     width: 96.8%;
+    height: 3.5em;
 
     .footer-wrapper{
       margin: 1em 0 0 0;

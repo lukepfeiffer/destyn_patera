@@ -11,39 +11,41 @@
       })                                  |
 
   %body#main
-    - if @nav_image == true
-      .nav-container#special-nav
-        %header.navigation{:role => "banner"}
-          .left-navigation-wrapper
-            = link_to root_path, class: 'logo' do
-              %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
-              %p.logo-text Destyn Patera
-          .right-navigation-wrapper
-            %span.navigation-menu-button.menu-button
-              %span.right.burger-icon
-            = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
-            = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
-            = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
-            = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
-            = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
-    - else
-      .nav-container#normal-nav
-        %header.navigation{:role => "banner"}
-          .left-navigation-wrapper
-            = link_to root_path, class: 'logo' do
-              %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
-              %p.logo-text Destyn Patera
-          .right-navigation-wrapper
-            %span.navigation-menu-button.menu-button
-              %span.right.burger-icon
-            = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
-            = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
-            = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
-            = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
-            = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
+    .body-wrapper
+      - if @nav_image == true
+        .nav-container#special-nav
+          %header.navigation{:role => "banner"}
+            .left-navigation-wrapper
+              = link_to root_path, class: 'logo' do
+                %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
+                %p.logo-text Destyn Patera
+            .right-navigation-wrapper
+              %span.navigation-menu-button.menu-button
+                %i.fa.fa-bars
+              = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
+              = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
+              = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
+              = link_to 'Photo', photos_path, class: 'navigation-menu-button right hidden'
+              = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
+      - else
+        .nav-container#normal-nav
+          %header.navigation{:role => "banner"}
+            .left-navigation-wrapper
+              = link_to root_path, class: 'logo' do
+                %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
+                %p.logo-text Destyn Patera
+            .right-navigation-wrapper
+              %span.navigation-menu-button.menu-button
+                %i.fa.fa-bars
+              = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
+              = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
+              = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
+              = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
+              = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
 
-    = yield
+      = yield
 
+  .footers-wrapper
     %footer.footer-top
       .footer-wrapper
         .contact-info
