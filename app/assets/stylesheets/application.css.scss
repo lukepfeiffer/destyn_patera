@@ -333,6 +333,33 @@
     h1{
       text-align: center;
     }
+
+    ul{
+      li{
+        width: 24%;
+        display: inline-block;
+
+        h1{
+          background-color: transparent;
+          text-align: center;
+          border-top: 1px solid $soft-gray-text;
+          border-bottom: 1px solid $soft-gray-text;
+          span{
+            opacity: 1;
+            // color: #000;
+          }
+        }
+
+        img{
+          position: relative;
+          width: 100%;
+        }
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .footers-wrapper{

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :categories
 
   get '/sign_in', to: 'pages#sign_in'
+  get '/photos', to: 'categories#photos'
 
   post '/sign_in', to: 'sessions#create'
 
