@@ -29,6 +29,14 @@
   font-family: "PT Sans", sans-serfif;
   margin: 0;
 
+  .video{
+    margin: 4em 0;
+    iframe{
+      width: 80vw;
+      height: 45vw;
+    }
+  }
+
   .right{
     float: right;
   }
@@ -87,7 +95,7 @@
 
   #special-nav{
     width: 100%;
-    height: 800px;
+    height: 52vw;
     background-image:  url('http://www.lustmord.com/wp_lustmord/wp-content/uploads/2013/06/Metavoid-2-1920x1080.jpg');
   }
 
@@ -143,7 +151,7 @@
         float: left;
         height: $navigation-height;
         max-height: $navigation-height;
-        padding-right: 2em;
+        // padding-right: 2em;
 
         img {
           width: $navigation-height;
@@ -156,10 +164,6 @@
         }
       }
 
-      #cancel{
-        font-size: 28px;
-      }
-
       .menu-button{
         float: right;
         &:hover{
@@ -169,7 +173,7 @@
 
       .menu-button {
         display: inline-block;
-        padding: .5em;
+        padding: .5vw;
       }
 
       .navigation-menu-button {
@@ -177,7 +181,7 @@
         display: block;
         line-height: $navigation-height;
         margin: 0;
-        padding-right: 1em;
+        padding-right: 1vw;
         text-decoration: none;
         text-transform: uppercase;
 
@@ -189,53 +193,6 @@
 
       .hidden{
         display: none;
-      }
-
-    // Nav menu
-
-      nav {
-        float: none;
-        min-height: $navigation-height;
-        z-index: 9999999;
-      }
-
-      ul.navigation-menu {
-        clear: both;
-        display: none;
-        margin: 0 auto;
-        overflow: visible;
-        padding: 0;
-        width: 100%;
-        z-index: 9999;
-
-        &.show {
-          display: block;
-        }
-
-      }
-
-
-    // The nav items
-
-      ul li.nav-link {
-        display: block;
-        line-height: $navigation-height;
-        overflow: hidden;
-        padding-right: 0.8em;
-        text-align: right;
-        width: 100%;
-        z-index: 9999;
-
-        a {
-          color: $navigation-color;
-          display: inline-block;
-          text-decoration: none;
-
-          &:focus,
-          &:hover {
-            color: $navigation-color-hover;
-          }
-        }
       }
     }
   }
@@ -298,12 +255,9 @@
         float: left;
         width: 1.4%;
         padding: 0px;
-        height: 110px;
+        height: 9vw;
         background: #dfdfdf;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 1vw 0.31vw;
       }
 
       #carousel_ul li img {
@@ -316,8 +270,11 @@
 
       #left_scroll, #right_scroll{
         float: left;
-        height: 130px;
+        height: 1vw;
         width: 15px;
+        &:hover{
+          cursor: pointer;
+        }
       }
 
       #left_scroll img, #right_scroll img{
@@ -344,9 +301,9 @@
           text-align: center;
           border-top: 1px solid $soft-gray-text;
           border-bottom: 1px solid $soft-gray-text;
+          font-size: 2vw;
           span{
             opacity: 1;
-            // color: #000;
           }
         }
 
@@ -376,14 +333,15 @@
     background-color: $footer-background;
     display: inline-block;
     padding: $base-spacing;
-    width: 96.8%;
+    width: 100%;
+    padding:  1.8vw 0;
     height: 6em;
     margin-top: 4em;
     color: $glyphicon-color;
 
     i{
-      line-height: 1.5em;
-      font-size: 2em;
+      line-height: 1.5vw;
+      font-size: 2vw;
     }
 
     .footer-wrapper{
@@ -400,7 +358,7 @@
     .contact-info{
       text-align: center;
       display: inline-block;
-      width: 33%;
+      width: 32%;
     }
   }
 
@@ -411,8 +369,9 @@
     background-color: $footer-background;
     display: inline-block;
     padding: $base-spacing;
-    width: 96.8%;
+    width: 100%;
     height: 3.5em;
+    padding: 1.5vw 0;
 
     .footer-wrapper{
       margin: 1em 0 0 0;
