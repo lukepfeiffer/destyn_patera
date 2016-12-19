@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#photos').on('click', '.modal-trigger', function(){
     var category = $(this);
     jQuery.fn.center = function () {
-      this.css("position","absolute");
+      this.css("position","fixed");
       this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
       this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
       return this;
