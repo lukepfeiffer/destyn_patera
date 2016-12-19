@@ -8,4 +8,8 @@ class CategoriesController < ApplicationController
   def photos
   end
 
+  def show
+    render partial: 'modal', locals: {category: category}
+  end
+
 end

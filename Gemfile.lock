@@ -199,7 +199,7 @@ DEPENDENCIES
   formal
   google-webfonts-rails
   haml-rails
-  jbuilder (~> 2.0)
+  jbuilder
   jquery-rails
   listen (~> 3.0.5)
   neat
@@ -207,9 +207,9 @@ DEPENDENCIES
   pry-rails
   rails (= 5.0.0)
   sass-burger
-  sass-rails (~> 5.0)
-  sdoc (~> 0.4.0)
-  uglifier (>= 1.3.0)
+  sass-rails
+  sdoc
+  uglifier
   web-console (~> 2.0)
   will_paginate
 

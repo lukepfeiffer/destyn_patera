@@ -1,8 +1,8 @@
 #photos
   %h1 Photos
   %ul
-    - 5.times do
-      %li.category
+    - categories.each do |category|
+      %li.category.modal-trigger{data: {category_id: category.id, url: category_path(category.id)}}
         %h1.title
-          %span Hashrocket
+          %span= category.title
         = image_tag 'hashrocket.jpg'
