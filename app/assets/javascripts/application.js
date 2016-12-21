@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require carousels
+//= require modal
 //= require_tree .

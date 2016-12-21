@@ -225,6 +225,12 @@
   }
 
   .modal-container{
+
+    iframe{
+      width: 64vw;
+      height: 36vw;
+    }
+
     .overlay {
       position: fixed;
       top: 0;
@@ -240,7 +246,7 @@
       position:absolute;
       background:url(tint20.png) 0 0 repeat;
       background:rgba(0,0,0,0.2);
-      border-radius:14px;
+      border-radius: 8px;
       padding:8px;
     }
 
@@ -248,17 +254,6 @@
       border-radius:8px;
       background:#fff;
       padding:20px;
-    }
-
-    .close {
-      position:absolute;
-      background:url(close.png) 0 0 no-repeat;
-      width:24px;
-      height:27px;
-      display:block;
-      text-indent:-9999px;
-      top:-7px;
-      right:-7px;
     }
   }
 

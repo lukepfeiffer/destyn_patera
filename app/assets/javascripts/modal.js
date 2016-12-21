@@ -8,6 +8,8 @@ $(document).ready(function() {
     };
   });
 
+  // photos modal
+
   $('#photos').on('click', '.modal-trigger', function(){
     var category = $(this);
     jQuery.fn.center = function () {
@@ -25,4 +27,25 @@ $(document).ready(function() {
       }
     });
   });
+
+  // videos modal
+
+  $('.video-container').on('click', '.thumb-nail', function(){
+    var video = $(this);
+    jQuery.fn.center = function () {
+      this.css("position","absolute");
+      this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 7) + $(window).scrollTop()) + "px");
+      this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 6) + $(window).scrollLeft()) + "px");
+      return this;
+    }
+
+    $.ajax({type: 'get',
+      url: video.data('video-url'),
+      success: function(response){
+        $('#main').append(response);
+        $('.modal-container').center();
+      }
+    });
+  });
+
 });

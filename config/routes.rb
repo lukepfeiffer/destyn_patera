@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/sign_in', to: 'pages#sign_in'
   get '/photos', to: 'categories#photos'
+  get '/video_modal', to: 'pages#video_modal'
 
   post '/sign_in', to: 'sessions#create'
 
