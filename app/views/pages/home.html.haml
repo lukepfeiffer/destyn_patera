@@ -18,14 +18,10 @@
       #left_scroll= image_tag 'left_arrow.png'
       #carousel_inner
         %ul#carousel_ul
-          %li
-            =link_to(image_tag('jake_peavy.png'), root_path)
-          %li
-            =link_to(image_tag('hashrocket.jpg'), root_path)
-          %li
-            =link_to(image_tag('street_sound.png'), root_path)
-          %li
-            =link_to(image_tag('facebook.png'), root_path)
-          %li
-            =link_to(image_tag('facebook.png'), root_path)
+          %li.big=link_to(image_tag('jake_peavy.png', id: 'digi_pro'), root_path)
+          %li.big=link_to(image_tag('http://i.imgur.com/wVxj5g7.png', id: 'hashrocket'), root_path)
+          %li.small=link_to(image_tag('http://i.imgur.com/tdgErIM.png', id: 'revitalists' ), root_path)
+          %li.big=link_to(image_tag('http://i.imgur.com/nVIQWQK.png', id: 'street_sound'), root_path)
+          %li.big=link_to(image_tag('http://i.imgur.com/PWiDMmT.png', id: 'jake_peavy'), root_path)
+
       #right_scroll= image_tag 'right_arrow.png'

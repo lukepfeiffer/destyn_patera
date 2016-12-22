@@ -4,6 +4,7 @@
     %title DestynPatera
     %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet"}
 
+
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
@@ -18,7 +19,7 @@
           %header.navigation{:role => "banner"}
             .left-navigation-wrapper
               = link_to root_path, class: 'logo' do
-                %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"}/
+                = image_tag 'main_logo.png'
                 %p.logo-text Destyn Patera
             .right-navigation-wrapper
               %span.navigation-menu-button.menu-button
