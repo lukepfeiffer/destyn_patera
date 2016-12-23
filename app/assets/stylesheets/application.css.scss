@@ -17,6 +17,16 @@
   @import "base/base";
  */
 
+
+@font-face {
+  font-family: "Norwester";
+  src: font-url("norwester-webfont.eot");
+  src: font-url("norwester-webfont.eot?#iefix") format("embedded-opentype"),
+    font-url("norwester-webfont.svg#norwester") format("svg"),
+    font-url("norwester-webfont.ttf") format("truetype"),
+    font-url("norwester-webfont.woff") format("woff");
+}
+
 #main{
   $default-font: arial;
   $default-font-size: 18px;
@@ -26,16 +36,6 @@
   $social-media-hover: #288D8f;
   $glyphicon-color: #249880;
   $soft-gray-text: #737373;
-
-  @font-face {
-    font-family: "Norwester";
-    src: url("//db.onlinewebfonts.com/t/9d0967bfe19937b123d26cde0ba6a217.eot");
-    src: url("//db.onlinewebfonts.com/t/9d0967bfe19937b123d26cde0ba6a217.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/9d0967bfe19937b123d26cde0ba6a217.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/9d0967bfe19937b123d26cde0ba6a217.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/9d0967bfe19937b123d26cde0ba6a217.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/9d0967bfe19937b123d26cde0ba6a217.svg#Norwester") format("svg");
-  }
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
@@ -101,7 +101,9 @@
   }
 
   .fa-bars{
-    font-size: 30px;
+    position: relative;
+    top: 0.3vw;
+    font-size: 2vw;
   }
 
   #special-nav{
@@ -132,7 +134,7 @@
       $navigation-color: transparentize(white, 0.3);
       $navigation-color-hover: white;
       $navigation-height: 48px;
-      $image-size: 5em;
+      $image-size: 5vw;
 
       min-height: $navigation-height;
       width: 60%;
@@ -150,9 +152,9 @@
 
       .logo-text{
         color: $default-color;
-        font-family: Norwester !important;
+        font-family: 'Norwester', sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.5vw;
         text-transform: uppercase;
       }
 
@@ -201,7 +203,14 @@
         padding: .5vw;
       }
 
+      .links{
+        position: relative;
+        top: 0.4vw;
+      }
+
       .navigation-menu-button {
+        position: relative;
+        top: 0.9vw;
         color: $default-color;
         display: block;
         line-height: $navigation-height;
@@ -234,29 +243,45 @@
     .top-row, .bottom-row{
       margin: 0;
     }
-    .video-container{
 
-      .thumb-nail{
-        display: table-cell;
+    .row{
+      padding: 0;
+      margin: 0;
+      list-style: none;
 
-        .text{
-          font-size: 1.3em;
-          margin: 0;
-          color: #fff;
-          position: relative;
-          top: -2.4vw;
-          left: 1vw;
-        }
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
 
-        img{
-          width: 100%;
-        }
+      -webkit-flex-flow: row wrap;
+      justify-content: center;
+    }
 
-        &:hover{
-          cursor: pointer;
-        }
+    .thumb-nail{
+      width: 380px;
+      height: 207px;
 
+      .text{
+        margin: 0;
+        font-size: 1.3em;
+        width: 80%;
+        margin: 0;
+        color: #fff;
+        position: relative;
+        top: -46px;
+        left: 19px;
       }
+
+      img{
+        width: 100%;
+      }
+
+      &:hover{
+        cursor: pointer;
+      }
+
     }
   }
 
