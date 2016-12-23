@@ -235,6 +235,15 @@
       .thumb-nail{
         display: table-cell;
 
+        .text{
+          font-size: 1.3em;
+          margin: 0;
+          color: #fff;
+          position: relative;
+          top: -2.4vw;
+          left: 1vw;
+        }
+
         img{
           width: 100%;
         }
