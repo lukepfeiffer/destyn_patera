@@ -1,8 +1,8 @@
 #photos
+  .new-link= link_to 'Create Category', new_category_path
   %h1 Photos
-  %ul
+  %ul.categories-container
     - categories.each do |category|
       %li.category.modal-trigger{data: {category_id: category.id, url: category_path(category.id)}}
-        %h1.title
-          %span= category.title
-        = image_tag 'hashrocket.jpg'
+        %h1.title= category.title
+        = image_tag 'video_1.png'
