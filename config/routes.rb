@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   resources :users, only: [:new, :edit, :update]
   resources :categories
+  resources :images
 
   get '/sign_in', to: 'pages#sign_in'
   get '/photos', to: 'categories#photos'

@@ -1,0 +1,9 @@
+%h1 Images
+= form_for image do |f|
+  %fieldset
+    %dl
+      %dt= f.label :dropbox_url
+      %dd= f.text_field :dropbox_url
+
+  %fieldset.actions
+
