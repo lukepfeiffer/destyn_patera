@@ -219,10 +219,14 @@
   }
 
   #recent_work{
-    text-align: center;
     color: $default-color;
     width: 100%;
     margin: 0;
+    h1{
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+    }
     .top-row, .bottom-row{
       margin: 0;
     }
@@ -287,7 +291,9 @@
     margin-bottom: 2em;
 
     h1{
+      font-size: 24px;
       color: $default-color;
+      text-transform: uppercase;
     }
     .container{
       width: 55%;
@@ -335,6 +341,19 @@
         border: 0px;
       }
 
+      #carousel_ul li#jake_peavy img{
+        top: 20px;
+      }
+
+      #carousel_ul li#street_sound img{
+        height: 70%;
+      }
+
+      #carousel_ul li#hashrocket img{
+        width: 80%;
+        height: 70%;
+      }
+
       #right_scroll{
         float: left;
         width: 15px;
@@ -353,7 +372,7 @@
 
       #left_scroll img, #right_scroll img{
         position: relative;
-        top: 50px;
+        top: 40px;
         cursor: pointer;
         width: 100%;
       }
@@ -406,9 +425,8 @@
 
     background-color: $footer-background;
     display: inline-block;
-    padding: $base-spacing;
     width: 100%;
-    padding:  1.8vw 0;
+    padding: 2.8vw 0;
     height: 6em;
     margin-top: 4em;
     color: $glyphicon-color;
@@ -419,6 +437,8 @@
     }
 
     .footer-wrapper{
+      position: relative;
+      top: 20px;
       width: 65%;
       margin-right: auto;
       margin-left: auto;
