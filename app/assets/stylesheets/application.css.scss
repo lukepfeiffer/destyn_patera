@@ -36,6 +36,7 @@
   $social-media-hover: #288D8f;
   $glyphicon-color: #249880;
   $soft-gray-text: #737373;
+  $link-color: #517a9e;
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
@@ -298,6 +299,11 @@
       height: 36vw;
     }
 
+    img{
+      width: 64vw;
+      height: 36vw;
+    }
+
     .overlay {
       position: fixed;
       top: 0;
@@ -311,17 +317,23 @@
 
     .modal {
       position:absolute;
-      background:url(tint20.png) 0 0 repeat;
       background:rgba(0,0,0,0.2);
       border-radius: 8px;
       padding:8px;
     }
 
     .content {
-      border-radius:8px;
-      background:#fff;
-      padding:20px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      color:#fff;
+      font-size: 2vw;
     }
+  }
+
+  .photos{
+    background:rgba(21,21,21,.8) !important;
+    border-radius: 0 !important;
   }
 
   #clients{
@@ -419,29 +431,61 @@
   }
 
   #photos{
+
+    .categories-container{
+      padding: 0;
+      list-style-type: none;
+
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-flex-flow: row wrap;
+      justify-content: flow-start;
+    }
+
+    .new-link{
+      margin-top: 1vw;
+      text-align: center;
+      a{
+        color: $link-color;
+        text-decoration: none;
+        font-size: 20px;
+        &:hover{
+          text-decoration: underline;
+          color: darken($link-color, 5%);
+        }
+      }
+    }
+
     h1{
       text-align: center;
     }
 
     ul{
+      margin: 0;
       li{
-        width: 24%;
-        display: inline-block;
-
+        width: 380px;
+        height: 216px;
         h1{
+          width: 90%;
+          text-align: left;
+          position: relative;
+          top: 210px;
+          left: 16px;
           background-color: transparent;
-          text-align: center;
-          border-top: 1px solid $soft-gray-text;
-          border-bottom: 1px solid $soft-gray-text;
-          font-size: 2vw;
-          span{
-            opacity: 1;
-          }
+          font-size: 32px;
+          color: #fff;
+          padding: 0;
+          margin: 0;
+          opacity: 0.9;
         }
 
         img{
-          position: relative;
           width: 100%;
+          height: 100%;
         }
 
         &:hover{
