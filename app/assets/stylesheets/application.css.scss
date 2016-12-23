@@ -100,10 +100,22 @@
     }
   }
 
-  .fa-bars{
-    position: relative;
-    top: 0.3vw;
-    font-size: 2vw;
+  #special-nav{
+    .navigation-menu-button{
+      position: relative;
+      top: 0.9vw;
+    }
+    .fa-bars{
+      position: relative;
+      top: 0.3vw;
+      font-size: 2vw;
+    }
+  }
+
+  #normal-nav{
+    .fa-bars{
+      font-size: 2vw;
+    }
   }
 
   #special-nav{
@@ -209,8 +221,6 @@
       }
 
       .navigation-menu-button {
-        position: relative;
-        top: 0.9vw;
         color: $default-color;
         display: block;
         line-height: $navigation-height;
