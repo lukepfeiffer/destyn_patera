@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   // videos modal
 
-  $('.video-container').on('click', '.thumb-nail', function(){
+  $('.row').on('click', '.thumb-nail', function(){
     var video = $(this);
     jQuery.fn.center = function () {
       this.css("position","absolute");
