@@ -115,6 +115,10 @@
   #normal-nav{
     background-color: lighten(#DFDFDF, 10%);
     padding: 1em;
+    .logo{
+      position: relative;
+      top: -.5vw;
+    }
   }
 
   .nav-container{
