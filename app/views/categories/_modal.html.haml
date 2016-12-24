@@ -2,4 +2,13 @@
   .overlay
   .modal.photos
     %p.content= category.title
-    = image_tag 'facebook.png'
+    = image_tag image.dropbox_url
+    - category.images.each do |image|
+      %img.hidden{data: {src: "#{image.dropbox_url}"}, src: ''}
+    .pagination
+      .previous
+        %i.fa.fa-arrow-left
+        Previous
+      .next
+        Next
+        %i.fa.fa-arrow-right

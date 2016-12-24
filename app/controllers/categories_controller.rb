@@ -4,6 +4,9 @@ class CategoriesController < ApplicationController
   expose :categories do
     Category.all
   end
+  expose :image do
+    category.images.first
+  end
 
   def photos
   end
