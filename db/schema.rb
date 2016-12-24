@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20161223232603) do
 
   create_table "images", force: :cascade do |t|
     t.string   "dropbox_url"
+    t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

@@ -45,6 +45,9 @@
               = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
               = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
               = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
+        .admin-links
+          = link_to 'Create Category', new_category_path
+          = link_to 'Add Images', images_path
 
       = yield
 

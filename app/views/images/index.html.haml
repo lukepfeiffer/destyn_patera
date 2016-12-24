@@ -1,9 +1,15 @@
-%h1 Images
-= form_for image do |f|
-  %fieldset
-    %dl
-      %dt= f.label :dropbox_url
-      %dd= f.text_field :dropbox_url
+#images
+  %h1 Images
+  .form
+    = form_for image, html: {id: 'new'} do |f|
+      %fieldset
+        %dl
+          %dt= f.label :dropbox_url
+          %dd= f.text_field :dropbox_url
 
-  %fieldset.actions
+          %dt= f.label :course
+          %dd= f.select :category_id, options_for_select(categories.collect { |category| [category.title.titleize, category.id] }, 1), {}, class: 'form-control'
 
+      %fieldset.actions
+        = f.submit 'Save'
+  .image-container= render partial: 'image_container', collection: images, as: :image
