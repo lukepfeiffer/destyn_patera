@@ -1,41 +1,42 @@
 #recent_work
   %h1 Our Recent Work
-  .row
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/192687722")}}
-      = image_tag "video_1.png"
-      %p.text 2016 Reel
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/168624560")}}
-      = image_tag "video_2.png"
-      %p.text Find Me Free
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/181320359")}}
-      = image_tag "video_3.png"
-      %p.text Radical Face - Road To Nowhere
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/183110074")}}
-      = image_tag "video_4.png"
-      %p.text Continuum - Breaking Point
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/181314070")}}
-      = image_tag "video_5.png"
-      %p.text Nick Black - Worst You Can Do
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/181314069")}}
-      = image_tag "video_6.png"
-      %p.text Continuum - Black and Blue
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/181314581")}}
-      = image_tag "video_7.png"
-      %p.text Jake Peavy Foundation
-    .thumb-nail{data: {video_url: video_modal_path(url: "http://player.vimeo.com/video/137507357")}}
-      = image_tag "video_8.png"
-      %p.text.black The Revitalists - Keep Going (Live)
+  .video-container
+    .row
+      .thumb-nail{data: {id: 1}}
+        = image_tag "video_1.png"
+        %p.text 2016 Reel
+      .thumb-nail{data: {id: 2}}
+        = image_tag "video_2.png"
+        %p.text Find Me Free
+      .thumb-nail{data: {id: 3}}
+        = image_tag "video_3.png"
+        %p.text Radical Face - Road To Nowhere
+      .thumb-nail{data: {id: 4}}
+        = image_tag "video_4.png"
+        %p.text Continuum - Breaking Point
+    .row
+      .thumb-nail{data: {id: 5}}
+        = image_tag "video_5.png"
+        %p.text Nick Black - Worst You Can Do
+      .thumb-nail{data: {id: 6}}
+        = image_tag "video_6.png"
+        %p.text Continuum - Black and Blue
+      .thumb-nail{data: {id: 7}}
+        = image_tag "video_7.png"
+        %p.text Jake Peavy Foundation
+      .thumb-nail{data: {id: 8}}
+        = image_tag "video_8.png"
+        %p.text.black The Revitalists - Keep Going (Live)
 #clients
   %h1 Our Clients
-  .container
-    #carousel_container
-      #left_scroll= image_tag 'left_arrow.png'
-      #carousel_inner
-        %ul#carousel_ul
-          %li.big=link_to(image_tag('http://i.imgur.com/nL8c2wC.png', id: 'digi_pro'), root_path)
-          %li.big#hashrocket=link_to(image_tag('http://i.imgur.com/wVxj5g7.png', id: 'hashrocket'), root_path)
-          %li.small=link_to(image_tag('http://i.imgur.com/tdgErIM.png', id: 'revitalists' ), root_path)
-          %li.big#street_sound=link_to(image_tag('http://i.imgur.com/nVIQWQK.png'), root_path)
-          %li.small#jake_peavy=link_to(image_tag('http://i.imgur.com/PWiDMmT.png'), root_path)
-
-      #right_scroll= image_tag 'right_arrow.png'
+  .scroller
+    %div 1
+    %div 2
+    %div 3
+    %div 4
+    %div 5
+    -# .big=link_to(image_tag('http://i.imgur.com/nL8c2wC.png', id: 'digi_pro'), root_path)
+    -# .big#hashrocket=link_to(image_tag('http://i.imgur.com/wVxj5g7.png', id: 'hashrocket'), root_path)
+    -# .small=link_to(image_tag('http://i.imgur.com/tdgErIM.png', id: 'revitalists' ), root_path)
+    -# .big#street_sound=link_to(image_tag('http://i.imgur.com/nVIQWQK.png'), root_path)
+    -# .small#jake_peavy=link_to(image_tag('http://i.imgur.com/PWiDMmT.png'), root_path)
