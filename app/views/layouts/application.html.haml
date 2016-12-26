@@ -3,15 +3,10 @@
   %head
     %title DestynPatera
     %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet"}
-
-
+    %link{href:'https://fonts.googleapis.com/css?family=PT+Sans', rel:'stylesheet', type: 'text/css'}
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
-    = google_webfonts_init({              |
-        google: ['PT Sans', 'serif'] |
-      })                                  |
-
   %body#main
     .body-wrapper
       - if @nav_image == true
