@@ -336,6 +336,7 @@
     margin-bottom: 2em;
 
     h1{
+      margin-top: 3em;
       font-size: 24px;
       color: $default-color;
       text-transform: uppercase;
@@ -347,9 +348,44 @@
     }
 
     .scroller {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      button{
+        color: #ccc;
+      }
+      .slick-slide{
+        margin: 0 1vw;
+      }
+      .hashrocket{
+        position: relative;
+        top: 1vw;
+        img{
+          height: 9vw;
+          width: 9vw;
+        }
+      }
+      .revitalists{
+        position: relative;
+        top: 4.8vw;
+      }
+      .jake-peavy{
+        position: relative;
+        top: 2.2vw;
+      }
+      .street-sound{
+        position: relative;
+        top: 2.2vw;
+      }
       div {
-        text-align: center;
-        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        img{
+          width: 100%;
+        }
+      }
+      button{
       }
     }
 
