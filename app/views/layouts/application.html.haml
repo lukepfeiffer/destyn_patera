@@ -29,11 +29,14 @@
     %meta{:content => "#ffffff", :name => "msapplication-TileColor"}
     %meta{:content => "/ms-icon-144x144.png", :name => "msapplication-TileImage"}
     %meta{:content => "#ffffff", :name => "theme-color"}
+    %link{href: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", rel: "stylesheet", type: "text/css"}
+    %link{href: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css", rel: "stylesheet", type: "text/css"}
 
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   %body#main
+    %script{src: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", type: "text/javascript"}
     .body-wrapper
       - if @nav_image == true
         .nav-container#special-nav

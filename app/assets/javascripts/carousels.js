@@ -1,22 +1,34 @@
 $(document).ready(function() {
-  $('#carousel_ul li:first').before($('#carousel_ul li:last'));
-  $('#right_scroll img').click(function(){
-    var item_width = $('#carousel_ul li').outerWidth() + 10;
-    var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;
-
-    $('#carousel_ul').animate({'left' : left_indent},{queue:false, duration:500},function(){
-      $('#carousel_ul li:last').after($('#carousel_ul li:first'));
-      $('#carousel_ul').css({'left' : '-210px'});
-    });
-  });
-
-  $('#left_scroll img').click(function(){
-    var item_width = $('#carousel_ul li').outerWidth() + 10;
-    var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;
-
-    $('#carousel_ul').animate({'left' : left_indent},{queue:false, duration:500},function(){
-      $('#carousel_ul li:first').before($('#carousel_ul li:last'));
-      $('#carousel_ul').css({'left' : '-210px'});
-    });
+  $('.scroller').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 });
