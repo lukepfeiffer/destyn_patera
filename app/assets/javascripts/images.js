@@ -12,4 +12,14 @@ $(document).ready(function() {
     })
   });
 
+  $('#main').on('click', '.previous', function(){
+    var visibleImage = $('.photos').children('img:visible')
+    var hiddenImages = $('.photos').children('img:hidden')
+    visibleImage.hide();
+  });
+
+  $('#main').on('click', '.next', function(){
+    var image = $('.photos').children('img:visible')
+  });
+
 });
