@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20161228173119) do
   create_table "videos", force: :cascade do |t|
     t.string "vimeo_url"
     t.string "title"
+    t.string "thumbnail_url"
   end
 
 end

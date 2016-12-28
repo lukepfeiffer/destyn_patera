@@ -19,6 +19,6 @@
   %ul.video-container
     .row
       - videos.each do |video|
-        .thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
+        %li.thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
           %h1.title= video.title
           = image_tag video.thumbnail_url
