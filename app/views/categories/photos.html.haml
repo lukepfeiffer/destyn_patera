@@ -11,6 +11,9 @@
           .card
             .card-image= image_tag category.dropbox_url
             .card-header= category.title
+            .card-copy
+              = link_to 'delete'
+              = link_to 'edit'
   - else
     %h1 Photos
     %ul.categories-container

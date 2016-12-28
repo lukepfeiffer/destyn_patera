@@ -13,4 +13,12 @@
 
         %fieldset.actions
           = f.submit 'Save'
-  .image-container= render partial: 'image_container', collection: images, as: :image
+  .admin-view
+    %h1 Images
+    .cards
+      - images.each do |image|
+        .card
+          .card-image= image_tag image.dropbox_url
+          .card-copy
+            = link_to 'delete'
+            = link_to 'edit'
