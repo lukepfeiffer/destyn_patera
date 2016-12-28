@@ -51,7 +51,6 @@
               %span.links
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
                 = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
-                = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
                 = link_to 'Photo', photos_path, class: 'navigation-menu-button right hidden'
                 = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
       - else
@@ -66,7 +65,6 @@
                 %i.fa.fa-bars
               = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
               = link_to 'Contact', root_path, class: 'navigation-menu-button right hidden'
-              = link_to 'Blog', root_path, class: 'navigation-menu-button right hidden'
               = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
               = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
         .admin-links
