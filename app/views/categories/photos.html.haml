@@ -3,9 +3,18 @@
     .category-form
       %h1 Add Category
       = render partial: 'form'
-  %h1 Photos
-  %ul.categories-container
-    - categories.each do |category|
-      %li.category.modal-trigger{data: {category_id: category.id, url: category_path(category.id)}}
-        %h1.title= category.title
-        = image_tag category.dropbox_url
+  - if current_user.present?
+    .admin-view
+      %h1 Photos
+      .cards
+        - categories.each do |category|
+          .card
+            .card-image= image_tag category.dropbox_url
+            .card-header= category.title
+  - else
+    %h1 Photos
+    %ul.categories-container
+      - categories.each do |category|
+        %li.category.modal-trigger{data: {category_id: category.id, url: category_path(category.id)}}
+          %h1.title= category.title
+          = image_tag category.dropbox_url
