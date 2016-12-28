@@ -25,7 +25,8 @@ class CategoriesController < ApplicationController
 
   def category_params
     params.require(:category).permit(
-      :title
+      :title,
+      :dropbox_url
     )
   end
 
