@@ -1,4 +1,5 @@
 class VideosController < ApplicationController
+  before_action :authenticate_user, only: [:create, :delete, :edit, :update]
   expose :video
   expose :videos do
     Video.all
@@ -13,6 +14,14 @@ class VideosController < ApplicationController
       redirect_to videos_path
     else
       redirect_to videos_path
+    end
+  end
+
+  private
+
+  def authenticate_user
+    if current_user.nil?
+      redirect_to root_path
     end
   end
 

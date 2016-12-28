@@ -67,10 +67,11 @@
               = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
               = link_to 'Photo', root_path, class: 'navigation-menu-button right hidden'
               = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
-        .admin-links
-          = link_to 'View Categories', photos_path
-          = link_to 'View Videos', videos_path
-          = link_to 'Add Images', images_path
+        - if current_user.present?
+          .admin-links
+            = link_to 'View Categories', photos_path
+            = link_to 'View Videos', videos_path
+            = link_to 'Add Images', images_path
 
       = yield
 

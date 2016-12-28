@@ -1,7 +1,8 @@
 #photos
-  .category-form
-    %h1 Add Category
-    = render partial: 'form'
+  - if current_user.present?
+    .category-form
+      %h1 Add Category
+      = render partial: 'form'
   %h1 Photos
   %ul.categories-container
     - categories.each do |category|

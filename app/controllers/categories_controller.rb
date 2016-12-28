@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user, only: [:create, :edit, :update, :delete]
 
   expose :category
   expose :categories do
@@ -21,6 +22,14 @@ class CategoriesController < ApplicationController
 
   def show
     render partial: 'modal', locals: {category: category}
+  end
+
+  private
+
+  def authenticate_user
+    if current_user.nil?
+      redirect_to root_path
+    end
   end
 
   def category_params
