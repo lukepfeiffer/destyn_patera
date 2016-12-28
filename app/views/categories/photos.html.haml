@@ -4,4 +4,4 @@
     - categories.each do |category|
       %li.category.modal-trigger{data: {category_id: category.id, url: category_path(category.id)}}
         %h1.title= category.title
-        = image_tag 'video_1.png'
+        = image_tag category.dropbox_url

@@ -12,14 +12,28 @@ $(document).ready(function() {
     })
   });
 
-  $('#main').on('click', '.previous', function(){
-    var visibleImage = $('.photos').children('img:visible')
-    var hiddenImages = $('.photos').children('img:hidden')
-    visibleImage.hide();
+  $('#main').on('click', '.next', function(){
+    var allImages = $('.photos').children('img')
+    var currentImageIndex = allImages.index('.photos img:visible')
+    var currentImage = allImages.eq(currentImageIndex)
+    var nextImageIndex = currentImageIndex + 1
+    var nextImage = allImages.eq(nextImageIndex)
+    if(!nextImage){
+      nextImage = allImages.eq(0)
+    }
+    currentImage.hide()
+    nextImage.show()
   });
 
-  $('#main').on('click', '.next', function(){
-    var image = $('.photos').children('img:visible')
+  $('#main').on('click', '.previous', function(){
+    var allImages = $('.photos').children('img')
+    if(allImages.indexOf('img:visible') == 0){
+      allImages.last().show()
+      allImages.first('img:visible').hide()
+    } else{
+      allImages.first('img:visible').prev().show()
+      allImages.first('img:visible').hide()
+    }
   });
 
 });

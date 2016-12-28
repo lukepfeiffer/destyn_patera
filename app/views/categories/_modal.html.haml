@@ -2,9 +2,8 @@
   .overlay
   .modal.photos
     %p.content= category.title
-    = image_tag image.dropbox_url, id: image.id
-    - category.images.each do |other_image|
-      = image_tag other_image.dropbox_url, class: 'hidden', id: other_image.id
+    - category.images.each do |image|
+      = image_tag image.dropbox_url
     .pagination
       .previous
         %i.fa.fa-arrow-left

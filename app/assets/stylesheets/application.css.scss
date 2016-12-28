@@ -371,8 +371,16 @@
   }
 
   .photos{
-    background:rgba(21,21,21,.8) !important;
-    border-radius: 0 !important;
+    background:rgba(21,21,21,.8);
+
+    img{
+      display: none;
+    }
+
+    > img:first-of-type{
+      display: block;
+    }
+
   }
 
   #clients{

@@ -16,5 +16,4 @@
 //= require modal
 //= require images
 //= require pages
-//= require categories
 //= require_tree .
