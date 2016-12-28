@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :edit, :update]
   resources :categories
   resources :images
+  resources :videos
 
   get '/sign_in', to: 'pages#sign_in'
   get '/photos', to: 'categories#photos'

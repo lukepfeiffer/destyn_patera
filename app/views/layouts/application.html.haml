@@ -52,7 +52,7 @@
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
                 = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
                 = link_to 'Photo', photos_path, class: 'navigation-menu-button right hidden'
-                = link_to 'Video', root_path, class: 'navigation-menu-button right hidden'
+                = link_to 'Video', videos_path, class: 'navigation-menu-button right hidden'
       - else
         .nav-container#normal-nav
           %header.navigation{:role => "banner"}
