@@ -43,6 +43,11 @@
   font-family: "PT Sans", sans-serfif;
   margin: 0;
 
+  .body-wrapper{
+    height: 100%;
+    min-height: 450px;
+  }
+
   .video{
     margin: 4em 0;
     iframe{
@@ -557,13 +562,23 @@
       }
     }
   }
+}
 
-  .footers-wrapper{
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  }
+.footers-wrapper{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 
   .footer-top{
     $base-spacing: 1.5em !default;
