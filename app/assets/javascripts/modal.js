@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#main').on('click', '.overlay', function(event) {
     if(!$(event.target).is('.modal-container')){
       if($('.modal-container').is(":visible")) {
-        $('.modal-container').hide();
+        $('.modal-container').remove();
       }
     };
   });
@@ -12,18 +12,11 @@ $(document).ready(function() {
 
   $('#photos').on('click', '.modal-trigger', function(){
     var category = $(this);
-    jQuery.fn.center = function () {
-      this.css("position","fixed");
-      this.css("top", Math.max(0, (($(window).height())/ 58) + $(window).scrollTop()) + "px");
-      this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 6) + $(window).scrollLeft()) + "px");
-      return this;
-    }
 
     $.ajax({type: 'get',
       url: category.data('url'),
       success: function(response){
         $('#main').append(response);
-        $('.modal-container').center();
       }
     });
   });
@@ -33,9 +26,7 @@ $(document).ready(function() {
   $('.row').on('click', '.thumb-nail', function(){
     var video = $(this);
     jQuery.fn.center = function () {
-      this.css("position","absolute");
-      this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 7) + $(window).scrollTop()) + "px");
-      this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 6) + $(window).scrollLeft()) + "px");
+      this.css("margin-top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 7) + $(window).scrollTop()) + "px");
       return this;
     }
 

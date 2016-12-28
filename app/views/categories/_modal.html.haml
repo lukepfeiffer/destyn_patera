@@ -3,7 +3,7 @@
   .modal.photos
     %p.content= category.title
     - category.images.each do |image|
-      = image_tag image.dropbox_url
+      = image_tag image.dropbox_url, id: image.id
     .pagination
       .previous
         %i.fa.fa-arrow-left
