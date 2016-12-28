@@ -1,0 +1,24 @@
+#videos
+  .form
+    = form_for video, html: {id: 'new'} do |f|
+      %fieldset
+        %dl
+          %dt= f.label :vimeo_url
+          %dd= f.text_field :vimeo_url
+
+          %dt= f.label :thumbnail_url, 'Thumbnail from dropbox'
+          %dd= f.text_field :thumbnail_url
+
+          %dt= f.label :title
+          %dd= f.text_field :title
+
+      %fieldset.actions
+        = f.submit 'Save'
+
+  %h1 Videos
+  %ul.video-container
+    .row
+      - videos.each do |video|
+        .thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
+          %h1.title= video.title
+          = image_tag video.thumbnail_url

@@ -23,6 +23,22 @@ $(document).ready(function() {
 
   // videos modal
 
+  $('#row').on('click', '.thumb-nail', function(){
+    var video = $(this);
+    jQuery.fn.center = function () {
+      this.css("margin-top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 7) + $(window).scrollTop()) + "px");
+      return this;
+    }
+
+    $.ajax({type: 'get',
+      url: video.data('video-url'),
+      success: function(response){
+        $('#main').append(response);
+        $('.modal-container').center();
+      }
+    });
+  });
+
   $('.row').on('click', '.thumb-nail', function(){
     var video = $(this);
     jQuery.fn.center = function () {
