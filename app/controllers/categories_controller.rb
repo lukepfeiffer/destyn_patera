@@ -1,14 +1,10 @@
 class CategoriesController < ApplicationController
-  before_action :authenticate_user, only: [:create, :edit, :update, :delete]
+  before_action :authenticate_user, only: [:create, :edit, :update, :destroy]
 
   expose :category
   expose :categories do
-    Category.all
+    Category.all.order('created_at DESC')
   end
-  expose :image do
-    category.images.first
-  end
-
   def photos
   end
 
@@ -22,6 +18,14 @@ class CategoriesController < ApplicationController
 
   def show
     render partial: 'modal', locals: {category: category}
+  end
+
+  def destroy
+    category = Category.find(params[:id])
+    images = category.images
+    images.destroy_all
+    category.delete
+    redirect_to photos_path
   end
 
   private

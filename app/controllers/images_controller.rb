@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  before_action :authenticate_user, only: [:index, :create, :edit, :update, :delete]
+  before_action :authenticate_user, only: [:index, :create, :edit, :update, :destroy]
   expose :image
   expose :images do
     Image.all.order('created_at DESC')
@@ -10,10 +10,15 @@ class ImagesController < ApplicationController
 
   def create
     if image.save
-      render partial: 'image_container', locals: {image: image}
+      redirect_to images_path
     else
-      head :no_content
+      redirect_to images_path
     end
+  end
+
+  def destroy
+    image.delete
+    redirect_to images_path
   end
 
   private

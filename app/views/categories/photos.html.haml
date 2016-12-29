@@ -12,8 +12,8 @@
             .card-image= image_tag category.dropbox_url
             .card-header= category.title
             .card-copy
-              = link_to 'delete'
-              = link_to 'edit'
+              = link_to 'delete', category_path(category.id), method: :delete, class: 'delete'
+              = link_to 'edit', category_path(category.id)
   - else
     %h1 Photos
     %ul.categories-container

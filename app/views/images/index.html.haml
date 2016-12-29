@@ -19,6 +19,7 @@
       - images.each do |image|
         .card
           .card-image= image_tag image.dropbox_url
+          .card-header= image.category.title
           .card-copy
-            = link_to 'delete'
+            = link_to 'delete', image_path(image), method: :delete
             = link_to 'edit'

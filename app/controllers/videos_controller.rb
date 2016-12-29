@@ -1,8 +1,8 @@
 class VideosController < ApplicationController
-  before_action :authenticate_user, only: [:create, :delete, :edit, :update]
+  before_action :authenticate_user, only: [:create, :destroy, :edit, :update]
   expose :video
   expose :videos do
-    Video.all
+    Video.all.order('created_at DESC')
   end
 
   def create
@@ -15,6 +15,11 @@ class VideosController < ApplicationController
     else
       redirect_to videos_path
     end
+  end
+
+  def destroy
+    video.delete
+    redirect_to videos_path
   end
 
   private
