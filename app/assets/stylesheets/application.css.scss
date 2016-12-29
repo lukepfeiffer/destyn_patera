@@ -44,7 +44,6 @@
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
-
   .delete{
     background-color: $danger-color;
     padding: 5px;
@@ -287,6 +286,51 @@
       .hidden{
         display: none;
       }
+    }
+  }
+
+  #vision{
+    position: relative;
+    min-height: 20vw;
+    max-height: 40vw;
+    min-width: 900px;
+    max-width: 1200px;
+    max-height: 700px;
+    min-height: 430px;
+    background-image: url('lighthouse.jpg');
+    background-size: 900px 100%;
+    background-repeat: no-repeat;
+    img{
+    }
+    .container{
+      top: -20px;
+      position: relative;
+    }
+    p{
+      margin-top: 0;
+      padding: 30px;
+      margin-right: 0;
+    }
+    .header{
+      background-color: #fff;
+      position: relative;
+      left: 22em;
+      top: 60px;
+      color: $default-color;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 28px;;
+      width: 30%;
+    }
+
+    .subheader{
+      background-color: #fff;
+      position: relative;
+      top: 5px;
+      left: 38.5em;
+      color: $soft-gray-text;
+      width: 30%;
+      font-size: 16px;
     }
   }
 
