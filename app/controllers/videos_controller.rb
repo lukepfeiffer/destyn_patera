@@ -10,10 +10,24 @@ class VideosController < ApplicationController
     url_second_half = video.vimeo_url.split('//').second.split('/').second.prepend('/video/')
     whole_url = url_first_half + url_second_half
     video.vimeo_url = whole_url
-    if video.save
+    if video.save(video_params)
       redirect_to videos_path
     else
       redirect_to videos_path
+    end
+  end
+
+  def update
+    unless video.vimeo_url.include?('player')
+      url_first_half = video.vimeo_url.split('//').second.split('/').first.prepend('http://player.')
+      url_second_half = video.vimeo_url.split('//').second.split('/').second.prepend('/video/')
+      whole_url = url_first_half + url_second_half
+      video.vimeo_url = whole_url
+    end
+    if video.update(video_params)
+      redirect_to videos_path
+    else
+      redirect_to edit_video_path(video)
     end
   end
 

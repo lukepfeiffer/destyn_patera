@@ -16,6 +16,14 @@ class ImagesController < ApplicationController
     end
   end
 
+  def update
+    if image.update
+      redirect_to images_path
+    else
+      redirect_to edit_images_path(image)
+    end
+  end
+
   def destroy
     image.delete
     redirect_to images_path

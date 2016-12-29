@@ -27,8 +27,8 @@
             .card-image= image_tag video.thumbnail_url
             .card-header= video.title
             .card-copy
-              = link_to 'delete', video_path(video.id), method: :delete
-              = link_to 'edit'
+              = link_to 'delete', video_path(video.id), method: :delete, class: 'delete'
+              = link_to 'edit', edit_video_path(video), class: 'edit'
   - else
     %h1 Videos
     %ul.video-container

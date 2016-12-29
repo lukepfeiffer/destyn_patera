@@ -39,9 +39,27 @@
   $glyphicon-color: #249880;
   $soft-gray-text: #737373;
   $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
+
+  .delete{
+    background-color: $danger-color;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius:  4px;
+  }
+
+  .edit{
+    background-color: $warning-color;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius:  4px;
+  }
 
   .body-wrapper{
     height: 100%;

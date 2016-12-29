@@ -1,0 +1,19 @@
+#videos
+  .video-form
+    %h1= "Edit " + video.title
+    .form
+      = form_for video, html: {id: 'new'} do |f|
+        %fieldset
+          %dl
+            %dt= f.label :vimeo_url
+            %dd= f.text_field :vimeo_url
+
+            %dt= f.label :thumbnail_url, 'Thumbnail from dropbox'
+            %dd= f.text_field :thumbnail_url
+
+            %dt= f.label :title
+            %dd= f.text_field :title
+
+        %fieldset.actions
+          = f.submit 'Save'
+

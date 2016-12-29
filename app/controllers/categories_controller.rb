@@ -20,6 +20,14 @@ class CategoriesController < ApplicationController
     render partial: 'modal', locals: {category: category}
   end
 
+  def update
+    if category.update(category_params)
+      redirect_to categories_path
+    else
+      redirect_to edit_category_path(category)
+    end
+  end
+
   def destroy
     category = Category.find(params[:id])
     images = category.images

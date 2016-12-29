@@ -13,7 +13,7 @@
             .card-header= category.title
             .card-copy
               = link_to 'delete', category_path(category.id), method: :delete, class: 'delete'
-              = link_to 'edit', category_path(category.id)
+              = link_to 'edit', edit_category_path(category.id), class: 'edit'
   - else
     %h1 Photos
     %ul.categories-container
