@@ -31,9 +31,8 @@
               = link_to 'edit', edit_video_path(video), class: 'edit'
   - else
     %h1 Videos
-    %ul.video-container
-      .row
-        - videos.each do |video|
-          %li.thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
-            %h1.title= video.title
-            = image_tag video.thumbnail_url
+    %ul.video-container.row
+      - videos.each do |video|
+        %li.thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
+          %h1.title= video.title
+          = image_tag video.thumbnail_url
