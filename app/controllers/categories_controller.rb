@@ -22,7 +22,7 @@ class CategoriesController < ApplicationController
 
   def update
     if category.update(category_params)
-      redirect_to categories_path
+      redirect_to photos_path
     else
       redirect_to edit_category_path(category)
     end
