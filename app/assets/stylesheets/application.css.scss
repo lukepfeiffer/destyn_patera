@@ -10,7 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-  // @import url(//db.onlinewebfonts.com/c/9d0967bfe19937b123d26cde0ba6a217?family=Norwester);
   @import "font-awesome-sprockets";
   @import "font-awesome";
   @import "bourbon";
@@ -20,14 +19,14 @@
  */
 
 
-// @font-face {
-//   font-family: "Norwester";
-//   src: font-url("norwester-webfont.eot");
-//   src: font-url("norwester-webfont.eot?#iefix") format("embedded-opentype"),
-//     font-url("norwester-webfont.svg#norwester") format("svg"),
-//     font-url("norwester-webfont.ttf") format("truetype"),
-//     font-url("norwester-webfont.woff") format("woff");
-// }
+@font-face{
+  font-family: 'Norwester';
+  src: url('norwester.eot');
+  src: url('norwester.eot?iefix') format('eot'),
+       url('norwester.woff') format('woff'),
+       url('norwester.ttf') format('truetype'),
+       url('norwester.svg#webfont') format('svg');
+}
 
 #main{
   $default-font: arial;
@@ -134,6 +133,11 @@
   }
 
   #special-nav{
+    width: 100%;
+    height: 51vw;
+    background-image:  url('main_header.JPG');
+    background-size: 100% 51vw;
+    background-repeat: no-repeat;
     .navigation-menu-button{
       position: relative;
       top: 0.9vw;
@@ -146,22 +150,11 @@
   }
 
   #normal-nav{
+    background-color: lighten(#DFDFDF, 10%);
+    padding: 1em;
     .fa-bars{
       font-size: 2vw;
     }
-  }
-
-  #special-nav{
-    width: 100%;
-    height: 51vw;
-    background-image:  url('main_header.JPG');
-    background-size: 100% 51vw;
-    background-repeat: no-repeat;
-  }
-
-  #normal-nav{
-    background-color: lighten(#DFDFDF, 10%);
-    padding: 1em;
     .logo{
       position: relative;
       top: -.5vw;
@@ -212,7 +205,7 @@
 
       .logo-text{
         color: $default-color;
-        font-family: 'Norwester', sans-serif;
+        font-family: 'Norwester', Arial, sans-serif;
         font-weight: bold;
         font-size: 1.5vw;
         text-transform: uppercase;
