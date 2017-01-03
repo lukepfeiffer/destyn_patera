@@ -190,7 +190,7 @@
       $image-size: 5vw;
 
       min-height: $navigation-height;
-      width: 60%;
+      width: 90%;
       z-index: 999;
       margin-left: auto;
       margin-right: auto;
@@ -291,8 +291,10 @@
     max-height: 700px;
     min-height: 430px;
     background-image: url('lighthouse.jpg');
-    background-size: 900px 100%;
+    background-size: 95% 100%;
     background-repeat: no-repeat;
+    margin-top: 1.5em;
+    margin-bottom: 0;
     img{
     }
     .container{
@@ -307,7 +309,7 @@
     .header{
       background-color: #fff;
       position: relative;
-      left: 23.7em;
+      left: 63%;
       top: 60px;
       color: $default-color;
       text-transform: uppercase;
@@ -320,7 +322,7 @@
       background-color: #fff;
       position: relative;
       top: 5px;
-      left: 38.5em;
+      left: 63%;
       color: $soft-gray-text;
       width: 30%;
       font-size: 16px;
@@ -328,6 +330,10 @@
   }
 
   #recent_work{
+    $footer-background: lighten(#DFDFDF, 10%);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: $footer-background;
     color: $default-color;
     width: 100%;
     margin: 0;
@@ -356,12 +362,12 @@
     }
 
     .thumb-nail{
-      width: 380px;
-      height: 207px;
+      width: 544px;
+      height: 304px;
 
       .text{
         margin: 0;
-        font-size: 1.3em;
+        font-size: 1.7em;
         width: 80%;
         margin: 0;
         color: #fff;
@@ -450,6 +456,10 @@
       }
     }
   }
+  .video_modal{
+    height: 0;
+    width: 0;
+  }
 
   .photos{
     background:rgba(21,21,21,.8);
@@ -483,7 +493,7 @@
     }
 
     .scroller {
-      width: 60%;
+      width: 50%;
       margin-left: auto;
       margin-right: auto;
       button{
@@ -494,23 +504,42 @@
       }
       .hashrocket{
         position: relative;
-        top: 1vw;
+        top: 18px;
         img{
-          height: 9vw;
-          width: 9vw;
+          height: 5.5vw;
+          width: 5.5vw;
+        }
+      }
+      .digi-pro{
+        img{
+          width: 7vw;
+          height: 7vw;
         }
       }
       .revitalists{
         position: relative;
-        top: 4.8vw;
+        top: 2.9vw;
+        left: -1vw;
+        img{
+          width: 9vw;
+          height: 1vw;
+        }
       }
       .jake-peavy{
         position: relative;
         top: 2.2vw;
+        img{
+          height: 4vw;
+          width: 7vw;
+        }
       }
       .street-sound{
         position: relative;
         top: 2.2vw;
+        img{
+          width: 6vw;
+          height: 4vw;
+        }
       }
       div {
         margin-left: auto;
@@ -822,7 +851,7 @@
 
     .footer-wrapper{
       position: relative;
-      top: 2.1vw;
+      top: 25px;
       width: 65%;
       margin-right: auto;
       margin-left: auto;
@@ -888,6 +917,10 @@
     }
 
     .footer-secondary-links {
+      ul a.copyright{
+        position: relative;
+        top: 50px;
+      }
       ul.footer-social {
         display: inline;
         float: right;

@@ -94,8 +94,8 @@
       .footer-wrapper
         .primary-link
           %ul
-            = link_to root_path do
-              %li
+            = link_to root_path, html: {class: 'copyright'} do
+              %li.copyright
                 %i.fa.fa-copyright
                 %span.text 2016 Destyn Patera
         .footer-secondary-links
