@@ -363,43 +363,69 @@
     }
 
     #row{
-      padding: 0;
-      margin: 0;
-      list-style: none;
+      .thumb-nail{
+        width: 100%;
+        height: 56.25%;
 
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
+        .text{
+          margin: 0;
+          font-size: 1.8em;
+          width: 80%;
+          margin: 0;
+          color: #fff;
+          position: relative;
+        }
 
-      -webkit-flex-flow: row wrap;
-      justify-content: center;
+        img{
+          width: 100%;
+        }
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
     }
 
-    .thumb-nail{
-      width: 409px;
-      height: 230.0625px;
-
-      .text{
+    @media only screen and (min-width: 799px){
+      #row{
+        padding: 0;
         margin: 0;
-        font-size: 1.4em;
-        width: 80%;
-        margin: 0;
-        color: #fff;
-        position: relative;
-        top: -46px;
-        left: 19px;
+        list-style: none;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        justify-content: center;
       }
 
-      img{
-        width: 100%;
-      }
+      .thumb-nail{
+        width: 409px;
+        height: 230.0625px;
 
-      &:hover{
-        cursor: pointer;
-      }
+        .text{
+          margin: 0;
+          font-size: 1.4em;
+          width: 80%;
+          margin: 0;
+          color: #fff;
+          position: relative;
+          top: -46px;
+          left: 19px;
+        }
 
+        img{
+          width: 100%;
+        }
+
+        &:hover{
+          cursor: pointer;
+        }
+
+      }
     }
   }
 
