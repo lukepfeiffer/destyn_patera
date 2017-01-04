@@ -17,14 +17,13 @@ $(document).ready(function() {
       url: category.data('url'),
       success: function(response){
         $('#main').append(response);
-        $('.modal-container').center();
       }
     });
   });
 
   // videos modal
 
-  $('#row').on('click', '.thumb-nail', function(){
+  $('.video-click').on('click', '.thumb-nail', function(){
     var video = $(this);
     jQuery.fn.center = function () {
       this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 11) + $(window).scrollTop()) + "px");

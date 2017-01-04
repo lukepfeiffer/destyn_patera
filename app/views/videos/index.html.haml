@@ -18,7 +18,6 @@
           %fieldset.actions
             = f.submit 'Save'
 
-  - if current_user.present?
     .admin-view
       %h1 Videos
       .cards
@@ -31,7 +30,7 @@
               = link_to 'edit', edit_video_path(video), class: 'edit'
   - else
     %h1 Videos
-    %ul.video-container.row
+    %ul.video-container.row.video-click
       - videos.each do |video|
         %li.thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
           %h1.title= video.title
