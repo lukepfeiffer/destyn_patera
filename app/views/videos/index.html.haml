@@ -1,7 +1,7 @@
 #videos
   - if current_user.present?
     .video-form
-      %h1 Add Video
+      %h1.misc-header Add Video
       .form
         = form_for video, html: {id: 'new'} do |f|
           %fieldset

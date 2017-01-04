@@ -80,6 +80,11 @@
     float: left;
   }
 
+  .misc-header{
+    text-transform: uppercase;
+    color: lighten(#000, 19%)
+  }
+
   .form{
     text-align: left;
 
@@ -141,23 +146,39 @@
     .navigation-menu-button{
       position: relative;
       top: 0.9vw;
+      color: #000;
+      &:focus, &:hover {
+        cursor: pointer;
+        color: lighten(#000, 10%);
+      }
     }
     .fa-bars{
+      color: #000;
       position: relative;
       top: 0.3vw;
       font-size: 2vw;
+    }
+    .link a{
     }
   }
 
   #normal-nav{
     background-color: lighten(#DFDFDF, 10%);
     padding: 1em;
+    .navigation-menu-button{
+      color: $default-color;
+      &:focus, &:hover {
+        cursor: pointer;
+        color: darken($default-color, 10%);
+      }
+    }
     .fa-bars{
+      color: $default-color;
       font-size: 2vw;
     }
     .logo{
       position: relative;
-      top: -.5vw;
+      top: -17px;
     }
   }
 
@@ -262,7 +283,6 @@
       }
 
       .navigation-menu-button {
-        color: $default-color;
         display: block;
         line-height: $navigation-height;
         margin: 0;
@@ -270,10 +290,6 @@
         text-decoration: none;
         text-transform: uppercase;
 
-        &:focus, &:hover {
-          cursor: pointer;
-          color: darken($default-color, 10%);
-        }
       }
 
       .hidden{
@@ -362,12 +378,12 @@
     }
 
     .thumb-nail{
-      width: 544px;
-      height: 304px;
+      width: 409px;
+      height: 230.0625px;
 
       .text{
         margin: 0;
-        font-size: 1.7em;
+        font-size: 1.4em;
         width: 80%;
         margin: 0;
         color: #fff;
@@ -860,6 +876,10 @@
     .text, a{
       color: $soft-gray-text;
       text-decoration: none;
+    }
+
+    .text{
+      font-size: 16px;
     }
 
     .contact-info{

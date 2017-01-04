@@ -1,11 +1,10 @@
 #photos
   - if current_user.present?
     .category-form
-      %h1 Add Category
+      %h1.misc-header Add Category
       = render partial: 'form'
-  - if current_user.present?
     .admin-view
-      %h1 Photos
+      %h1.misc-header Photos
       .cards
         - categories.each do |category|
           .card
@@ -15,7 +14,7 @@
               = link_to 'delete', category_path(category.id), method: :delete, class: 'delete'
               = link_to 'edit', edit_category_path(category.id), class: 'edit'
   - else
-    %h1 Photos
+    %h1.misc-header Photos
     %ul.categories-container
       - categories.each do |category|
         %li.category.modal-trigger{data: {category_id: category.id, url: category_path(category.id)}}
