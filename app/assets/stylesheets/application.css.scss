@@ -362,32 +362,8 @@
       margin: 0;
     }
 
-    #row{
-      .thumb-nail{
-        width: 100%;
-        height: 56.25%;
-
-        .text{
-          margin: 0;
-          font-size: 1.8em;
-          width: 80%;
-          margin: 0;
-          color: #fff;
-          position: relative;
-        }
-
-        img{
-          width: 100%;
-        }
-
-        &:hover{
-          cursor: pointer;
-        }
-      }
-    }
-
-    @media only screen and (min-width: 799px){
-      #row{
+    @media only screen and (min-device-width: 769px){
+      .video-click{
         padding: 0;
         margin: 0;
         list-style: none;
@@ -424,9 +400,30 @@
         &:hover{
           cursor: pointer;
         }
-
       }
     }
+
+    @media only screen and (max-device-width: 768px) {
+      .thumb-nail{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 34.38em;
+        .text{
+          color: #fff;
+          font-size: 2em;
+          position: relative;
+          top: -3.4rem;
+          left: 0.5em;
+          margin: 0;
+          padding: 0;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+
   }
 
   .modal-container{
