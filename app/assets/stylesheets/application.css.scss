@@ -289,11 +289,19 @@
         padding-right: 1vw;
         text-decoration: none;
         text-transform: uppercase;
-
       }
 
       .hidden{
         display: none;
+      }
+
+      @media only screen and (min-device-width: 769px){
+        .hidden{
+          display: block;
+        }
+        .fa-bars{
+          display: none;
+        }
       }
     }
   }
@@ -573,6 +581,12 @@
         }
       }
       button{
+      }
+    }
+
+    @media only screen and (max-device-width: 768px) {
+      .scroller{
+        width: 60%;
       }
     }
 
@@ -862,7 +876,7 @@
     background-color: $footer-background;
     display: inline-block;
     width: 100%;
-    padding: 2.8vw 0;
+    padding: 1.6vw 0;
     height: 6em;
     margin-top: 4em;
     color: $glyphicon-color;

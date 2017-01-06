@@ -64,6 +64,7 @@
               %span.navigation-menu-button.menu-button
                 %i.fa.fa-bars
               = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
+              = link_to 'home', root_path, class: 'navigation-menu-button right hidden'
               = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
               = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
               = link_to 'Videos', videos_path, class: 'navigation-menu-button right hidden'
