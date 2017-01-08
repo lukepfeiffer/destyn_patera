@@ -43,6 +43,11 @@
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
+
+  .main-content{
+    margin-top: 80px;
+  }
+
   .delete{
     background-color: $danger-color;
     padding: 5px;
@@ -82,7 +87,7 @@
 
   .misc-header{
     text-transform: uppercase;
-    color: lighten(#000, 19%)
+    color: $default-color;
   }
 
   .form{
@@ -138,6 +143,13 @@
   }
 
   #special-nav{
+    .navigation{
+      background-color: rgba(201, 201, 201, .1);
+      border-radius: 20px;
+      margin-top: 0;
+      width: 100%;
+      padding: 1em 1em 3em 1em;
+    }
     width: 100%;
     height: 51vw;
     background-image:  url('main_header.JPG');
@@ -158,13 +170,29 @@
       top: 0.3vw;
       font-size: 2vw;
     }
-    .link a{
+    @media only screen and (max-device-width: 768px) {
+      .navigation{
+        width: 94%;
+        padding: 1em;
+        .navigation-menu-button{
+          position: relative;
+          top: -10px;
+        }
+        .fa-bars{
+          top: 3px;
+        }
+      }
     }
   }
 
   #normal-nav{
-    background-color: lighten(#DFDFDF, 10%);
-    padding: 1em;
+    .navigation{
+      margin-top: 0;
+      width: 100%;
+      background-color: rgba(201, 201, 201, .1);
+      border-radius: 20px;
+      padding: 1em;
+    }
     .navigation-menu-button{
       color: $default-color;
       &:focus, &:hover {
@@ -179,6 +207,23 @@
     .logo{
       position: relative;
       top: -17px;
+    }
+    @media only screen and (max-device-width: 768px) {
+      .navigation{
+        width: 96.4%;
+        padding: 1em;
+        .navigation-menu-button{
+          position: relative;
+          top: -10px;
+        }
+        .logo{
+          top: 0;
+        }
+        .fa-bars{
+          position: relative;
+          top: 10px;
+        }
+      }
     }
   }
 
@@ -215,6 +260,8 @@
       z-index: 999;
       margin-left: auto;
       margin-right: auto;
+      position: fixed;
+      top: -10px;
 
       .left-navigation-wrapper, .right-navigation-wrapper{
         font-size: 14px;
@@ -641,6 +688,8 @@
   }
 
   #videos{
+    // position: relative;
+    // top: 60px;
     .video-form{
       h1{
         text-align: left;
@@ -864,10 +913,7 @@
   $soft-gray-text: #737373;
   $link-color: #517a9e;
 
-  position: relative;
   width: 100%;
-  bottom: 0;
-  left: 0;
 
   .footer-top{
     $base-spacing: 1.5em !default;
@@ -888,8 +934,9 @@
 
     .footer-wrapper{
       position: relative;
+      left: 28px;
       top: 25px;
-      width: 65%;
+      width: 76.5%;
       margin-right: auto;
       margin-left: auto;
     }
@@ -907,6 +954,23 @@
       text-align: center;
       display: inline-block;
       width: 32%;
+    }
+
+    @media only screen and (max-device-width: 768px){
+      .footer-wrapper{
+        width: 100%;
+      }
+      .contact-info{
+        margin: 0;
+        .fa{
+          font-size: 40px;
+        }
+        .text{
+          font-size: 28px;
+        }
+      }
+      .mobile-top-center{
+      }
     }
   }
 
