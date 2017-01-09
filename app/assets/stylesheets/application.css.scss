@@ -44,6 +44,18 @@
   font-family: "PT Sans", sans-serfif;
   margin: 0;
 
+  // @media only screen and (max-device-width: 768px) {
+  //   overflow: scroll;
+  //   overflow-x: hidden;
+  //   ::-webkit-scrollbar {
+  //     width: 0px;
+  //     background: transparent;
+  //   }
+  //   ::-webkit-scrollbar-thumb {
+  //     background: #FF0000;
+  //   }
+  // }
+
   .main-content{
     margin-top: 70px;
   }
@@ -149,16 +161,15 @@
     background-size: 100% 51vw;
     background-repeat: no-repeat;
     .navigation{
-      background-color: rgba(201, 201, 201, .3);
-      border-radius: 20px;
+      background-color: rgba(201, 201, 201, .6);
       margin-top: 0;
       width: 100%;
       padding: 1em 1em 1.8em 1em;
     }
     .navigation-menu-button{
       position: relative;
-      top: 10px;
-      color: #000;
+      top: 5px;
+      color: lighten(#000, 32%);
       font-size: 17px;
       margin-right: 0.5em;
       &:focus, &:hover {
@@ -166,33 +177,38 @@
         color: lighten(#000, 10%);
       }
     }
-    .fa-bars{
-      color: #000;
-      position: relative;
-      top: 0.3vw;
-      font-size: 2vw;
-    }
     .logo{
       position: relative;
-      top: -2px;
+      top: -9px;
+      .logo-text{
+        position: relative;
+        top: 7px;
+      }
     }
     @media only screen and (max-device-width: 768px) {
       .navigation{
-        width: 94%;
+        width: 97%;
         padding: 1em 1em 0 1em;
+
         .navigation-menu-button{
           position: relative;
           top: -5px;
+          color: #000;
         }
+
         .fa-bars{
-          top: -.8px;
+          color: #000;
+          position: relative;
+          font-size: 2vw;
         }
+
         .logo{
           top: -15px;
         }
+
         .logo-text{
           position: relative;
-          top: .5em;
+          top: .9em;
           font-size: 1.8vw;
         }
       }
@@ -203,14 +219,14 @@
     .navigation{
       margin-top: 0;
       width: 100%;
-      background-color: rgba(201, 201, 201, .3);
-      border-radius: 20px;
+      background-color: rgba(201, 201, 201, .6);
       padding: 1em;
     }
     .navigation-menu-button{
       color: $default-color;
       position: relative;
       top: 5px;
+      font-size: 17px;
       &:focus, &:hover {
         cursor: pointer;
         color: darken($default-color, 10%);
@@ -222,11 +238,15 @@
     }
     .logo{
       position: relative;
-      top: -10px;
+      top: -18px;
+      .logo-text{
+        position: relative;
+        top: 6px;
+      }
     }
     @media only screen and (max-device-width: 768px) {
       .navigation{
-        width: 96.4%;
+        width: 96.8%;
         padding: 1em 1em .8em 1em;
         .navigation-menu-button{
           position: relative;
@@ -268,7 +288,7 @@
       $navigation-color: transparentize(white, 0.3);
       $navigation-color-hover: white;
       $navigation-height: 48px;
-      $image-size: 5em;
+      $image-size: 6em;
 
       min-height: $navigation-height;
       width: 90%;
@@ -316,8 +336,6 @@
         }
 
         .logo-text{
-          position: relative;
-          top: 5px;
           color: #000;
         }
 
@@ -449,12 +467,12 @@
       }
 
       .thumb-nail{
-        width: 409px;
-        height: 230.0625px;
+        width: 25%;
+        height: 13.8vw;
 
         .text{
           margin: 0;
-          font-size: 1.4em;
+          font-size: 1.4vw;
           width: 80%;
           margin: 0;
           color: #fff;
@@ -481,6 +499,7 @@
         height: 34.38em;
         .text{
           color: #fff;
+          width: 60%;
           font-size: 2em;
           position: relative;
           top: -3.4rem;
@@ -942,11 +961,6 @@
     margin-top: 4em;
     color: $glyphicon-color;
 
-    i{
-      line-height: 1.5vw;
-      font-size: 2vw;
-    }
-
     .footer-wrapper{
       position: relative;
       left: 28px;
@@ -969,11 +983,20 @@
       text-align: center;
       display: inline-block;
       width: 32%;
+
+      .text{
+        font-size: 1.4vw;
+      }
+
+      i{
+        line-height: 1.5vw;
+        font-size: 3vw;
+      }
     }
 
     @media only screen and (max-device-width: 768px){
       .footer-wrapper{
-        width: 100%;
+        width: 94%;
       }
       .contact-info{
         margin: 0;
@@ -984,8 +1007,6 @@
           font-size: 28px;
         }
       }
-      .mobile-top-center{
-      }
     }
   }
 
@@ -994,11 +1015,9 @@
     $footer-background: #DFDFDF;
 
     background-color: $footer-background;
-    display: inline-block;
-    padding: $base-spacing;
     width: 100%;
     height: 3.5em;
-    padding: 1.5vw 0;
+    padding: 0.75em 0;
 
     .footer-wrapper{
       margin: 1em 0 0 0;
@@ -1030,17 +1049,17 @@
       float: left;
       i{
         color: $default-color;
+        position: relative;
+        top: .5em;
       }
-      a{
-        text-decoration: none;
+      .text{
+        position: relative;
+        top: .5em;
       }
     }
 
     .footer-secondary-links {
-      ul a.copyright{
-        position: relative;
-        top: 50px;
-      }
+      padding: 0;
       ul.footer-social {
         display: inline;
         float: right;
