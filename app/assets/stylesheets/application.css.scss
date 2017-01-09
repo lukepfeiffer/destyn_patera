@@ -27,6 +27,19 @@
        url('norwester.ttf') format('truetype'),
        url('norwester.svg#webfont') format('svg');
 }
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #FF0000;
+    }
+}
+
+
 
 #main{
   $default-font: arial;
@@ -43,18 +56,6 @@
 
   font-family: "PT Sans", sans-serfif;
   margin: 0;
-
-  // @media only screen and (max-device-width: 768px) {
-  //   overflow: scroll;
-  //   overflow-x: hidden;
-  //   ::-webkit-scrollbar {
-  //     width: 0px;
-  //     background: transparent;
-  //   }
-  //   ::-webkit-scrollbar-thumb {
-  //     background: #FF0000;
-  //   }
-  // }
 
   .main-content{
     margin-top: 70px;
@@ -223,17 +224,18 @@
       padding: 1em;
     }
     .navigation-menu-button{
-      color: $default-color;
       position: relative;
       top: 5px;
       font-size: 17px;
+      color: lighten(#000, 32%);
       &:focus, &:hover {
         cursor: pointer;
-        color: darken($default-color, 10%);
+        color: #000;
+        color: lighten(#000, 10%);
       }
     }
     .fa-bars{
-      color: $default-color;
+      color: lighten(#000, 32%);
       font-size: 2vw;
     }
     .logo{
@@ -472,7 +474,7 @@
 
         .text{
           margin: 0;
-          font-size: 1.4vw;
+          font-size: 1.3vw;
           width: 80%;
           margin: 0;
           color: #fff;
@@ -956,7 +958,7 @@
     background-color: $footer-background;
     display: inline-block;
     width: 100%;
-    padding: .7vw 0;
+    padding: 1.5vw 0;
     height: 6em;
     margin-top: 4em;
     color: $glyphicon-color;
@@ -975,22 +977,18 @@
       text-decoration: none;
     }
 
-    .text{
-      font-size: 16px;
-    }
-
     .contact-info{
       text-align: center;
       display: inline-block;
       width: 32%;
 
       .text{
-        font-size: 1.4vw;
+        font-size: 1vw;
       }
 
       i{
         line-height: 1.5vw;
-        font-size: 3vw;
+        font-size: 2vw;
       }
     }
 
