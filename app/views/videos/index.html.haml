@@ -19,7 +19,7 @@
             = f.submit 'Save'
 
     .admin-view
-      %h1 Videos
+      %h1.misc-header Videos
       .cards
         - videos.each do |video|
           .card
@@ -29,7 +29,7 @@
               = link_to 'delete', video_path(video.id), method: :delete, class: 'delete'
               = link_to 'edit', edit_video_path(video), class: 'edit'
   - else
-    %h1 Videos
+    %h1.misc-header Videos
     %ul.video-container.row.video-click
       - videos.each do |video|
         %li.thumb-nail{data: {video_url: video_modal_path(url: video.vimeo_url)}}
