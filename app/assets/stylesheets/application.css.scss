@@ -27,6 +27,7 @@
        url('norwester.ttf') format('truetype'),
        url('norwester.svg#webfont') format('svg');
 }
+
 html{
     overflow: scroll;
     overflow-x: hidden;
@@ -1010,6 +1011,18 @@ html{
       i{
         line-height: 1.5vw;
         font-size: 2vw;
+      }
+    }
+
+    @media only screen and (min-device-width: 769px) and (max-device-width: 1300px){
+      .contact-info{
+        margin: 0;
+        .fa{
+          font-size: 35px;
+        }
+        .text{
+          font-size: 23px;
+        }
       }
     }
 
