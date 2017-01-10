@@ -452,7 +452,7 @@ html{
       margin: 0;
     }
 
-    @media only screen and (min-device-width: 769px){
+    @media only screen and (min-device-width: 768px){
       .video-click{
         padding: 0;
         margin: 0;
@@ -493,6 +493,28 @@ html{
       }
     }
 
+    @media only screen and (min-width: 769px) and (max-device-width: 1300px){
+      .thumb-nail{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        height: 27.32vw;
+        .text{
+          margin-right: 0;
+          color: #fff;
+          font-size: 1.5em;
+          position: relative;
+          top: -2.8em;
+          left: 0.5em;
+          margin: 0;
+          padding: 0;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+
     @media only screen and (max-device-width: 768px) {
       .thumb-nail{
         margin: 0;
@@ -514,7 +536,6 @@ html{
         }
       }
     }
-
   }
 
   .modal-container{
