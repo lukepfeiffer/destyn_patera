@@ -46,8 +46,21 @@
                 = image_tag 'main_logo.png'
                 %p.logo-text Destyn Patera
             .right-navigation-wrapper
+
               %span.navigation-menu-button.menu-button
-                %i.fa.fa-bars
+                .mobile-view.dropdown
+                  %i.fa.fa-bars
+                  %ul
+                    .items
+                      = link_to '#contact' do
+                        %li Contact
+                      = link_to photos_path do
+                        %li Photos
+                      = link_to videos_path do
+                        %li Videos
+                      = link_to '#special-nav' do
+                        %li Home
+
               %span.links
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
                 = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
@@ -63,18 +76,23 @@
                 %p.logo-text Destyn Patera
             .right-navigation-wrapper
               %span.navigation-menu-button.menu-button
-                %i.fa.fa-bars
-              = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
-              = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
-              = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
-              = link_to 'Videos', videos_path, class: 'navigation-menu-button right hidden'
-              = link_to 'home', root_path, class: 'navigation-menu-button right hidden'
+                .mobile-view.dropdown
+                  %i.fa.fa-bars
+                  %ul
+                    .items
+                      = link_to '#contact' do
+                        %li Contact
+                      = link_to photos_path do
+                        %li Photos
+                      = link_to videos_path do
+                        %li Videos
+                      = link_to root_path do
+                        %li Home
         - if current_user.present?
           .admin-links
             = link_to 'View Categories', photos_path
             = link_to 'View Videos', videos_path
             = link_to 'Add Images', images_path
-
       = yield
 
   .footers-wrapper

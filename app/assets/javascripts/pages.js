@@ -1,7 +1,24 @@
 $(document).ready(function() {
-  $('.navigation').on('click', '.menu-button, burger-icon', function(){
-    $('.hidden').toggle(100);
+  $('.navigation').on('click', '.fa-bars', function(){
+    $('.items').show(100);
   });
+
+  $('.dropdown').on('click', 'li', function(){
+    $('.items').hide();
+    $('.fa-bars').show();
+  });
+
+  $('body').on('click', '.body-wrapper', function(event) {
+    if(!$(event.target).is('.items, .fa-bars')){
+      if($('.items').is(":visible")) {
+        $('.items').hide();
+      }
+      if($('.fa-bars').is(":hidden")) {
+        $('.fa-bars').show();
+      }
+    };
+  });
+
 
   $('#photos').on('click', '.delete', function(event){
     event.preventDefault;
