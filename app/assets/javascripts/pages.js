@@ -12,8 +12,6 @@ $(document).ready(function() {
     if(!$(event.target).is('.items, .fa-bars')){
       if($('.items').is(":visible")) {
         $('.items').hide();
-      }
-      if($('.fa-bars').is(":hidden")) {
         $('.fa-bars').show();
       }
     };
