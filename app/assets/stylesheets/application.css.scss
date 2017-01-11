@@ -178,9 +178,9 @@ html{
   @media only screen and (max-device-width: 768px) {
     .mobile-link{
       position: relative;
-      width: 16em;
+      width: 29em;
       top: -63em;
-      left: 25.3em;
+      left: 23em;
       display: block;
       margin: 0;
       button{
@@ -1074,23 +1074,24 @@ html{
     }
 
     @media only screen and (max-device-width: 768px){
-      padding: 12vw 0 35vw 0;
+      padding: 12vw 0 55vw 0;
       .footer-wrapper{
         width: 94%;
       }
       .contact-info{
         position: relative;
         top: -4em;
+        left: -1em;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        padding-bottom: 3.8em;
+        padding-bottom: 8.8em;
         .fa{
-          font-size: 45px;
+          font-size: 47px;
           padding: 20px;
         }
         .text{
-          font-size: 33px;
+          font-size: 35px;
         }
         #email{
           position: relative;
@@ -1101,7 +1102,6 @@ html{
   }
 
   .footer-bottom{
-    $base-spacing: 1.5em !default;
     $footer-background: #DFDFDF;
 
     background-color: $footer-background;
@@ -1189,6 +1189,35 @@ html{
 
           &:focus, &:hover {
             opacity: 1;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-device-width: 768px){
+      height: 10vw;
+      padding: 10vw 0;
+      .copyright{
+        position: relative;
+        left: -5em;
+        .fa{
+          font-size: 2em;
+        }
+        .text{
+          font-size: 2em;
+        }
+      }
+      .footer-social{
+        width: 16em;
+        a{
+          position: relative;
+          top: 1.5em;
+          padding-right: 2em;
+        }
+        li{
+          width: 100%;
+          img{
+            width: 3.5em;
           }
         }
       }
