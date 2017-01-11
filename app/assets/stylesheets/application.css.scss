@@ -190,7 +190,7 @@ html{
         font-size: 2.5em;
         background-color: rgba(201, 201, 201, .3);
         a{
-          text-transform: lowercase;
+          text-transform: uppercase;
           text-decoration: none;
           color: #fff;
         }
@@ -269,6 +269,7 @@ html{
       margin-top: 0;
       width: 100%;
       padding: 1em 1em 1.8em 1em;
+      z-index: 3;
 
       .navigation-menu-button{
         position: relative;
@@ -283,6 +284,13 @@ html{
         &:focus, &:hover {
           cursor: pointer;
           color: lighten(#000, 10%);
+        }
+        a{
+          text-decoration: none;
+        }
+        .fa{
+          color: lighten(#000, 32%);
+          font-size: 17px;
         }
       }
 
@@ -368,6 +376,9 @@ html{
       }
 
       @media only screen and (max-device-width: 768px){
+        .normal-view-media{
+          display: none;
+        }
         .dropdown{
           display: block;
           width: 100%;
@@ -381,6 +392,9 @@ html{
               border-radius: 3px;
               width: 98.2vw;
               background: rgba(201,201,201,.3);
+              i{
+                font-size: 1.2em;
+              }
             }
             a{
               color: lighten(#000, 32%);

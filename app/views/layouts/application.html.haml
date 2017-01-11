@@ -59,9 +59,23 @@
                         %li Videos
                       = link_to '#special-nav' do
                         %li Home
+                      %li
+                        = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
+                          %i.fa.fa-vimeo-square
+                        = link_to 'https://www.instagram.com/destynpatera/', target: '_blank' do
+                          %i.fa.fa-instagram
+                        = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
+                          %i.fa.fa-facebook-square
 
               %span.links
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
+                .navigation-menu-button.right.normal-view-media
+                  = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
+                    %i.fa.fa-vimeo-square
+                  = link_to 'https://www.instagram.com/destynpatera/', target: '_blank' do
+                    %i.fa.fa-instagram
+                  = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
+                    %i.fa.fa-facebook-square
                 = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
                 = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
                 = link_to 'Videos', videos_path, class: 'navigation-menu-button right hidden'

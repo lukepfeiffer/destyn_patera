@@ -26,7 +26,7 @@ $(document).ready(function() {
   $('.video-click').on('click', '.thumb-nail', function(){
     var video = $(this);
     jQuery.fn.center = function () {
-      this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 11) + $(window).scrollTop()) + "px");
+      this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 30) + $(window).scrollTop()) + "px");
       this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 6) + $(window).scrollLeft()) + "px");
       return this;
     }
