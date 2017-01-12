@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.navigation').on('click', '.fa-bars', function(){
     $('.items').show(100);
+    $('.fa-bars').hide();
   });
 
   $('.dropdown').on('click', 'li', function(){

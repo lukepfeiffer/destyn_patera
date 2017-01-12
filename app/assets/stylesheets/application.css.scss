@@ -288,9 +288,11 @@ html{
         a{
           text-decoration: none;
         }
-        .fa{
+        i{
+          position: relative;
+          top: 0.2em;
           color: lighten(#000, 32%);
-          font-size: 17px;
+          font-size: 1.5em;
         }
       }
 
@@ -339,7 +341,6 @@ html{
       img {
         width: $image-size;
         height: $image-size;
-        max-height: $image-size;
       }
 
       p{
@@ -373,9 +374,17 @@ html{
         .items{
           display: none;
         }
-      }
-
-      @media only screen and (max-device-width: 768px){
+      } @media only screen and (max-device-width: 768px){
+        .logo{
+          width: 5em;
+          img{
+            width: 12em;
+            height: 12em;
+          }
+        }
+        .navigation-menu-button .fa{
+          font-size: 5em;
+        }
         .normal-view-media{
           display: none;
         }
@@ -393,7 +402,10 @@ html{
               width: 98.2vw;
               background: rgba(201,201,201,.3);
               i{
-                font-size: 1.2em;
+                position: relative;
+                left: .4em;
+                font-size: 1.5em;
+                padding-right: 1em;
               }
             }
             a{
@@ -1154,7 +1166,6 @@ html{
       left: 20px;
       ul.footer-social {
         display: inline;
-        float: right;
         a{
           float: left;
           margin-right: 0.3em;
