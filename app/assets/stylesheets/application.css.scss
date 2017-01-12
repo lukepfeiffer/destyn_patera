@@ -749,9 +749,75 @@ html{
       }
     }
 
+    .mobile-scroller{
+      display: none;
+    }
+
     @media only screen and (max-device-width: 768px) {
       .scroller{
-        width: 60%;
+        display: none;
+      }
+      .mobile-scroller{
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        .fa{
+          font-size: 4em;
+        }
+        .fa-arrow-circle-left{
+          position: relative;
+          left: -4.5em;
+          top: 1.4em;
+        }
+        .fa-arrow-circle-right{
+          position: relative;
+          left: 4.5em;
+          top: -1.6em;
+        }
+        .sr-only{
+          display: none;
+        }
+        div {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          left: 5px;
+          width: 90%;
+          .hashrocket{
+            width: 7em;
+            position: relative;
+          }
+          .street-sound{
+            width: 8em;
+            position: relative;
+            top: 1.6em;
+          }
+          .revitalists{
+            position: relative;
+            top: 3.6em;
+            width: 9em;
+          }
+          .digi-pro{
+            width: 8em;
+            position: relative;
+            top: -7px;
+          }
+          .jake-peavy{
+            position: relative;
+            top: 7px;
+            width: 12em;
+          }
+          div{
+            img{
+              width: 100%;
+            }
+          }
+        }
+        .slick-slide{
+          margin: 0 1vw;
+          height: 8em;
+        }
       }
     }
 
@@ -1039,7 +1105,7 @@ html{
     background-color: $footer-background;
     display: inline-block;
     width: 100%;
-    padding: 4.2vw 0;
+    padding: 8.2vw 0;
     height: 6em;
     margin-top: 4em;
     color: $glyphicon-color;
