@@ -24,6 +24,12 @@ $(document).ready(function() {
     }, 700);
   });
 
+  $('.mobile-link').on('click', 'button', function(event){
+    $('body').animate({
+      'scrollTop': $('#recent_work').offset().top
+    }, 700);
+  });
+
   $('.right-navigation-wrapper').on('click', '.home', function(event){
     $('body').animate({
       'scrollTop': $('#special-nav').offset().top
