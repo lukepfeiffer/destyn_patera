@@ -51,14 +51,14 @@
                   %i.fa.fa-bars
                   %ul
                     .items
-                      = link_to '#contact' do
-                        %li Contact
-                      = link_to photos_path do
-                        %li Photos
+                      %a.home
+                        %li Home
                       = link_to videos_path do
                         %li Videos
-                      = link_to '#special-nav' do
-                        %li Home
+                      = link_to photos_path do
+                        %li Photos
+                      %a.contact
+                        %li Contact
                       %li
                         = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
                           %i.fa.fa-vimeo-square
@@ -76,10 +76,10 @@
                     %i.fa.fa-instagram
                   = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
                     %i.fa.fa-facebook-square
-                = link_to 'Contact', '#contact', class: 'navigation-menu-button right hidden'
+                %a.navigation-menu-button.home.right.hidden Contact
                 = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
                 = link_to 'Videos', videos_path, class: 'navigation-menu-button right hidden'
-                = link_to 'home', '#special-nav', class: 'navigation-menu-button right hidden'
+                %a.navigation-menu-button.contact.right.hidden Home
       - else
         .nav-container#normal-nav
           %header.navigation{:role => "banner"}

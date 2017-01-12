@@ -18,6 +18,18 @@ $(document).ready(function() {
     };
   });
 
+  $('.right-navigation-wrapper').on('click', '.contact', function(event){
+    $('body').animate({
+      'scrollTop': $('#contact').offset().top
+    }, 700);
+  });
+
+  $('.right-navigation-wrapper').on('click', '.home', function(event){
+    $('body').animate({
+      'scrollTop': $('#special-nav').offset().top
+    }, 700);
+  });
+
 
   $('#photos').on('click', '.delete', function(event){
     event.preventDefault;
