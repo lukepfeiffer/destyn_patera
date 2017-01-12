@@ -1,59 +1,60 @@
-.mobile-link
-  %button= link_to 'Our Work', '#recent_work'
+#home-page
+  .mobile-link
+    %button= link_to 'Our Work', '#recent_work'
 
-#vision
-  .container
-    %p.header we believe in the power of storytelling. We believe video is the most effective way to communicate ideas.
-    %p.subheader We are a full service production. Our process involves everything from helping curate your story, to final formatting and tips on how to get the most from your content.
-#recent_work
-  %h1 Our Recent Work
-  .video-container
-    .video-click#row
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/192687722")}}
-        = image_tag "video_1.png"
-        %p.text 2016 Reel
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/168624560")}}
-        = image_tag "video_2.png"
-        %p.text Find Me Free
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181320359")}}
-        = image_tag "video_3.png"
-        %p.text Radical Face - Road To Nowhere
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/183110074")}}
-        = image_tag "video_4.png"
-        %p.text Continuum - Breaking Point
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181314070")}}
-        = image_tag "video_5.png"
-        %p.text Nick Black - Worst You Can Do
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181314069")}}
-        = image_tag "video_6.png"
-        %p.text Continuum - Black and Blue
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181314581")}}
-        = image_tag "video_7.png"
-        %p.text Jake Peavy Foundation
-      .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/137507357")}}
-        = image_tag "video_8.png"
-        %p.text.black The Revitalists - Keep Going (Live)
-#clients
-  %h1 Our Clients
-  .scroller
-    %div
-      .jake-peavy=link_to(image_tag('jake_peavy.png'), '//jakepeavyfoundation.org/', target: '_blank')
-    %div
-      .digi-pro=link_to(image_tag('digi_pro.png', id: 'digi_pro'), '//digipromedia.com/', target: '_blank')
-    %div
-      .hashrocket=link_to(image_tag('hashrocket.png', id: 'hashrocket'), '//hashrocket.com/', target: '_blank')
-    %div
-      .revitalists=link_to(image_tag('revitalists.png', id: 'revitalists' ), '//www.therevivalists.com/', target: '_blank')
-    %div
-      .street-sound=link_to(image_tag('street_sound.png'), '//www.dauphinstreetsound.com/', target: '_blank')
-  .mobile-scroller
-    %div
-      .jake-peavy=link_to(image_tag('jake_peavy.png'), '//jakepeavyfoundation.org/', target: '_blank')
-    %div
-      .digi-pro=link_to(image_tag('digi_pro.png', id: 'digi_pro'), '//digipromedia.com/', target: '_blank')
-    %div
-      .hashrocket=link_to(image_tag('hashrocket.png', id: 'hashrocket'), '//hashrocket.com/', target: '_blank')
-    %div
-      .revitalists=link_to(image_tag('revitalists.png', id: 'revitalists' ), '//www.therevivalists.com/', target: '_blank')
-    %div
-      .street-sound=link_to(image_tag('street_sound.png'), '//www.dauphinstreetsound.com/', target: '_blank')
+  #vision
+    .container
+      %p.header we believe in the power of storytelling.
+      %p.subheader In everyday life, Destyn Patera, is just my name. Here, it represents the efforts of myself and my partner, Austin, to elevate stories through cinematography. We are a full service production company. We write, produce, film, edit, and color grade all under one roof.
+  #recent_work
+    %h1 Our Recent Work
+    .video-container
+      .video-click#row
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/192687722")}}
+          = image_tag "video_1.png"
+          %p.text 2016 Reel
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/168624560")}}
+          = image_tag "video_2.png"
+          %p.text Find Me Free
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181320359")}}
+          = image_tag "video_3.png"
+          %p.text Radical Face - Road To Nowhere
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/183110074")}}
+          = image_tag "video_4.png"
+          %p.text Continuum - Breaking Point
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181314070")}}
+          = image_tag "video_5.png"
+          %p.text Nick Black - Worst You Can Do
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181314069")}}
+          = image_tag "video_6.png"
+          %p.text Continuum - Black and Blue
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/181314581")}}
+          = image_tag "video_7.png"
+          %p.text Jake Peavy Foundation
+        .thumb-nail{data: {video_url: video_modal_path(url: "//player.vimeo.com/video/137507357")}}
+          = image_tag "video_8.png"
+          %p.text.black The Revitalists - Keep Going (Live)
+  #clients
+    %h1 Our Clients
+    .scroller
+      %div
+        .jake-peavy=link_to(image_tag('jake_peavy.png'), '//jakepeavyfoundation.org/', target: '_blank')
+      %div
+        .digi-pro=link_to(image_tag('digi_pro.png', id: 'digi_pro'), '//digipromedia.com/', target: '_blank')
+      %div
+        .hashrocket=link_to(image_tag('hashrocket.png', id: 'hashrocket'), '//hashrocket.com/', target: '_blank')
+      %div
+        .revitalists=link_to(image_tag('revitalists.png', id: 'revitalists' ), '//www.therevivalists.com/', target: '_blank')
+      %div
+        .street-sound=link_to(image_tag('street_sound.png'), '//www.dauphinstreetsound.com/', target: '_blank')
+    .mobile-scroller
+      %div
+        .jake-peavy=link_to(image_tag('jake_peavy.png'), '//jakepeavyfoundation.org/', target: '_blank')
+      %div
+        .digi-pro=link_to(image_tag('digi_pro.png', id: 'digi_pro'), '//digipromedia.com/', target: '_blank')
+      %div
+        .hashrocket=link_to(image_tag('hashrocket.png', id: 'hashrocket'), '//hashrocket.com/', target: '_blank')
+      %div
+        .revitalists=link_to(image_tag('revitalists.png', id: 'revitalists' ), '//www.therevivalists.com/', target: '_blank')
+      %div
+        .street-sound=link_to(image_tag('street_sound.png'), '//www.dauphinstreetsound.com/', target: '_blank')

@@ -55,6 +55,13 @@ html{
   $danger-color: #FA3434;
   $warning-color: #FF9308;
 
+  @media only screen and (max-device-width: 768px) {
+    #home-page{
+      position: relative;
+      top: -6.8em;
+    }
+  }
+
   font-family: "PT Sans", sans-serfif;
   margin: 0;
 
@@ -169,7 +176,6 @@ html{
       }
     }
   }
-
 
   .mobile-link{
     display: none;
@@ -294,10 +300,10 @@ html{
     background-repeat: no-repeat;
 
     @media only screen and (max-device-width: 768px) {
+      height: 176vw;
       background-size: cover;
       background-position: -64em;
       width: 100%;
-      height: 176vw;
 
       .logo-text{
         display: none;
@@ -361,6 +367,18 @@ html{
       width: 100%;
       padding: 1em 1em 1.8em 1em;
       z-index: 3;
+      .normal-view-media{
+        i{
+          position: relative;
+          padding-left: .5em;
+          color: lighten(#000, 32%);
+          font-size: 1.5em;
+          top: 0.15em;
+        }
+        > i:first-of-type{
+          padding-left: none;
+        }
+      }
 
       .navigation-menu-button{
         position: relative;
@@ -379,18 +397,12 @@ html{
         a{
           text-decoration: none;
         }
-        i{
-          position: relative;
-          top: 0.2em;
-          color: lighten(#000, 32%);
-          font-size: 1.5em;
-        }
       }
 
       .fa-bars{
-        font-size: 34px;
         position: relative;
-        top: 14px;
+        left: -.4em;
+        top: 0.32em;
       }
 
       .logo{
@@ -491,7 +503,7 @@ html{
               border: 1px solid #000;
               border-radius: 3px;
               width: 98.2vw;
-              background: rgba(201,201,201,.3);
+              background: rgba(201,201,201,.7);
               i{
                 position: relative;
                 left: .4em;
@@ -548,7 +560,7 @@ html{
     img{
     }
     .container{
-      top: -20px;
+      top: 2em;
       position: relative;
     }
     p{
@@ -571,7 +583,8 @@ html{
     .subheader{
       background-color: #fff;
       position: relative;
-      top: 5px;
+      top: 0.8em;
+      padding: 0 2em 2em 2em;
       left: 63%;
       color: $soft-gray-text;
       width: 30%;
@@ -596,6 +609,11 @@ html{
       margin: 0;
     }
 
+    @media only screen and (max-device-width: 768px) {
+      h1{
+        font-size: 3em;
+      }
+    }
   }
 
   .modal-container{
@@ -762,6 +780,10 @@ html{
     }
 
     @media only screen and (max-device-width: 768px) {
+      h1{
+        font-size: 3em;
+        margin-top: 1em;
+      }
       .scroller{
         display: none;
       }
@@ -1176,17 +1198,18 @@ html{
   $link-color: #517a9e;
 
   width: 100%;
-
   .footer-top{
     $footer-background: lighten(#DFDFDF, 10%);
 
-    background-color: $footer-background;
+    background-repeat: no-repeat;
+    background-image:  url('contact_section.jpg');
+    background-size: cover;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;
     height: 6em;
     margin-top: 4em;
-    color: $glyphicon-color;
+    color: darken($glyphicon-color, 10%);
 
     .footer-wrapper{
       position: relative;
@@ -1195,10 +1218,12 @@ html{
       width: 76.5%;
       margin-right: auto;
       margin-left: auto;
+      background-color: rgba(201, 201, 201, .11);
+      border-radius: 0.5em;
     }
 
     .text, a{
-      color: $soft-gray-text;
+      color: darken($soft-gray-text, 35%);
       text-decoration: none;
     }
 
@@ -1208,7 +1233,7 @@ html{
       width: 32%;
 
       .text{
-        font-size: 1vw;
+        font-size: 1.5vw;
       }
 
       i{
@@ -1230,9 +1255,12 @@ html{
     }
 
     @media only screen and (max-device-width: 768px){
+      background-position: -52em;
       padding: 12vw 0 55vw 0;
+      color: $glyphicon-color;
       .footer-wrapper{
         width: 94%;
+        background: none;
       }
       .contact-info{
         position: relative;
@@ -1307,7 +1335,7 @@ html{
     .footer-secondary-links {
       padding: 0;
       position: relative;
-      left: 20px;
+      left: 3.3em;
       ul.footer-social {
         display: inline;
         float: right;
@@ -1316,7 +1344,6 @@ html{
           margin-right: 0.3em;
           text-decoration: none;
           img{
-            height: 2em;
             opacity: 0.4;
             filter: grayscale(100%);
             &:hover{
@@ -1340,6 +1367,12 @@ html{
       }
     }
 
+    @media only screen and (min-device-width: 769px){
+      img{
+        height: 2em;
+      }
+    }
+
     @media only screen and (max-device-width: 768px){
       height: 10vw;
       padding: 5vw 0;
@@ -1355,14 +1388,14 @@ html{
       }
       .footer-social{
         a{
+          left: 1em;
           position: relative;
           top: 1.5em;
           padding-right: 2em;
           img{
             width: 3.5em;
+            height: 100%;
           }
-        }
-        li{
         }
       }
     }
