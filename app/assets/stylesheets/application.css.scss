@@ -1278,12 +1278,14 @@ html{
 
     background-repeat: no-repeat;
     background-image:  url('contact_section.jpg');
-    background-size: cover;
+    background-size:  120% 50em;
     background-position: 0 -4em;
+    background-attachment: fixed;
+    background-position: center;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;
-    height: 6em;
+    height: 9em;
     margin-top: 4em;
     color: darken($glyphicon-color, 10%);
 
@@ -1294,7 +1296,6 @@ html{
       width: 76.5%;
       margin-right: auto;
       margin-left: auto;
-      background-color: rgba(201, 201, 201, .11);
       border-radius: 0.5em;
     }
 
@@ -1332,7 +1333,7 @@ html{
 
     @media only screen and (max-device-width: 768px){
       background-image:  url('mobile_contact.png');
-      background-size: 120% 56em;
+      background-size: 120% 92em;
       background-position: -8em;
       padding: 12vw 0 55vw 0;
       color: $glyphicon-color;
@@ -1351,7 +1352,7 @@ html{
         padding-bottom: 8.8em;
         padding-left: 3em;
         padding-right: 3em;
-        background-color: rgba(201, 201, 201, .2);
+        // background-color: rgba(201, 201, 201, .2);
         .fa{
           font-size: 47px;
           padding: 20px;
