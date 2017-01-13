@@ -56,6 +56,7 @@ html{
   $warning-color: #FF9308;
 
   @media only screen and (max-device-width: 768px) {
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
     cursor: pointer;
     #home-page{
       position: relative;
@@ -829,7 +830,9 @@ html{
     @media only screen and (max-device-width: 768px) {
       position: relative;
       top: 4em;
-      margin: 0;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       h1{
         font-size: 3em;
         margin-top: 1em;
@@ -839,7 +842,7 @@ html{
       }
       .mobile-scroller{
         display: block;
-        width: 50%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         .fa{
@@ -847,16 +850,21 @@ html{
         }
         .fa-arrow-circle-left{
           position: relative;
-          left: -4.8em;
+          left: -6.2em;
           top: 1.7em;
         }
         .fa-arrow-circle-right{
           position: relative;
-          left: 4.8em;
+          left: 6.2em;
           top: -1.7em;
         }
         .sr-only{
           display: none;
+        }
+        .jake-peavy{
+          img{
+            width: 16.5vw;
+          }
         }
         .southern{
           top: -0.9em;
