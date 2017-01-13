@@ -56,6 +56,7 @@ html{
   $warning-color: #FF9308;
 
   @media only screen and (max-device-width: 768px) {
+    cursor: pointer;
     #home-page{
       position: relative;
       top: -6.8em;
@@ -370,10 +371,11 @@ html{
       .normal-view-media{
         i{
           position: relative;
-          padding-left: .5em;
+          padding-left: 1.2em;
           color: lighten(#000, 32%);
           font-size: 1.5em;
           top: 0.15em;
+          left: -1.2em;
         }
         > i:first-of-type{
           padding-left: none;
@@ -411,7 +413,9 @@ html{
         float: left;
         height: $navigation-height;
         max-height: $navigation-height;
-
+        @media only screen and (max-device-width: 768px){
+          top: -2em;
+        }
         .logo-text{
           color: lighten(#000, 18%);
           letter-spacing: 3px;
@@ -638,6 +642,9 @@ html{
       background: #000;
       opacity: 0.5;
       filter: alpha(opacity=50);
+      @media only screen and (max-device-width: 768px) {
+        cursor: pointer;
+      }
     }
 
     .modal {
@@ -649,6 +656,10 @@ html{
       border-radius: 8px;
       padding: 8px;
       margin: auto;
+      @media only screen and (max-device-width: 768px) {
+        top: 24em;
+        left: 0.8em;
+      }
     }
 
     .video{
@@ -1204,6 +1215,7 @@ html{
     background-repeat: no-repeat;
     background-image:  url('contact_section.jpg');
     background-size: cover;
+    background-position: 0 -4em;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;

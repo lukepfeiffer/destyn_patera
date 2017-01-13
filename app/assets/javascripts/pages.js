@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  // All devices except iPhone and iPods
+
   $('.navigation').on('click', '.fa-bars', function(){
     $('.items').show(100);
     $('.fa-bars').hide();
