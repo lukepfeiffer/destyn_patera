@@ -1271,7 +1271,9 @@ html{
     }
 
     @media only screen and (max-device-width: 768px){
-      background-position: -52em;
+      background-image:  url('mobile_contact.png');
+      background-size: 120% 56em;
+      background-position: -8em;
       padding: 12vw 0 55vw 0;
       color: $glyphicon-color;
       margin: 0;
@@ -1287,6 +1289,9 @@ html{
         margin-right: auto;
         display: block;
         padding-bottom: 8.8em;
+        padding-left: 3em;
+        padding-right: 3em;
+        background-color: rgba(201, 201, 201, .2);
         .fa{
           font-size: 47px;
           padding: 20px;
