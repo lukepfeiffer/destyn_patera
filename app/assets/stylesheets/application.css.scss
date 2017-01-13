@@ -792,6 +792,8 @@ html{
     }
 
     @media only screen and (max-device-width: 768px) {
+      position: relative;
+      top: 4em;
       margin: 0;
       h1{
         font-size: 3em;
