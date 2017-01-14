@@ -188,7 +188,7 @@ html{
       position: relative;
       width: 29em;
       top: -63em;
-      left: 23em;
+      left: 22em;
       display: block;
       margin: 0;
       button{
@@ -304,7 +304,7 @@ html{
     @media only screen and (max-device-width: 768px) {
       height: 176vw;
       background-size: cover;
-      background-position: -64em;
+      background-position: -65.2em;
       width: 100%;
 
       .logo-text{
@@ -376,10 +376,10 @@ html{
           color: lighten(#000, 32%);
           font-size: 1.5em;
           top: 0.15em;
-          left: -1.2em;
+          left: -.6em;
         }
         > i:first-of-type{
-          padding-left: none;
+          padding-left: 2.2em;
         }
       }
 
@@ -869,6 +869,11 @@ html{
         .southern{
           top: -0.9em;
         }
+        .web_header{
+          img{
+            width: 12vw;
+          }
+        }
         .hotels{
           img{
             width: 13vw;
@@ -1280,7 +1285,6 @@ html{
     background-image:  url('contact_section.jpg');
     background-size:  120% 50em;
     background-position: 0 -4em;
-    background-attachment: fixed;
     background-position: center;
     display: inline-block;
     width: 100%;
@@ -1332,9 +1336,9 @@ html{
     }
 
     @media only screen and (max-device-width: 768px){
-      background-image:  url('mobile_contact.png');
+      background-image:  url('contact_section.jpg');
       background-size: 180% 92em;
-      background-position: -28em 25em;
+      background-position: -28em;
       padding: 12vw 0 55vw 0;
       color: $glyphicon-color;
       margin: 0;

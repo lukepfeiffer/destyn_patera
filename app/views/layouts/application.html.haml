@@ -34,6 +34,7 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
+
   %body#main
     %script{src: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", type: "text/javascript"}
     .body-wrapper
@@ -130,8 +131,8 @@
 
   .footers-wrapper
     %footer.footer-top
-      .footer-wrapper
-        .contact-info.mobile-top-center
+      .footer-wrapper.top-image
+        .contact-info
           %i.fa.fa-mobile
           %br
           %span.text (850) 723 - 4917

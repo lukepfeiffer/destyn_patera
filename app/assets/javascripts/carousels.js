@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('.scroller').slick({
     infinite: true,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2500,
     slidesToShow: 4,
     slidesToScroll: 1
   });
