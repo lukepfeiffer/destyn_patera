@@ -2,7 +2,6 @@ $(document).ready(function() {
   // Lock scroll on loading screen
 
   var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
   function scrollPreventDefault(event){
     event = event || window.event;
     if (event.preventDefault)
@@ -47,7 +46,7 @@ $(document).ready(function() {
     });
     $('body').css({'overflow' : 'visible'});
     enableScroll();
-  }, 4000);
+  }, 3000);
 
   // All devices except iPhone and iPods
 

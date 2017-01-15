@@ -56,49 +56,52 @@ html{
   $warning-color: #FF9308;
 
   .loading-screen{
-    width: 100%;
     height: 100%;
-    position: relative;
+    width: 100%;
     margin-bottom: 80em;
-    p{
-      width: 50%;
-      position: relative;
-      font-size: 2em;
-      top: 18vw;
-      left: 42vw;
-      margin: 0;
+    .overlay {
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      filter: alpha(opacity=50);
     }
-    img{
-      position: relative;
-      top: 18vw;
-      left: 38vw;
-      width: 15em;
-      height: 9em;
-    }
-    @media only screen and (max-device-width: 768px) {
+    .loading-content{
+      z-index: 2;
+      background: #fff;
+      vertical-align: middle;
+      margin-top: 12em;
+      position: fixed;
       p{
-        width: 50%;
         position: relative;
-        font-size: 3em;
-        top: 72vw;
-        left: 42vw;
-        margin: 0;
+        left: 18.2em;
+        font-size: 2.5em;
       }
       img{
         position: relative;
-        top: 72vw;
-        left: 38vw;
-        width: 15em;
-        height: 9em;
+        left: 36em;
+      }
+
+      @media only screen and (max-device-width: 768px) {
+        margin-top: 40em;
+        p{
+          font-size: 3em;
+        }
+        img{
+          left: 17.5em;
+        }
       }
     }
-  }
-  @media only screen and (max-device-width: 768px) {
-    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-    cursor: pointer;
-    #home-page{
-      position: relative;
-      top: -6.8em;
+    @media only screen and (max-device-width: 768px) {
+      -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+      cursor: pointer;
+      #home-page{
+        position: relative;
+        top: -6.8em;
+      }
     }
   }
 

@@ -40,8 +40,10 @@
     .body-wrapper
       - if @nav_image == true
         .loading-screen
-          %p Loading
-          = image_tag 'loading_icon.gif'
+          .overlay
+          .loading-content
+            %p Loading
+            = image_tag 'loading_icon.gif'
         .nav-container#special-nav
           %header.navigation{:role => "banner"}
             .left-navigation-wrapper
