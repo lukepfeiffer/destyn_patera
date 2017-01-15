@@ -55,6 +55,44 @@ html{
   $danger-color: #FA3434;
   $warning-color: #FF9308;
 
+  .loading-screen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 80em;
+    p{
+      width: 50%;
+      position: relative;
+      font-size: 2em;
+      top: 18vw;
+      left: 42vw;
+      margin: 0;
+    }
+    img{
+      position: relative;
+      top: 18vw;
+      left: 38vw;
+      width: 15em;
+      height: 9em;
+    }
+    @media only screen and (max-device-width: 768px) {
+      p{
+        width: 50%;
+        position: relative;
+        font-size: 3em;
+        top: 72vw;
+        left: 42vw;
+        margin: 0;
+      }
+      img{
+        position: relative;
+        top: 72vw;
+        left: 38vw;
+        width: 15em;
+        height: 9em;
+      }
+    }
+  }
   @media only screen and (max-device-width: 768px) {
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
     cursor: pointer;
@@ -185,6 +223,7 @@ html{
 
   @media only screen and (max-device-width: 768px) {
     .mobile-link{
+      // display: none;
       position: relative;
       width: 29em;
       top: -63em;
@@ -295,6 +334,7 @@ html{
   }
 
   #special-nav{
+    display: none;
     width: 100%;
     height: 51vw;
     background-image:  url('main_header.JPG');
@@ -368,7 +408,7 @@ html{
       margin-top: 0;
       width: 100%;
       padding: 1em 1em 1.8em 1em;
-      z-index: 3;
+      z-index: 2;
       .normal-view-media{
         i{
           position: relative;
@@ -1284,8 +1324,7 @@ html{
     background-repeat: no-repeat;
     background-image:  url('contact_section.jpg');
     background-size:  120% 50em;
-    background-position: 0 -4em;
-    background-position: center;
+    background-position: -13em -13em;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;

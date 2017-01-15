@@ -39,6 +39,9 @@
     %script{src: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", type: "text/javascript"}
     .body-wrapper
       - if @nav_image == true
+        .loading-screen
+          %p Loading
+          = image_tag 'loading_icon.gif'
         .nav-container#special-nav
           %header.navigation{:role => "banner"}
             .left-navigation-wrapper

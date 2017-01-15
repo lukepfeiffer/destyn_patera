@@ -1,4 +1,14 @@
 $(document).ready(function() {
+  // Remove loading Screen
+
+  setTimeout( function(){
+    $('#special-nav').fadeIn(2000);
+    $('#special-nav img').fadeIn(3000);
+    $('.loading-screen').fadeOut(1000, function(){
+      $(this).remove();
+    });
+  }, 4000);
+
   // All devices except iPhone and iPods
 
   $('.navigation').on('click', '.fa-bars', function(){
