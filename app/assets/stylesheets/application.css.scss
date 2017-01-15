@@ -29,15 +29,12 @@
 }
 
 html{
-    overflow: scroll;
-    overflow-x: hidden;
-    ::-webkit-scrollbar {
-      width: 0px;
-      background: transparent;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #FF0000;
-    }
+  overflow: scroll;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
 }
 
 
@@ -89,6 +86,8 @@ html{
         margin-top: 40em;
         p{
           font-size: 3em;
+          margin: 0;
+          left: 8.7em;
         }
         img{
           left: 17.5em;
@@ -889,7 +888,7 @@ html{
         margin-left: auto;
         margin-right: auto;
         .fa{
-          font-size: 3.5em;
+          font-size: 2.8em;
         }
         .fa-arrow-circle-left{
           position: relative;
@@ -898,8 +897,8 @@ html{
         }
         .fa-arrow-circle-right{
           position: relative;
-          left: 6.2em;
-          top: -1.7em;
+          left: 6.8em;
+          top: -1.9em;
         }
         .sr-only{
           display: none;
@@ -1322,12 +1321,9 @@ html{
 
   width: 100%;
   .footer-top{
-    $footer-background: lighten(#DFDFDF, 10%);
-
     background-repeat: no-repeat;
     background-image:  url('contact_section.jpg');
     background-size:  120% 50em;
-    background-position: -13em -13em;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;
@@ -1380,7 +1376,7 @@ html{
     @media only screen and (max-device-width: 768px){
       background-image:  url('contact_section.jpg');
       background-size: 180% 92em;
-      background-position: -28em;
+      // background-position: -28em;
       padding: 12vw 0 55vw 0;
       color: $glyphicon-color;
       margin: 0;

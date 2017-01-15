@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // Lock scroll on loading screen
 
   var keys = {37: 1, 38: 1, 39: 1, 40: 1};
@@ -48,17 +49,22 @@ $(document).ready(function() {
     enableScroll();
   }, 3000);
 
-  // All devices except iPhone and iPods
+
+  // Dropdown menu on mobile
 
   $('.navigation').on('click', '.fa-bars', function(){
     $('.items').show(100);
     $('.fa-bars').hide();
   });
 
+  // Hide dropdown after clicking link
+
   $('.dropdown').on('click', 'li', function(){
     $('.items').hide();
     $('.fa-bars').show();
   });
+
+  // Clicking outside of dropdown removes dropdown
 
   $('body').on('click', '.body-wrapper', function(event) {
     if(!$(event.target).is('.items, .fa-bars')){
@@ -69,11 +75,15 @@ $(document).ready(function() {
     };
   });
 
+  // Scroll to contact section
+
   $('.right-navigation-wrapper').on('click', '.contact', function(event){
     $('body').animate({
       'scrollTop': $('#contact').offset().top
     }, 700);
   });
+
+  // Scroll to our work section
 
   $('.mobile-link').on('click', 'button', function(event){
     $('body').animate({
@@ -81,12 +91,16 @@ $(document).ready(function() {
     }, 700);
   });
 
+  // Scroll to top of page
+
   $('.right-navigation-wrapper').on('click', '.home', function(event){
     $('body').animate({
       'scrollTop': $('#special-nav').offset().top
     }, 700);
   });
 
+
+  // Delete categories for admin
 
   $('#photos').on('click', '.delete', function(event){
     event.preventDefault;
@@ -99,5 +113,22 @@ $(document).ready(function() {
         }
       })
     };
+  });
+
+  // Parallax contact section
+
+  $(window).scroll(function(){
+    var topOfScreen = $(window).scrollTop();
+    var divam = 10;
+    if ($(window).innerWidth() <= "768px"){
+      $('.footer-top').css({
+        "background-position": "700px -" + topOfScreen/divam + "px"
+      });
+    }
+    else{
+      $('.footer-top').css({
+        "background-position": "-200px -" + topOfScreen/divam + "px"
+      });
+    }
   });
 });
