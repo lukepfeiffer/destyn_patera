@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
     $('body').css({'overflow' : 'visible'});
     enableScroll();
-  }, 3000);
+  }, 1000);
 
 
   // Dropdown menu on mobile
@@ -118,11 +118,13 @@ $(document).ready(function() {
   // Parallax contact section
 
   $(window).scroll(function(){
-    var topOfScreen = $(window).scrollTop();
-    var divam = 10;
-    if ($(window).innerWidth() <= "768px"){
+    var topOfScreen = $(window).scrollTop() - 290;
+    var mobileTopOfScreen = $(window).scrollTop() - 4470;
+    var divam = 6;
+    var mobileDivam = 5
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       $('.footer-top').css({
-        "background-position": "700px -" + topOfScreen/divam + "px"
+        "background-position": "-450px -" + mobileTopOfScreen/divam + "px"
       });
     }
     else{
@@ -130,5 +132,19 @@ $(document).ready(function() {
         "background-position": "-200px -" + topOfScreen/divam + "px"
       });
     }
+  });
+
+  // Parallax about
+
+  $(window).scroll(function(){
+    var topOfScreen = $(window).scrollTop();
+    var opacityControl = $(window).scrollTop()/2;
+    var divam = 10;
+    $('.container').css({
+      "position": "relative"
+    });
+    $('.container').css({
+      "right": topOfScreen/divam + "px"
+    });
   });
 });

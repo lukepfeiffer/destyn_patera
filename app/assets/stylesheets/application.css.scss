@@ -604,12 +604,6 @@ html{
     background-repeat: no-repeat;
     margin-top: 1.5em;
     margin-bottom: 0;
-    img{
-    }
-    .container{
-      top: 2em;
-      position: relative;
-    }
     p{
       margin-top: 0;
       padding: 30px;
@@ -1323,7 +1317,7 @@ html{
   .footer-top{
     background-repeat: no-repeat;
     background-image:  url('contact_section.jpg');
-    background-size:  120% 50em;
+    background-size:  120% 60em;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;
@@ -1376,7 +1370,7 @@ html{
     @media only screen and (max-device-width: 768px){
       background-image:  url('contact_section.jpg');
       background-size: 180% 92em;
-      // background-position: -28em;
+      // background-position: 88em 30em;
       padding: 12vw 0 55vw 0;
       color: $glyphicon-color;
       margin: 0;
