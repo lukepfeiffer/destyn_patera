@@ -136,15 +136,16 @@ $(document).ready(function() {
 
   // Parallax about
 
-  $(window).scroll(function(){
-    var topOfScreen = $(window).scrollTop();
-    var opacityControl = $(window).scrollTop()/2;
-    var divam = 10;
-    $('.container').css({
-      "position": "relative"
-    });
-    $('.container').css({
-      "right": topOfScreen/divam + "px"
-    });
+  $(document).scroll(function(e){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      var target = $('.container');
+      var targetHeight = target.outerHeight();
+
+      var scrollPercent = (window.scrollY - targetHeight) / targetHeight;
+      if(scrollPercent >= 0){
+        target.css('opacity', scrollPercent);
+      }
+    } else {
+    }
   });
 });

@@ -94,13 +94,14 @@ html{
         }
       }
     }
-    @media only screen and (max-device-width: 768px) {
-      -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-      cursor: pointer;
-      #home-page{
-        position: relative;
-        top: -6.8em;
-      }
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    cursor: pointer;
+    #home-page{
+      position: relative;
+      top: -6.8em;
     }
   }
 
@@ -604,6 +605,9 @@ html{
     background-repeat: no-repeat;
     margin-top: 1.5em;
     margin-bottom: 0;
+    .container{
+      opacity: 0.0;
+    }
     p{
       margin-top: 0;
       padding: 30px;
