@@ -164,9 +164,11 @@ $(document).ready(function() {
         target.css('opacity', 1);
         target.css({"position": "relative"});
         target.css({"left": target.offset()/2});
-      } else if( window.scrollY >= 650 ) {
+      } else if( window.scrollY >= 650 && window.scrollY < 950) {
         target.css('opacity', 1.4 - (window.scrollY*1.8/windowHeight));
         target.css({"left": topOfScreen + "px"});
+      } else {
+        target.css('opacity', 1);
       }
     }
   });
