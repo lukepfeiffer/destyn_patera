@@ -118,10 +118,9 @@ $(document).ready(function() {
   // Parallax contact section
 
   $(window).scroll(function(){
-    var topOfScreen = $(window).scrollTop() - 290;
+    var topOfScreen = $(window).scrollTop() - 685;
     var mobileTopOfScreen = $(window).scrollTop() - 4470;
-    var divam = 6;
-    var mobileDivam = 5
+    var divam = 4;
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     }
     else{
