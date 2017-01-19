@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
     $('body').css({'overflow' : 'visible'});
     enableScroll();
-  }, 1000);
+  }, 3000);
 
 
   // Dropdown menu on mobile
