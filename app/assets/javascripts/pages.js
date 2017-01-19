@@ -135,6 +135,8 @@ $(document).ready(function() {
 
   $(document).scroll(function(e){
     var target = $('.container');
+    var targetHeader = $('.container .header');
+    var targetSub = $('.container .subheader');
     var windowHeight = $(window).innerHeight();
     var windowWidth = $(window).innerWidth();
     var topOfScreen = $(window).scrollTop() - 590;
@@ -143,16 +145,15 @@ $(document).ready(function() {
     if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     } else {
       if( window.scrollY < 600 ){
-        target.css('opacity', scrollPercent*4.8);
+        target.css('opacity', scrollPercent*5.2);
+        targetHeader.css('opacity', scrollPercent*4.8);
+        targetSub.css('opacity', scrollPercent*4.8);
         target.css({"position": "relative"});
         target.css({"right": topOfScreen + "px"});
       } else if( window.scrollY >= 600 && window.scrollY < 650 ){
         target.css('opacity', 1);
         target.css({"position": "relative"});
         target.css({"left": target.offset()/2});
-      } else if( window.scrollY >= 650 && window.scrollY < 950) {
-        target.css('opacity', 1.4 - (window.scrollY*1.8/windowHeight));
-        target.css({"left": topOfScreen + "px"});
       } else {
         target.css('opacity', 1);
       }
