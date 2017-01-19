@@ -137,15 +137,37 @@ $(document).ready(function() {
   // Parallax about
 
   $(document).scroll(function(e){
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      var target = $('.container');
-      var targetHeight = target.outerHeight();
+    var target = $('.container');
+    var windowHeight = $(window).innerHeight();
+    var windowWidth = $(window).innerWidth();
+    var topOfScreen = $(window).scrollTop() - 590;
+    var scrollPercent = window.scrollY/windowHeight;
 
-      var scrollPercent = (window.scrollY - targetHeight) / targetHeight;
-      if(scrollPercent >= 0){
-        target.css('opacity', scrollPercent);
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      if( window.scrollY < 1300 ){
+        target.css('opacity', scrollPercent*10);
+      } else if( window.scrollY >= 1300 ) {
+        target.css('opacity', 1.15 - scrollPercent*1.001);
+      }
+    } else if( /iPad/i.test(navigator.userAgent) ) {
+      if( window.scrollY < 1300 ){
+        target.css('opacity', scrollPercent*10);
+      } else if( window.scrollY >= 1300 ) {
+        target.css('opacity', 1.2 - (window.scrollY*1.3/windowHeight));
       }
     } else {
+      if( window.scrollY < 600 ){
+        target.css('opacity', scrollPercent*4.8);
+        target.css({"position": "relative"});
+        target.css({"right": topOfScreen + "px"});
+      } else if( window.scrollY >= 600 && window.scrollY < 650 ){
+        target.css('opacity', 1);
+        target.css({"position": "relative"});
+        target.css({"left": target.offset()/2});
+      } else if( window.scrollY >= 650 ) {
+        target.css('opacity', 1.4 - (window.scrollY*1.8/windowHeight));
+        target.css({"left": topOfScreen + "px"});
+      }
     }
   });
 });
