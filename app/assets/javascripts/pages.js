@@ -123,9 +123,6 @@ $(document).ready(function() {
     var divam = 6;
     var mobileDivam = 5
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      $('.footer-top').css({
-        "background-position": "-450px -" + mobileTopOfScreen/divam + "px"
-      });
     }
     else{
       $('.footer-top').css({
@@ -143,18 +140,7 @@ $(document).ready(function() {
     var topOfScreen = $(window).scrollTop() - 590;
     var scrollPercent = window.scrollY/windowHeight;
 
-    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      if( window.scrollY < 1300 ){
-        target.css('opacity', scrollPercent*10);
-      } else if( window.scrollY >= 1300 ) {
-        target.css('opacity', 1.15 - scrollPercent*1.001);
-      }
-    } else if( /iPad/i.test(navigator.userAgent) ) {
-      if( window.scrollY < 1300 ){
-        target.css('opacity', scrollPercent*10);
-      } else if( window.scrollY >= 1300 ) {
-        target.css('opacity', 1.2 - (window.scrollY*1.3/windowHeight));
-      }
+    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     } else {
       if( window.scrollY < 600 ){
         target.css('opacity', scrollPercent*4.8);
