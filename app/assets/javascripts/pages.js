@@ -86,7 +86,7 @@ $(document).ready(function() {
     }
     else{
       $('.footer-top').css({
-        "background-position": "-200px -" + topOfScreen/divam + "px"
+        "background-position": "-150px -" + topOfScreen/divam + "px"
       });
     }
   });
