@@ -79,14 +79,14 @@ $(document).ready(function() {
   // Parallax contact section
 
   $(window).scroll(function(){
-    var topOfScreen = $(window).scrollTop() + 250;
+    var topOfScreen = $(window).scrollTop() - 750 ;
     var mobileTopOfScreen = $(window).scrollTop() - 4470;
     var divam = 4;
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     }
     else{
       $('.footer-top').css({
-        "background-position": "-150px -" + topOfScreen/divam + "px"
+        "background-position": "-300px -" + topOfScreen/divam + "px"
       });
     }
   });

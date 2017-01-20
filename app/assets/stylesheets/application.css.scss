@@ -75,7 +75,7 @@ html{
         width: 17vw;
         position: relative;
         left: 42vw;
-        top: 5vw;
+        top: 7vw;
       }
 
       @media only screen and (min-width: 769px) and (max-device-width: 1300px){
@@ -276,8 +276,19 @@ html{
           margin: 0;
           color: #fff;
           position: relative;
-          top: -46px;
+          top: -120px;
           left: 19px;
+        }
+
+        .fa{
+          position: relative;
+          top: -2em;
+          left: 2em;
+          font-size: 5em;
+          padding: 0;
+          margin: 0;
+          color: #fff;
+          opacity: 0;
         }
 
         img{
@@ -286,6 +297,16 @@ html{
 
         &:hover{
           cursor: pointer;
+          img{
+            filter: brightness(60%);
+          }
+          .fa{
+            opacity: 1;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+          }
         }
       }
     }
@@ -895,12 +916,12 @@ html{
         }
         .fa-arrow-circle-left{
           position: relative;
-          left: -6.8em;
+          left: -7.8em;
           top: 1.7em;
         }
         .fa-arrow-circle-right{
           position: relative;
-          left: 7.8em;
+          left: 8.2em;
           top: -2.15em;
         }
         .sr-only{
@@ -1324,9 +1345,10 @@ html{
 
   width: 100%;
   .footer-top{
-    background-repeat: no-repeat;
-    background-image:  url('contact_section.jpg');
-    background-size:  120% 90em;
+    // background-repeat: no-repeat;
+    // background-image:  url('contact_section.jpg');
+    // background-size:  140% 57vw;
+    background-color: lighten(rgba(201, 201, 201, .5), 15%);
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;
@@ -1344,6 +1366,15 @@ html{
       border-radius: 0.5em;
     }
 
+    h1{
+      color: $default-color;
+      margin-top: 0;
+      margin-bottom: 0;
+      position: relative;
+      top: -4.0em;
+      left: 12em;
+    }
+
     .text, a{
       color: darken($soft-gray-text, 35%);
       text-decoration: none;
@@ -1356,6 +1387,14 @@ html{
 
       .text{
         font-size: 1.5vw;
+        color: $soft-gray-text;
+        a{
+          color: $soft-gray-text;
+          &:hover{
+            color: darken($soft-gray-text, 10%);
+            font-weight: 400;
+          }
+        }
       }
 
       i{
@@ -1377,9 +1416,9 @@ html{
     }
 
     @media only screen and (max-device-width: 768px){
-      background-image:  url('contact_section.jpg');
-      background-size: 180% 92em;
-      background-position: -24em -21em;
+      // background-image:  url('contact_section.jpg');
+      // background-size: 180% 92em;
+      // background-position: -24em -21em;
       padding: 12vw 0 55vw 0;
       color: $glyphicon-color;
       margin: 0;

@@ -136,6 +136,7 @@
   .footers-wrapper
     %footer.footer-top
       .footer-wrapper
+        %h1 Let Us Bring Your Story To Life
         .contact-info
           %i.fa.fa-mobile
           %br
@@ -143,7 +144,8 @@
         .contact-info
           %i.fa.fa-envelope
           %br
-          %span.text#email info@destynpatera.com
+          %span.text#email
+            %a{href: 'mailto:info@destynpatera.com'} info@destynpatera.com
         .contact-info
           %i.fa.fa-map-marker
           %br
@@ -154,7 +156,7 @@
           %ul
             %li.copyright
               %i.fa.fa-copyright
-              %span.text 2017 Destyn Patera
+                %span.text 2017 Destyn Patera
         .footer-secondary-links
           %ul.footer-social
             = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
