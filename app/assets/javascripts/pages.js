@@ -1,43 +1,6 @@
 $(document).ready(function() {
 
-  // Lock scroll on loading screen
-
-  var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-  function scrollPreventDefault(event){
-    event = event || window.event;
-    if (event.preventDefault)
-      event.preventDefault();
-    event.returnValue = false;
-  }
-
-  function preventDefaultForScrollKeys(event){
-    if(keys[event.keyCode]) {
-      scrollPreventDefault(event);
-      return false;
-    }
-  }
-
-  function disableScroll(){
-    if (window.addEventListener){
-        window.addEventListener('DOMMouseScroll', scrollPreventDefault, false);
-    }
-    window.onwheel = scrollPreventDefault;
-    window.onmousewheel = document.onmousewheel = scrollPreventDefault;
-    window.ontouchmove  = scrollPreventDefault;
-    document.onkeydown  = preventDefaultForScrollKeys;
-  }
-
-  function enableScroll() {
-    if (window.removeEventListener){
-        window.removeEventListener('DOMMouseScroll', scrollPreventDefault, false);
-    };
-    window.onmousewheel = document.onmousewheel = null;
-    window.onwheel = null;
-    window.ontouchmove = null;
-    document.onkeydown = null;
-  }
-
-  disableScroll();
+  // Loading Screen
 
   setTimeout( function(){
     $('#special-nav').fadeIn(2000);
@@ -45,8 +8,6 @@ $(document).ready(function() {
     $('.loading-screen').fadeOut(1000, function(){
       $(this).remove();
     });
-    $('body').css({'overflow' : 'visible'});
-    enableScroll();
   }, 3000);
 
 
@@ -118,7 +79,7 @@ $(document).ready(function() {
   // Parallax contact section
 
   $(window).scroll(function(){
-    var topOfScreen = $(window).scrollTop() - 685;
+    var topOfScreen = $(window).scrollTop() + 250;
     var mobileTopOfScreen = $(window).scrollTop() - 4470;
     var divam = 4;
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

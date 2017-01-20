@@ -58,10 +58,10 @@
                     .items
                       %a.home
                         %li Home
-                      = link_to videos_path do
-                        %li Videos
-                      = link_to photos_path do
-                        %li Photos
+                      -# = link_to videos_path do
+                      -#   %li Videos
+                      -# = link_to photos_path do
+                      -#   %li Photos
                       %a.contact
                         %li Contact
                       %li
@@ -82,8 +82,8 @@
                   = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
                     %i.fa.fa-facebook-square
                 %a.navigation-menu-button.contact.right.hidden Contact
-                = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
-                = link_to 'Videos', videos_path, class: 'navigation-menu-button right hidden'
+                -# = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
+                -# = link_to 'Videos', videos_path, class: 'navigation-menu-button right hidden'
                 %a.navigation-menu-button.home.right.hidden Home
       - else
         .nav-container#normal-nav

@@ -72,20 +72,14 @@ html{
       margin-top: 12em;
       position: fixed;
       img{
-        position: relative;
-        left: 21em;
-        top: -5em;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       @media only screen and (max-device-width: 768px) {
         margin-top: 40em;
-        p{
-          font-size: 3em;
-          margin: 0;
-          left: 8.7em;
-        }
         img{
-          left: 17.5em;
+          left: 1.5em;
         }
       }
     }
@@ -201,7 +195,7 @@ html{
   }
 
   .admin-links{
-    margin-top: 1vw;
+    margin-top: 10vw;
     text-align: center;
     a{
       margin-right: 4vw;
@@ -1315,7 +1309,7 @@ html{
   .footer-top{
     background-repeat: no-repeat;
     background-image:  url('contact_section.jpg');
-    background-size:  120% 60em;
+    background-size:  120% 90em;
     display: inline-block;
     width: 100%;
     padding: 8.2vw 0;
