@@ -283,8 +283,8 @@ html{
         .fa{
           position: relative;
           top: -9.7vw;
-          left: 10vw;
-          font-size: 5em;
+          left: 11vw;
+          font-size: 4.0em;
           padding: 0;
           margin: 0;
           color: #fff;
@@ -640,7 +640,7 @@ html{
       position: relative;
       margin-bottom: 1.8em;
       padding-right: 1em;
-      padding-bottom: 0.5em;
+      padding-bottom: 1.3em;
       left: 63%;
       top: 60px;
       color: $default-color;
@@ -664,10 +664,14 @@ html{
       .header{
         display: inline-block;
       }
+      .header{
+        margin-bottom: 2em;
+        padding-bottom: 1.2em;
+      }
       .subheader{
         display: inline-block;
         position: relative;
-        top: 12.9em;
+        top: 13.9em;
         left: 18.24em;
       }
     }
@@ -813,7 +817,7 @@ html{
     }
 
     .scroller {
-      width: 50%;
+      width: 60%;
       margin-left: auto;
       margin-right: auto;
       button{
@@ -847,7 +851,7 @@ html{
         position: relative;
         top: 2.4em;
         img{
-          width: 9vw;
+          width: 8.5vw;
         }
       }
       .continuum{
@@ -1384,6 +1388,7 @@ html{
       margin-top: 0;
       margin-bottom: 0;
       position: relative;
+      left: -1em;
       top: -4.0em;
       text-align: center;
     }
@@ -1408,6 +1413,9 @@ html{
             font-weight: 400;
           }
         }
+      }
+      #phone{
+        font-size: 1.4vw;
       }
 
       i{
@@ -1435,6 +1443,9 @@ html{
       padding: 14vw 0 55vw 0;
       color: $glyphicon-color;
       margin: 0;
+      h1{
+        left: -0.5em;
+      }
       .footer-wrapper{
         width: 94%;
         background: none;
@@ -1513,6 +1524,7 @@ html{
     .footer-secondary-links {
       padding: 0;
       position: relative;
+      top: -1em;
       left: 3.3em;
       ul.footer-social {
         display: inline;
@@ -1554,6 +1566,10 @@ html{
     @media only screen and (max-device-width: 768px){
       height: 10vw;
       padding: 5vw 0;
+
+      .footer-secondary-links{
+        top: -1em;
+      }
       .copyright{
         position: relative;
         left: -5em;
