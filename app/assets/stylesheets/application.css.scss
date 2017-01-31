@@ -101,7 +101,7 @@ html{
     cursor: pointer;
     #home-page{
       position: relative;
-      top: -6.8em;
+      top: -17.8em;
     }
   }
 
@@ -226,13 +226,21 @@ html{
 
   @media only screen and (max-device-width: 768px) {
     .mobile-link{
-      // display: none;
       position: relative;
       width: 29em;
-      top: -63em;
+      top: -58em;
       left: 22em;
       display: block;
       margin: 0;
+      .text{
+        position: relative;
+        left: -2em;
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+      }
+
       button{
         padding: 1em;
         background: none;
@@ -645,8 +653,7 @@ html{
       top: 60px;
       color: $default-color;
       text-transform: uppercase;
-      font-weight: bold;
-      font-size: 26px;;
+      font-weight: bold; font-size: 26px;;
       width: 27%;
     }
 
@@ -663,16 +670,21 @@ html{
     @media only screen and (max-device-width: 768px) {
       .header{
         display: inline-block;
-      }
-      .header{
         margin-bottom: 2em;
         padding-bottom: 1.2em;
+        padding-left: 1.5em;
+        width: 51%;
+        position: relative;
+        font-size: 30px;
+        left: 13em;
       }
       .subheader{
         display: inline-block;
         position: relative;
-        top: 13.9em;
-        left: 18.24em;
+        top: -1em;
+        left: 17.72em;
+        font-size: 22px;
+        width: 51%;
       }
     }
   }
@@ -943,6 +955,10 @@ html{
         }
         .sr-only{
           display: none;
+        }
+        .slick-list{
+          position: relative;
+          left: -0.5em;
         }
         .jake-peavy{
           img{
@@ -1466,6 +1482,9 @@ html{
         }
         .text{
           font-size: 35px;
+        }
+        #phone{
+          font-size: 2em;
         }
         #email{
           position: relative;
