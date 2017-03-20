@@ -1,0 +1,15 @@
+#edit-thumbnails
+  .form
+    = form_for homepage_thumbnail do |f|
+      %fieldset
+        %dl
+          %dt= f.label :thumbnail_url
+          %dd= f.text_field :image_url
+
+          %dt= f.label :video_url
+          %dd= f.text_field :video_url
+
+          %dt= f.label :caption
+          %dd= f.text_field :caption
+      %fieldset.actions
+        = f.submit 'Save'

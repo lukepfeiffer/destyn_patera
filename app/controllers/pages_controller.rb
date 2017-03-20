@@ -3,6 +3,10 @@ class PagesController < ApplicationController
   expose :modal_video do
   end
 
+  expose :homepage_thumbnails do
+    HomepageThumbnail.all
+  end
+
   def home
     @nav_image = true
   end

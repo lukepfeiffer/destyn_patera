@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :images
   resources :videos
+  resources :homepage_thumbnails, only: [:edit, :update]
 
   get '/sign_in', to: 'pages#sign_in'
   get '/photos', to: 'categories#photos'
