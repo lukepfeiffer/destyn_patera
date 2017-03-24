@@ -4,12 +4,13 @@
       %fieldset
         %dl
           %dt= f.label :thumbnail_url
-          %dd= f.text_field :image_url
+          %dd= f.text_field :image_url, id: 'image_field'
 
           %dt= f.label :video_url
-          %dd= f.text_field :video_url
+          %dd= f.text_field :video_url, id: 'video_field'
 
           %dt= f.label :caption
-          %dd= f.text_field :caption
+          %dd= f.text_field :caption, id: 'caption_field'
       %fieldset.actions
         = f.submit 'Save'
+        %button.preview{data: {url: preview_route_path}} Preview

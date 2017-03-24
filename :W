@@ -31,19 +31,11 @@ $(document).ready(function() {
     var image_url = $('#image_field').val();
     var video_url = $('#video_field').val();
     var caption = $('#caption_field').val();
-    var params =  "?image_url=" + image_url + "&video_url=" + video_url + "&caption=" + caption;
-    var route = $(this).data('url');
-    var final_url = route + params;
-    $.ajax({
-      type: 'get',
-      url: final_url,
-      success: function(response){
-        if($('.preview-page')){
-          $('.preview-page').remove();
-        }
-        $('.form').append(response);
-      }
-    })
+    var url = $(this).data('url');
+    debugger
+    // $.ajax({
+    //   url:
+    // })
   })
 
 

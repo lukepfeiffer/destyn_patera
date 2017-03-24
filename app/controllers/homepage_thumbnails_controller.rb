@@ -9,6 +9,13 @@ class HomepageThumbnailsController < ApplicationController
     end
   end
 
+  def preview_route
+    video_url = params[:video_url]
+    image_route = params[:image_url]
+    caption = params[:caption]
+    render partial: 'preview', locals: {caption: caption, image_route: image_route, video_url: video_url}
+  end
+
   def edit
   end
 

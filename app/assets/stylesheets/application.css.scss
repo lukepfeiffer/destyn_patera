@@ -154,6 +154,23 @@ html{
   }
 
   .form{
+
+    .preview{
+      padding: 0 1vw;
+      font-size: 1.2vw;
+      height: 2vw;
+      border-radius: .5em;
+      color: $warning-color;
+      border: 1px solid $warning-color;
+      background: #fff;
+      font-weight: bold;
+      &:hover{
+        cursor: pointer;
+        color: darken($warning-color, 5%);
+        border: 1px solid darken($warning-color, 5%);
+      }
+    }
+
     text-align: left;
 
     .field-left{
