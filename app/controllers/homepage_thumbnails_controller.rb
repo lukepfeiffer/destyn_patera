@@ -14,6 +14,9 @@ class HomepageThumbnailsController < ApplicationController
   end
 
   def edit
+    unless current_user.present?
+      redirect_to root_path
+    end
   end
 
   def homepage_thumbnail_params
