@@ -95,23 +95,30 @@ $(document).ready(function() {
 
   $(window).on('scroll', function(){
     var scrollDistance = $(this).scrollTop();
-    var target = $('#special-nav');
-    if($(this).scrollTop() < 50){
-      target.css('background-image','url(assets/main_header_1.JPG)');
+    if(scrollDistance < 50){
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-1').css('display', 'block');
     } else if(scrollDistance >= 50 && scrollDistance < 100 ){
-      target.css('background-image','url(assets/main_header_2.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-2').css('display', 'block');
     } else if(scrollDistance >= 100 && scrollDistance < 150 ){
-      target.css('background-image','url(assets/main_header_3.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-3').css('display', 'block');
     } else if(scrollDistance >= 150 && scrollDistance < 200 ){
-      target.css('background-image','url(assets/main_header_4.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-4').css('display', 'block');
     } else if(scrollDistance >= 200 && scrollDistance < 250 ){
-      target.css('background-image','url(assets/main_header_5.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-5').css('display', 'block');
     } else if(scrollDistance >= 250 && scrollDistance < 300 ){
-      target.css('background-image','url(assets/main_header_6.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-6').css('display', 'block');
     } else if(scrollDistance >= 300 && scrollDistance < 350 ){
-      target.css('background-image','url(assets/main_header_7.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-7').css('display', 'block');
     } else if(scrollDistance >= 350){
-      target.css('background-image','url(assets/main_header_8.JPG)');
+      $('.nav-styles').css('display', 'none');
+      $('.background-image-8').css('display', 'block');
     }
   });
   // Parallax about

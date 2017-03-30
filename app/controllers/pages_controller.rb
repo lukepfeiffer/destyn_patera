@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   expose :homepage_thumbnails do
-    HomepageThumbnail.all
+    HomepageThumbnail.all.order('created_at DESC')
   end
 
   def home

@@ -2,11 +2,8 @@ class HomepageThumbnailsController < ApplicationController
   expose :homepage_thumbnail
 
   def update
-    if homepage_thumbnail.save
-      redirect_to root_path
-    else
-      render '/homepage_thumbnails/edit'
-    end
+    homepage_thumbnail.update(homepage_thumbnail_params)
+    redirect_to root_path
   end
 
   def preview_route
@@ -19,7 +16,7 @@ class HomepageThumbnailsController < ApplicationController
   def edit
   end
 
-  def homepage_thumbnails_params
+  def homepage_thumbnail_params
     params.require(:homepage_thumbnail).permit(
       :video_url,
       :image_url,
