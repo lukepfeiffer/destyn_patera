@@ -434,6 +434,9 @@ html{
     background-repeat: no-repeat;
 
     @media only screen and (max-device-width: 768px) {
+      .nav-styles{
+        display: none;
+      }
       height: 176vw;
       background-size: cover;
       background-position: -65.2em;

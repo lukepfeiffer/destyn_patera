@@ -95,30 +95,33 @@ $(document).ready(function() {
 
   $(window).on('scroll', function(){
     var scrollDistance = $(this).scrollTop();
-    if(scrollDistance < 50){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-1').css('display', 'block');
-    } else if(scrollDistance >= 50 && scrollDistance < 100 ){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-2').css('display', 'block');
-    } else if(scrollDistance >= 100 && scrollDistance < 150 ){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-3').css('display', 'block');
-    } else if(scrollDistance >= 150 && scrollDistance < 200 ){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-4').css('display', 'block');
-    } else if(scrollDistance >= 200 && scrollDistance < 250 ){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-5').css('display', 'block');
-    } else if(scrollDistance >= 250 && scrollDistance < 300 ){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-6').css('display', 'block');
-    } else if(scrollDistance >= 300 && scrollDistance < 350 ){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-7').css('display', 'block');
-    } else if(scrollDistance >= 350){
-      $('.nav-styles').css('display', 'none');
-      $('.background-image-8').css('display', 'block');
+    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    } else {
+      if(scrollDistance < 50){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-1').css('display', 'block');
+      } else if(scrollDistance >= 50 && scrollDistance < 100 ){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-2').css('display', 'block');
+      } else if(scrollDistance >= 100 && scrollDistance < 150 ){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-3').css('display', 'block');
+      } else if(scrollDistance >= 150 && scrollDistance < 200 ){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-4').css('display', 'block');
+      } else if(scrollDistance >= 200 && scrollDistance < 250 ){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-5').css('display', 'block');
+      } else if(scrollDistance >= 250 && scrollDistance < 300 ){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-6').css('display', 'block');
+      } else if(scrollDistance >= 300 && scrollDistance < 350 ){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-7').css('display', 'block');
+      } else if(scrollDistance >= 350){
+        $('.nav-styles').css('display', 'none');
+        $('.background-image-8').css('display', 'block');
+      }
     }
   });
   // Parallax about
