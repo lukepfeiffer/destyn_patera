@@ -11,13 +11,14 @@
     %h1 Our Recent Work
     .video-container
       .video-click#row
-        - homepage_thumbnails.each do |video|
-          .thumb-nail{data: {video_url: video_modal_path(url: "//player." + video.video_url)}}
-            = link_to edit_homepage_thumbnail_path(video.id) do
-              %p.edit-video Edit
-            = image_tag video.image_url
-            %i.fa.fa-play
-            %p.text= video.caption
+        - if homepage_thumbnails.present?
+          - homepage_thumbnails.each do |video|
+            .thumb-nail{data: {video_url: video_modal_path(url: "//player." + video.video_url)}}
+              = link_to edit_homepage_thumbnail_path(video.id) do
+                %p.edit-video Edit
+              = image_tag video.image_url
+              %i.fa.fa-play
+              %p.text= video.caption
   #clients
     %h1 Our Clients
     .scroller
