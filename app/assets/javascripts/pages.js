@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('.loading-screen').fadeOut(1000, function(){
       $(this).remove();
     });
-  }, 1);
+  }, 3000);
 
 
   // Dropdown menu on mobile
