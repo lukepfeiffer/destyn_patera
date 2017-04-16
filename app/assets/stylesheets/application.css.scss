@@ -66,6 +66,7 @@ html{
       vertical-align: middle;
       margin-top: 12em;
       position: fixed;
+
       img{
         width: 17vw;
         position: relative;
@@ -150,6 +151,7 @@ html{
 
   .form{
     margin-top: 5em;
+
     .preview{
       padding: 0 1vw;
       font-size: 1.2vw;
@@ -244,6 +246,7 @@ html{
       left: 22em;
       display: block;
       margin: 0;
+
       .text{
         position: relative;
         left: -1.7em;
@@ -426,7 +429,7 @@ html{
     background-size: 100% 51vw;
     background-repeat: no-repeat;
 
-    @media only screen and (max-device-width: 768px) {
+    @media only screen and (max-device-width: 1200px) {
       .nav-styles{
         display: none;
       }

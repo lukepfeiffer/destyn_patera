@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
   // Loading Screen
-
-  setTimeout( function(){
+setTimeout( function(){
     $('#special-nav').fadeIn(2000);
     $('#special-nav img').fadeIn(3000);
     $('.loading-screen').fadeOut(1000, function(){
@@ -95,8 +94,7 @@ $(document).ready(function() {
 
   $(window).on('scroll', function(){
     var scrollDistance = $(this).scrollTop();
-    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    } else {
+    if(!($(window).width() < 1201)) {
       if(scrollDistance < 50){
         $('.nav-styles').css('display', 'none');
         $('.background-image-1').css('display', 'block');
@@ -135,8 +133,7 @@ $(document).ready(function() {
     var topOfScreen = $(window).scrollTop() - 590;
     var scrollPercent = window.scrollY/windowHeight;
 
-    if ( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    } else {
+    if ( !($(window).width() < 1201) ) {
       if( window.scrollY < 600 ){
         target.css('opacity', scrollPercent*5.2);
         targetHeader.css('opacity', scrollPercent*4.8);
