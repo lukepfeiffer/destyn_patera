@@ -1,0 +1,47 @@
+#images{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
+  .image-form{
+    h1{
+      text-align: left;
+      font-size: 24px;
+      margin-left: .9em;
+    }
+  }
+  .image-container{
+    padding: 0;
+    list-style-type: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flow-start;
+    .image-text{
+      position: relative;
+      top: -40px;
+      left: 20px;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+      width: 90%;
+    }
+    img{
+      width: 380px;
+      height: 216px;
+    }
+  }
+}

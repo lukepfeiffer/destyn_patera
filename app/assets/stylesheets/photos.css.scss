@@ -1,0 +1,139 @@
+#photos{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
+  .category-form{
+    h1{
+      text-align: left;
+      font-size: 24px;
+      margin-left: .9em;
+    }
+  }
+
+  .categories-container{
+    padding-left: 0;
+    width: 100%;
+  }
+
+  @media only screen and (min-device-width: 769px){
+    .row{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-flex-flow: row wrap;
+      justify-content: flow-start;
+      width: 100%;
+    }
+    .category{
+      margin: 0;
+      width: 25%;
+      height: 13.8vw;
+      img{
+        width: 100%;
+      }
+      .text{
+        color: #fff;
+        position: relative;
+        top: -3em;
+        left: 1em;
+        font-size: 1.3vw;
+        width: 70%;
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1300px){
+    .category{
+      margin: 0;
+      width: 50%;
+      height: 27.32vw;
+      img{
+        width: 100%;
+      }
+      .text{
+        color: #fff;
+        position: relative;
+        top: -3em;
+        left: 1em;
+        font-size: 2em;
+      }
+    }
+  }
+
+  @media only screen and (max-device-width: 768px){
+    .row{
+      padding: 0;
+      width: 100%;
+
+      .category{
+        margin: 0;
+        width: 100%;
+        height: 31.38em;
+      }
+
+      .text{
+        color: #fff;
+        width: 70%;
+        font-size: 3.0em;
+        position: relative;
+        top: -2.9em;
+        left: 0.8em;
+        margin: 0;
+        padding: 0;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  ul{
+    margin: 0;
+    li{
+      width: 380px;
+      height: 216px;
+      h1{
+        width: 90%;
+        text-align: left;
+        position: relative;
+        top: 210px;
+        left: 16px;
+        background-color: transparent;
+        font-size: 32px;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        opacity: 0.9;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+

@@ -124,8 +124,8 @@ $(document).ready(function() {
       }
     }
   });
-  // Parallax about
 
+  // Parallax about
   $(document).scroll(function(e){
     var target = $('.container');
     var targetHeader = $('.container .header');

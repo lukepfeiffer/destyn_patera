@@ -1,0 +1,50 @@
+#recent_work{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
+  $footer-background: lighten(#DFDFDF, 10%);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: $footer-background;
+  color: $default-color;
+  width: 100%;
+  margin: 0;
+
+  h1{
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .top-row, .bottom-row{
+    margin: 0;
+  }
+
+  .edit-video{
+    margin: 0;
+    border: 1px solid $warning-color;
+    background-color: $warning-color;
+    position: relative;
+    top: 40px;
+    left: 19px;
+    width: 20%;
+    text-align:center;
+    z-index: 1;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    h1{
+      font-size: 3em;
+    }
+  }
+}
+

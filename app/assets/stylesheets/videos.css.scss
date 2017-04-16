@@ -1,0 +1,72 @@
+#videos{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
+
+  // position: relative;
+  // top: 60px;
+  .video-form{
+    h1{
+      text-align: left;
+      font-size: 24px;
+      margin-left: 1em;
+    }
+  }
+  h1{
+    text-align: center;
+  }
+  .video-container{
+    padding: 0;
+    list-style-type: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flow-start;
+  }
+
+  ul{
+    margin: 0;
+    li{
+      width: 380px;
+      height: 216px;
+
+      &:hover{
+        cursor: pointer;
+      }
+      h1{
+        width: 90%;
+        margin: 0;
+        text-align: left;
+        position: relative;
+        top: 210px;
+        left: 16px;
+        background-color: transparent;
+        font-size: 32px;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        opacity: 0.9;
+      }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
+}

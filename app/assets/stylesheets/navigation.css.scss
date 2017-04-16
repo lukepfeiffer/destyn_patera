@@ -1,0 +1,216 @@
+.nav-container{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
+
+  header.navigation {
+    $base-border-color: gainsboro !default;
+    $base-border-radius: 3px !default;
+    $action-color: #477DCA !default;
+    $large-screen: 53.75em !default;
+    $font-color: #fff;
+    $navigation-padding: 1em;
+    $navigation-color: transparentize(white, 0.3);
+    $navigation-color-hover: white;
+    $navigation-height: 48px;
+    $image-size: 6em;
+
+    min-height: $navigation-height;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: -10px;
+    margin-top: 0;
+    width: 100%;
+    padding: 1em 1em 1.8em 1em;
+    z-index: 2;
+    .normal-view-media{
+      i{
+        position: relative;
+        padding-left: 1.2em;
+        color: lighten(#000, 32%);
+        font-size: 1.5em;
+        top: 0.15em;
+        left: -.6em;
+      }
+      > i:first-of-type{
+        padding-left: 2.2em;
+      }
+    }
+
+    .navigation-menu-button{
+      position: relative;
+      top: 10px;
+      font-size: 17px;
+      display: block;
+      line-height: $navigation-height;
+      padding-right: 1.8vw;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: lighten(#000, 32%);
+      &:focus, &:hover {
+        cursor: pointer;
+        color: lighten(#000, 10%);
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+
+    .fa-bars{
+      position: relative;
+      left: -.4em;
+      top: 0.32em;
+    }
+
+    .logo{
+      position: relative;
+      top: -8px;
+      float: left;
+      height: $navigation-height;
+      max-height: $navigation-height;
+      @media only screen and (max-device-width: 768px){
+        top: -2em;
+      }
+      .logo-text{
+        color: lighten(#000, 18%);
+        letter-spacing: 3px;
+        position: relative;
+        top: 6px;
+        text-transform: uppercase;
+        font-family: 'Norwester', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+      }
+    }
+    .left-navigation-wrapper, .right-navigation-wrapper{
+      font-size: 14px;
+      font-family: $default-font;
+      font-weight: bold;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .right-navigation-wrapper {
+      float: right;
+      width: 60%;
+    }
+
+    .left-navigation-wrapper {
+      // width: 100%;
+      float: left;
+    }
+
+    img {
+      width: $image-size;
+      height: $image-size;
+    }
+
+    p{
+      float: right;
+      padding-left: 5px;
+    }
+
+    .menu-button{
+      float: right;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    .menu-button {
+      display: inline-block;
+      padding: .5vw;
+    }
+
+    .links{
+      position: relative;
+      top: 0.4vw;
+    }
+
+    .hidden{
+      display: none;
+    }
+
+    .dropdown{
+      display: none;
+      .items{
+        display: none;
+      }
+    }
+    @media only screen and (max-device-width: 768px){
+      .logo{
+        width: 5em;
+        img{
+          width: 12em;
+          height: 12em;
+        }
+      }
+      .navigation-menu-button .fa{
+        font-size: 5em;
+      }
+      .normal-view-media{
+        display: none;
+      }
+      .dropdown{
+        display: block;
+        width: 100%;
+        ul{
+          position: relative;
+          top: -3.0em;
+          .items{
+            position: relative;
+            left: .5em;
+            border: 1px solid #000;
+            border-radius: 3px;
+            width: 98.2vw;
+            background: rgba(201,201,201,.7);
+            i{
+              position: relative;
+              left: .4em;
+              font-size: 1.5em;
+              padding-right: 1em;
+            }
+          }
+          a{
+            color: lighten(#000, 32%);
+            text-decoration: none;
+            position: relative;
+            top: 3px;
+          }
+          li{
+            padding: 1.45em 0;
+            font-size: 2.6em;
+            text-align: center;
+            border-top: 1px solid #000;
+            list-style-type: none;
+            width: 100%;
+          }
+          > li:first-of-type{
+            border-top: none;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-device-width: 769px){
+      background-color: rgba(201, 201, 201, .6);
+      .hidden{
+        display: block;
+      }
+      .fa-bars{
+        display: none;
+      }
+    }
+  }
+}
+

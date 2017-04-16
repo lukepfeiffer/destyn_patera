@@ -1,0 +1,81 @@
+#vision{
+  $default-font: arial;
+  $default-font-size: 18px;
+  $default-color: #297A8C;
+  $background-color: #fff;
+  $social-media-color: #C0C0C0;
+  $social-media-hover: #288D8f;
+  $glyphicon-color: #249880;
+  $soft-gray-text: #737373;
+  $link-color: #517a9e;
+  $danger-color: #FA3434;
+  $warning-color: #FF9308;
+
+  position: relative;
+  min-height: 20vw;
+  max-height: 40vw;
+  min-width: 900px;
+  max-width: 1200px;
+  max-height: 700px;
+  min-height: 430px;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+
+  @media only screen and (min-device-width: 769px) {
+    background-image: url('lighthouse.jpg');
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+  }
+
+  p{
+    margin-top: 0;
+    padding: 30px;
+    margin-right: 0;
+  }
+
+  .header{
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 1.8em;
+    padding-right: 1em;
+    padding-bottom: 1.3em;
+    left: 63%;
+    top: 60px;
+    color: $default-color;
+    text-transform: uppercase;
+    font-weight: bold; font-size: 26px;;
+    width: 27%;
+  }
+
+  .subheader{
+    background-color: #fff;
+    position: relative;
+    top: 0.8em;
+    padding: 0 2em 2em 2em;
+    left: 63%;
+    color: $soft-gray-text;
+    width: 30%;
+    font-size: 16px;
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    .header{
+      display: inline-block;
+      width: 70%;
+      padding: 0 0 30px 0;
+      position: relative;
+      font-size: 45px;
+      left: 150px;
+    }
+    .subheader{
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      top: -1em;
+      left: 150px;
+      font-size: 35px;
+      width: 70%;
+    }
+  }
+}
+
