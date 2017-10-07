@@ -203,3 +203,59 @@
   }
 }
 
+#special-nav{
+  display: none;
+  width: 100%;
+  height: 51vw;
+  background-image:  url('main_header_1.JPG');
+  background-size: 100% 51vw;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-device-width: 1200px) {
+    .nav-styles{
+      display: none;
+    }
+    height: 176vw;
+    background-size: cover;
+    background-position: -65.2em;
+    width: 100%;
+
+    .logo-text{
+      display: none;
+    }
+
+    .navigation{
+      width: 97%;
+      padding: 1em;
+
+      .navigation-menu-button{
+        position: relative;
+        top: -5px;
+      }
+
+    }
+  }
+}
+
+#normal-nav{
+  .navigation-menu-button{
+    position: relative;
+    top: 11px;
+  }
+
+  @media only screen and (max-device-width: 768px) {
+    .navigation{
+      width: 96.8%;
+      padding: 1em 1em 1.6em 1em;
+      .logo-text{
+        display: none;
+      }
+      .navigation-menu-button{
+        position: relative;
+        top: 4px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
