@@ -66,27 +66,21 @@ html{
       vertical-align: middle;
       margin-top: 12em;
       position: fixed;
-
-      img{
-        width: 17vw;
+      video{
+        top: -18vw;
         position: relative;
-        left: 42vw;
-        top: 7vw;
+        width: 100%;
       }
 
       @media only screen and (min-width: 769px) and (max-device-width: 1300px){
-        img{
-          width: 25vw;
-          left: 40vw;
-          top: 30vw;
+        video{
+          top: 20vw;
         }
       }
 
       @media only screen and (max-device-width: 768px) {
-        img{
-          width: 35vw;
-          top: 50vw;
-          left: 33vw;
+        video{
+          top: 35vw;
         }
       }
     }

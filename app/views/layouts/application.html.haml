@@ -1,6 +1,6 @@
 %html{xmlns: "http://www.w3.org/1999/xhtml", "xmlns:fb" => "http://ogp.me/ns/fb#"}
   %head
-    %title DestynPatera
+    %title LenseaFilm
     %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet"}
     %link{href:'https://fonts.googleapis.com/css?family=PT+Sans', rel:'stylesheet', type: 'text/css'}
     = favicon_link_tag 'apple-touch-icon-57x57.png', :rel => 'apple-touch-icon', :type => 'image/png', :sizes => '57x57'
@@ -48,7 +48,9 @@
         .loading-screen
           .overlay
           .loading-content
-            = image_tag 'loading_icon.gif'
+            = video_tag "loading_screen.mp4", autoplay: true, loop: true
+
+            = video_tag 'https://www.dropbox.com/s/ok2x5rvuwknq53p/Wave%20for%20site%20opening.mp4?dl=0'
         .nav-container#special-nav
           .nav-styles.background-image-1
           .nav-styles.background-image-2
@@ -62,7 +64,6 @@
             .left-navigation-wrapper
               = link_to root_path, class: 'logo' do
                 = image_tag 'main_logo.png'
-                %p.logo-text Destyn Patera
             .right-navigation-wrapper
 
               %span.navigation-menu-button.menu-button
@@ -79,21 +80,21 @@
                       %a.contact
                         %li Contact
                       %li
-                        = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
+                        = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
                           %i.fa.fa-vimeo-square
-                        = link_to 'https://www.instagram.com/destynpatera/', target: '_blank' do
+                        = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
                           %i.fa.fa-instagram
-                        = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
+                        = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
                           %i.fa.fa-facebook-square
 
               %span.links
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
                 .navigation-menu-button.right.normal-view-media
-                  = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
+                  = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
                     %i.fa.fa-vimeo-square
-                  = link_to 'https://www.instagram.com/destynpatera/', target: '_blank' do
+                  = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
                     %i.fa.fa-instagram
-                  = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
+                  = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
                     %i.fa.fa-facebook-square
                 %a.navigation-menu-button.contact.right.hidden Contact
                 -# = link_to 'Photos', photos_path, class: 'navigation-menu-button right hidden'
@@ -121,11 +122,11 @@
                       %a.contact
                         %li Contact
                       %li
-                        = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
+                        = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
                           %i.fa.fa-vimeo-square
-                        = link_to 'https://www.instagram.com/destynpatera/', target: '_blank' do
+                        = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
                           %i.fa.fa-instagram
-                        = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
+                        = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
                           %i.fa.fa-facebook-square
               %span.links
                 = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
@@ -150,7 +151,6 @@
   .footers-wrapper
     %footer.footer-top
       .footer-wrapper
-        %h1 Let Us Bring Your Story To Life!
         .contact-info
           %i.fa.fa-mobile
           %br
@@ -159,11 +159,11 @@
           %i.fa.fa-envelope
           %br
           %span.text#email
-            %a{href: 'mailto:info@destynpatera.com'} info@destynpatera.com
+            %a{href: 'mailto:info@destynpatera.com'} info@lenseafilm.com
         .contact-info
           %i.fa.fa-map-marker
           %br
-          %span.text Jacksonville, FL
+          %span.text Los Angeles, CA
     %footer.footer-bottom#contact{:role => "contentinfo"}
       .footer-wrapper
         .primary-link
@@ -173,9 +173,9 @@
                 %span.text 2017 Destyn Patera
         .footer-secondary-links
           %ul.footer-social
-            = link_to 'https://vimeo.com/destynpatera', target: '_blank' do
+            = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
               %li= image_tag('vimeo.png', alt: 'vimeo')
-            = link_to 'https://www.instagram.com/destynpatera/', target: '_blank' do
+            = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
               %li= image_tag('instagram.png', alt: 'instagram')
-            = link_to 'https://www.facebook.com/DestynPatera/', target: '_blank' do
+            = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
               %li= image_tag('facebook.png', alt: 'facebook')

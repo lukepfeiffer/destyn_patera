@@ -71,27 +71,6 @@
       left: -.4em;
       top: 0.32em;
     }
-
-    .logo{
-      position: relative;
-      top: -8px;
-      float: left;
-      height: $navigation-height;
-      max-height: $navigation-height;
-      @media only screen and (max-device-width: 768px){
-        top: -2em;
-      }
-      .logo-text{
-        color: lighten(#000, 18%);
-        letter-spacing: 3px;
-        position: relative;
-        top: 6px;
-        text-transform: uppercase;
-        font-family: 'Norwester', Arial, sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-      }
-    }
     .left-navigation-wrapper, .right-navigation-wrapper{
       font-size: 14px;
       font-family: $default-font;
@@ -106,7 +85,6 @@
     }
 
     .left-navigation-wrapper {
-      // width: 100%;
       float: left;
     }
 
@@ -147,12 +125,23 @@
         display: none;
       }
     }
+
+    .logo{
+      position: relative;
+      float: left;
+      height: $navigation-height;
+      max-height: $navigation-height;
+      img{
+        width: 250px;
+        height: 67px;
+      }
+    }
     @media only screen and (max-device-width: 768px){
       .logo{
         width: 5em;
         img{
-          width: 12em;
-          height: 12em;
+          width: 500px;
+          height: 133px;
         }
       }
       .navigation-menu-button .fa{

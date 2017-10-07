@@ -7,7 +7,7 @@ setTimeout( function(){
     $('.loading-screen').fadeOut(1000, function(){
       $(this).remove();
     });
-  }, 3000);
+  }, 7000);
 
 
   // Dropdown menu on mobile
