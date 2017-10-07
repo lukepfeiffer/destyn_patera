@@ -1,0 +1,31 @@
+.footers-wrapper
+  %footer.footer-top
+    .footer-wrapper
+      .contact-info
+        %i.fa.fa-mobile
+        %br
+        %span.text#phone (850) 723 - 4917
+      .contact-info
+        %i.fa.fa-envelope
+        %br
+        %span.text#email
+          %a{href: 'mailto:info@destynpatera.com'} info@lenseafilm.com
+      .contact-info
+        %i.fa.fa-map-marker
+        %br
+        %span.text Los Angeles, CA
+  %footer.footer-bottom#contact{:role => "contentinfo"}
+    .footer-wrapper
+      .primary-link
+        %ul
+          %li.copyright
+            %i.fa.fa-copyright
+              %span.text 2017 Destyn Patera
+      .footer-secondary-links
+        %ul.footer-social
+          = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
+            %li= image_tag('vimeo.png', alt: 'vimeo')
+          = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
+            %li= image_tag('instagram.png', alt: 'instagram')
+          = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
+            %li= image_tag('facebook.png', alt: 'facebook')

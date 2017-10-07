@@ -1,0 +1,43 @@
+.nav-container#special-nav
+  .nav-styles.background-image-1
+  .nav-styles.background-image-2
+  .nav-styles.background-image-3
+  .nav-styles.background-image-4
+  .nav-styles.background-image-5
+  .nav-styles.background-image-6
+  .nav-styles.background-image-7
+  .nav-styles.background-image-8
+  %header.navigation{:role => "banner"}
+    .left-navigation-wrapper
+      = link_to root_path, class: 'logo' do
+        = image_tag 'main_logo.png'
+    .right-navigation-wrapper
+
+      %span.navigation-menu-button.menu-button
+        .mobile-view.dropdown
+          %i.fa.fa-bars
+          %ul
+            .items
+              %a.home
+                %li Home
+              %a.contact
+                %li Contact
+              %li
+                = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
+                  %i.fa.fa-vimeo-square
+                = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
+                  %i.fa.fa-instagram
+                = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
+                  %i.fa.fa-facebook-square
+
+      %span.links
+        = link_to 'Sign Out', sign_out_path, method: :delete, class: 'navigation-menu-button right hidden' if current_user.present?
+        .navigation-menu-button.right.normal-view-media
+          = link_to 'https://vimeo.com/lenseafilm', target: '_blank' do
+            %i.fa.fa-vimeo-square
+          = link_to 'https://www.instagram.com/lenseafilm/', target: '_blank' do
+            %i.fa.fa-instagram
+          = link_to 'https://www.facebook.com/lenseafilm/', target: '_blank' do
+            %i.fa.fa-facebook-square
+        %a.navigation-menu-button.contact.right.hidden Contact
+        %a.navigation-menu-button.home.right.hidden Home
