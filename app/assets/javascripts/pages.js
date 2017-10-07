@@ -136,8 +136,8 @@ setTimeout( function(){
     if ( !($(window).width() < 1201) ) {
       if( window.scrollY < 600 ){
         target.css('opacity', scrollPercent*5.2);
-        targetHeader.css('opacity', scrollPercent*5.1);
-        targetSub.css('opacity', scrollPercent*5.1);
+        targetHeader.css('opacity', scrollPercent*4.8);
+        targetSub.css('opacity', scrollPercent*4.8);
         target.css({"position": "relative"});
         target.css({"right": topOfScreen + "px"});
       } else if( window.scrollY >= 600 && window.scrollY < 650 ){
