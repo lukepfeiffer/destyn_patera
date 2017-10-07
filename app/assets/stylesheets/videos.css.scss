@@ -35,6 +35,68 @@
 
     -webkit-flex-flow: row wrap;
     justify-content: flow-start;
+
+    @media only screen and (min-device-width: 769px){
+      .video-click{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .thumb-nail{
+        width: 25%;
+        height: 13.8vw;
+
+        .text{
+          margin: 0;
+          font-size: 1.3vw;
+          width: 80%;
+          margin: 0;
+          color: #fff;
+          position: relative;
+          top: -120px;
+          left: 19px;
+        }
+
+        .fa{
+          position: relative;
+          top: -9.7vw;
+          left: 11vw;
+          font-size: 4.0em;
+          padding: 0;
+          margin: 0;
+          color: #fff;
+          opacity: 0;
+        }
+
+        img{
+          width: 100%;
+        }
+
+        &:hover{
+          cursor: pointer;
+          img{
+            filter: brightness(60%);
+          }
+          .fa{
+            opacity: 1;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
   }
 
   ul{
@@ -69,4 +131,50 @@
     }
   }
 
+}
+@media only screen and (min-width: 769px) and (max-device-width: 1300px){
+  .thumb-nail{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 27.32vw;
+    .text{
+      margin-right: 0;
+      color: #fff;
+      font-size: 2.0em;
+      position: relative;
+      top: -2.2em;
+      left: 0.5em;
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .thumb-nail{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 34.38em;
+
+    .fa{
+      display: none;
+    }
+    .text{
+      color: #fff;
+      width: 60%;
+      font-size: 3.0em;
+      position: relative;
+      top: -1.9em;
+      left: 0.5em;
+      display: inline;
+    }
+    img{
+      width: 100%;
+    }
+  }
 }

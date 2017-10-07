@@ -1,3 +1,18 @@
+.admin-links{
+  margin-top: 10vw;
+  text-align: center;
+  a{
+    margin-right: 4vw;
+    color: $link-color;
+    text-decoration: none;
+    font-size: 20px;
+    &:hover{
+      text-decoration: underline;
+      color: darken($link-color, 5%);
+    }
+  }
+}
+
 .nav-container{
   $default-font: arial;
   $default-font-size: 18px;
