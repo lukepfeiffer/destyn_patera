@@ -15,24 +15,36 @@
   .loading-content{
     z-index: 2;
     background: #fff;
-    vertical-align: middle;
-    margin-top: 12em;
-    position: fixed;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     video{
-      top: -18vw;
       position: relative;
       width: 100%;
     }
 
+    .mobile{
+      display: none;
+    }
+
     @media only screen and (min-width: 769px) and (max-device-width: 1300px){
-      video{
-        top: 20vw;
+      .mobile{
+        display: none;
       }
     }
 
     @media only screen and (max-device-width: 768px) {
-      video{
-        top: 35vw;
+      .normal{
+        display: none;
+      }
+      .mobile{
+        display: block;
+      }
+      img{
+        position: relative;
+        width: 100%;
       }
     }
   }
