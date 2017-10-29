@@ -1,14 +1,18 @@
 $(document).ready(function() {
-
   // Loading Screen
-setTimeout( function(){
+  setTimeout( function(){
     $('#special-nav').fadeIn(2000);
-    $('#special-nav img').fadeIn(3000);
+    $('#special-nav img').fadeIn(2000);
     $('.loading-screen').fadeOut(1000, function(){
       $(this).remove();
     });
   }, 7000);
 
+  window.setInterval( function() {
+    if( $(".loading-screen").css("display") === "block") {
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+  }, 250);
 
   // Dropdown menu on mobile
 
