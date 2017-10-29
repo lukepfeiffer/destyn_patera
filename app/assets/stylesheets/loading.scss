@@ -1,5 +1,6 @@
 .loading-screen{
   display: none;
+
   @media only screen and (min-width: 769px) {
     display: block;
     height: 100%;
@@ -43,7 +44,7 @@
           display: none;
         }
         .mobile{
-          display: block;
+          display: none;
         }
         img{
           position: relative;

@@ -1,21 +1,28 @@
 $(document).ready(function() {
   // Loading Screen
-  setTimeout( function(){
-    $('#special-nav').fadeIn(2000);
-    $('#special-nav img').fadeIn(2000);
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#special-nav').fadeIn(1000);
+    $('#special-nav img').fadeIn(1000);
     $('.loading-screen').fadeOut(1000, function(){
       $(this).remove();
     });
-  }, 7000);
+  } else {
+    setTimeout( function(){
+      $('#special-nav').fadeIn(2000);
+      $('#special-nav img').fadeIn(2000);
+      $('.loading-screen').fadeOut(1000, function(){
+        $(this).remove();
+      });
+    }, 7000);
 
-  window.setInterval( function() {
-    if( $(".loading-screen").css("display") === "block") {
-      $('html, body').animate({ scrollTop: 0 }, 'fast');
-    }
-  }, 250);
+    window.setInterval( function() {
+      if( $(".loading-screen").css("display") === "block") {
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+      }
+    }, 250);
+  }
 
   // Dropdown menu on mobile
-
   $('.navigation').on('click', '.fa-bars', function(){
     $('.items').show(100);
     $('.fa-bars').hide();
