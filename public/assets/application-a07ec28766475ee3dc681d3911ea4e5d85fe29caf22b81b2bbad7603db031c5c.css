@@ -1,0 +1,1940 @@
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+/* line 12, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card {
+  background-color: #f6f6f6;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #e6e6e6;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  width: 340px;
+}
+/* line 37, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card .card-image {
+  background-color: #F8F2B4;
+  overflow: hidden;
+}
+/* line 43, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card .card-image img {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+}
+/* line 52, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card .card-header {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid gainsboro;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+  transition: all 0.2s ease-in-out;
+}
+/* line 62, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card .card-copy {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+/* line 67, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+/* line 74, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+/* line 79, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card:active {
+  background-color: #f6f6f6;
+}
+/* line 82, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/cards.css.scss */
+.card:active .card-header {
+  background-color: #f6f6f6;
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 8em;
+}
+/* line 17, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients h1 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 27px;
+  color: #297A8C;
+  text-transform: uppercase;
+}
+/* line 24, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .container {
+  width: 55%;
+  margin-left: auto;
+}
+/* line 29, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 33, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller button {
+  color: blue;
+}
+/* line 36, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .slick-slide {
+  margin: 0 1vw;
+  height: 8vw;
+}
+/* line 40, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .hashrocket {
+  position: relative;
+  top: 18px;
+  left: 5px;
+}
+/* line 44, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .hashrocket img {
+  width: 6vw;
+}
+/* line 49, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .digi-pro img {
+  width: 7vw;
+}
+/* line 53, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .ahero {
+  position: relative;
+  top: 1.5em;
+}
+/* line 56, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .ahero img {
+  width: 8vw;
+}
+/* line 60, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .ballpoint {
+  position: relative;
+  top: 2.4em;
+}
+/* line 63, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .ballpoint img {
+  width: 8.5vw;
+}
+/* line 67, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .continuum {
+  position: relative;
+  top: 1.4em;
+}
+/* line 70, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .continuum img {
+  width: 8vw;
+}
+/* line 74, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .embark {
+  position: relative;
+  top: 1.1em;
+}
+/* line 77, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .embark img {
+  width: 8vw;
+}
+/* line 81, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .southern {
+  position: relative;
+  top: .2em;
+}
+/* line 84, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .southern img {
+  width: 9vw;
+}
+/* line 88, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .revitalists {
+  position: relative;
+  top: 54px;
+}
+/* line 92, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .jake-peavy {
+  position: relative;
+  top: 2.2vw;
+}
+/* line 96, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .street-sound {
+  position: relative;
+  top: 24px;
+}
+/* line 99, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller .street-sound img {
+  width: 8vw;
+}
+/* line 103, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller div {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 5px;
+  width: 90%;
+}
+/* line 110, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .scroller div div img {
+  width: 80%;
+}
+/* line 117, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .mobile-scroller {
+  display: none;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients {
+    position: relative;
+    top: 4em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+  }
+  /* line 129, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients h1 {
+    font-size: 3em;
+    margin-top: 4em;
+  }
+  /* line 133, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .scroller {
+    display: none;
+  }
+  /* line 136, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 141, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .fa {
+    font-size: 2.8em;
+  }
+  /* line 144, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .fa-arrow-circle-left {
+    position: relative;
+    left: -7.8em;
+    top: 1.7em;
+  }
+  /* line 149, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .fa-arrow-circle-right {
+    position: relative;
+    left: 8.2em;
+    top: -2.15em;
+  }
+  /* line 154, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .sr-only {
+    display: none;
+  }
+  /* line 157, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .slick-list {
+    position: relative;
+    left: -0.5em;
+  }
+  /* line 162, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .jake-peavy img {
+    width: 16.5vw;
+  }
+  /* line 166, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .southern {
+    top: -0.9em;
+  }
+  /* line 170, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .web_header img {
+    width: 12vw;
+  }
+  /* line 175, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .hotels img {
+    width: 13vw;
+  }
+  /* line 179, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .ahero {
+    top: 1em;
+  }
+  /* line 182, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .ballpoint {
+    top: 2em;
+  }
+  /* line 185, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .continuum {
+    top: 0.5em;
+  }
+  /* line 188, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 5px;
+    width: 90%;
+  }
+  /* line 194, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div .hashrocket {
+    width: 7em;
+    position: relative;
+  }
+  /* line 198, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div .street-sound {
+    width: 8em;
+    position: relative;
+    top: 1.6em;
+  }
+  /* line 203, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div .revitalists {
+    position: relative;
+    top: 3.6em;
+    width: 9em;
+  }
+  /* line 208, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div .digi-pro {
+    width: 8em;
+    position: relative;
+    top: -7px;
+  }
+  /* line 213, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div .jake-peavy {
+    position: relative;
+    top: 7px;
+    width: 12em;
+  }
+  /* line 219, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller div div img {
+    width: 100%;
+  }
+  /* line 224, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+  #clients .mobile-scroller .slick-slide {
+    margin: 0 1vw;
+    height: 8em;
+  }
+}
+/* line 231, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .slick-prev::before, #clients .slick-next::before {
+  color: #000;
+}
+/* line 235, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .slick-next {
+  right: -5px;
+}
+/* line 239, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/clients.css.scss */
+#clients .slick-prev {
+  left: -5px;
+}
+@font-face {
+  font-family: 'Norwester';
+  src: url("norwester.eot");
+  src: url("norwester.eot?iefix") format("eot"), url("norwester.woff") format("woff"), url("norwester.ttf") format("truetype"), url("norwester.svg#webfont") format("svg");
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper {
+  width: 100%;
+}
+/* line 13, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top {
+  background-color: rgba(239, 239, 239, 0.5);
+  display: inline-block;
+  width: 100%;
+  padding: 8.2vw 0;
+  height: 9em;
+  margin-top: 4em;
+  color: #1a6f5d;
+}
+/* line 25, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .footer-wrapper {
+  position: relative;
+  left: 28px;
+  top: 25px;
+  width: 76.5%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0.5em;
+}
+/* line 35, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top h1 {
+  color: #297A8C;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  left: -1em;
+  top: -4.0em;
+  text-align: center;
+}
+/* line 45, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .text, .footers-wrapper .footer-top a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+/* line 50, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .contact-info {
+  text-align: center;
+  display: inline-block;
+  width: 32%;
+}
+/* line 55, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .contact-info .text {
+  font-size: 1.5vw;
+  color: #737373;
+}
+/* line 58, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .contact-info .text a {
+  color: #737373;
+}
+/* line 60, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .contact-info .text a:hover {
+  color: #5a5a5a;
+  font-weight: 400;
+}
+/* line 66, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .contact-info #phone {
+  font-size: 1.4vw;
+}
+/* line 70, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-top .contact-info i {
+  line-height: 1.5vw;
+  font-size: 2vw;
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1300px) {
+  /* line 77, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info {
+    margin: 0;
+  }
+  /* line 79, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info .fa {
+    font-size: 35px;
+  }
+  /* line 82, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info .text {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 13, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top {
+    padding: 14vw 0 55vw 0;
+    color: #249880;
+    margin: 0;
+  }
+  /* line 95, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top h1 {
+    left: -0.5em;
+  }
+  /* line 98, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .footer-wrapper {
+    width: 94%;
+    background: none;
+  }
+  /* line 102, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info {
+    position: relative;
+    top: -4em;
+    left: -1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 8.8em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  /* line 112, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info .fa {
+    font-size: 47px;
+    padding: 20px;
+  }
+  /* line 116, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info .text {
+    font-size: 35px;
+  }
+  /* line 119, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info #phone {
+    font-size: 2em;
+  }
+  /* line 122, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-top .contact-info #email {
+    position: relative;
+    left: -.8em;
+  }
+}
+/* line 130, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom {
+  background-color: #DFDFDF;
+  width: 100%;
+  height: 3.8em;
+  padding: 0.75em 0;
+}
+/* line 138, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-wrapper {
+  margin: 1em 0 0 0;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 145, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom ul {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+/* line 150, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom ul li {
+  list-style: none;
+  padding-right: 1em;
+}
+/* line 155, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom ul .text {
+  color: #297A8C;
+}
+/* line 158, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom ul .text:focus, .footers-wrapper .footer-bottom ul .text:hover {
+  color: #246c7c;
+}
+/* line 163, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .primary-link {
+  display: inline;
+  float: left;
+}
+/* line 166, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .primary-link i {
+  color: #297A8C;
+  position: relative;
+  top: .5em;
+}
+/* line 171, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .primary-link .text {
+  font-size: 1vw;
+}
+/* line 176, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links {
+  padding: 0;
+  position: relative;
+  left: 3.3em;
+}
+/* line 180, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links ul.footer-social {
+  display: inline;
+  float: right;
+}
+/* line 183, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links ul.footer-social a {
+  float: left;
+  margin-right: 0.3em;
+  text-decoration: none;
+}
+/* line 187, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links ul.footer-social a img {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+/* line 190, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links ul.footer-social a img:hover {
+  filter: none;
+  cursor: pointer;
+  opacity: 1;
+}
+/* line 196, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links ul.footer-social a li {
+  color: #fff;
+  margin: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+/* line 203, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+.footers-wrapper .footer-bottom .footer-secondary-links ul.footer-social a li:last-child {
+  padding-right: 0;
+}
+@media only screen and (min-device-width: 769px) {
+  /* line 212, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom img {
+    height: 2em;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 130, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom {
+    height: 10vw;
+    padding: 5vw 0;
+  }
+  /* line 221, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom .footer-secondary-links {
+    top: -1em;
+  }
+  /* line 224, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom .copyright {
+    position: relative;
+    left: -5em;
+  }
+  /* line 227, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom .copyright .fa {
+    font-size: 2em;
+  }
+  /* line 230, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom .copyright .text {
+    font-size: 1em;
+  }
+  /* line 235, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom .footer-social a {
+    left: 1em;
+    position: relative;
+    top: 1.5em;
+    padding-right: 2em;
+  }
+  /* line 240, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/footer.css.scss */
+  .footers-wrapper .footer-bottom .footer-social a img {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+/* line 3, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.delete {
+  background-color: #FA3434;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* line 11, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.edit {
+  background-color: #FF9308;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* line 19, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form {
+  margin-top: 5em;
+  text-align: left;
+}
+/* line 22, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form .preview {
+  padding: 0 1vw;
+  font-size: 1.2vw;
+  height: 2vw;
+  border-radius: .5em;
+  color: #FF9308;
+  border: 1px solid #FF9308;
+  background: #fff;
+  font-weight: bold;
+}
+/* line 31, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form .preview:hover {
+  cursor: pointer;
+  color: #ee8600;
+  border: 1px solid #ee8600;
+}
+/* line 40, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form .field-left {
+  float: left;
+}
+/* line 44, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form fieldset {
+  border: none;
+}
+/* line 48, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form dd {
+  margin: 1em 0;
+}
+/* line 52, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form label {
+  font-size: 1.5vw;
+}
+/* line 56, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form input[type=text], .form input[type=password] {
+  padding: 0.3vw;
+  width: 40%;
+  height: 2vw;
+  font-size: 1.5vw;
+  border-radius: 4px;
+}
+/* line 64, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form select {
+  margin: 0;
+  padding: 0.5vw;
+  width: 20%;
+  height: 3vw;
+  font-size: 1.2vw;
+}
+/* line 72, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form input[type=submit] {
+  padding: 0 1vw;
+  font-size: 1.2vw;
+  height: 2vw;
+  border-radius: .5em;
+  color: #28AADC;
+  border: 1px solid #28AADC;
+  background: #fff;
+  font-weight: bold;
+}
+/* line 81, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/form.scss */
+.form input[type=submit]:hover {
+  cursor: pointer;
+  color: #166888;
+  border: 1px solid #166888;
+}
+/* line 14, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/images.css.scss */
+#images .image-form h1 {
+  text-align: left;
+  font-size: 24px;
+  margin-left: .9em;
+}
+/* line 20, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/images.css.scss */
+#images .image-container {
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flow-start;
+}
+/* line 32, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/images.css.scss */
+#images .image-container .image-text {
+  position: relative;
+  top: -40px;
+  left: 20px;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  width: 90%;
+}
+/* line 42, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/images.css.scss */
+#images .image-container img {
+  width: 380px;
+  height: 216px;
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+.loading-screen {
+  display: none;
+}
+@media only screen and (min-width: 769px) {
+  /* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  /* line 8, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .overlay {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    filter: alpha(opacity=50);
+  }
+  /* line 19, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content {
+    z-index: 2;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* line 27, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content video {
+    position: relative;
+    width: 100%;
+  }
+  /* line 32, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content .mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (min-width: 769px) and (max-device-width: 1300px) {
+  /* line 37, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content .mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-device-width: 768px) {
+  /* line 43, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content .normal {
+    display: none;
+  }
+  /* line 46, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content .mobile {
+    display: none;
+  }
+  /* line 49, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/loading.scss */
+  .loading-screen .loading-content img {
+    position: relative;
+    width: 100%;
+  }
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-1 {
+  background-image: url("main_header_1.JPG");
+  z-index: -3;
+}
+
+/* line 5, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-2 {
+  background-image: url("main_header_2.JPG");
+  z-index: -3;
+}
+
+/* line 9, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-3 {
+  background-image: url("main_header_3.JPG");
+  z-index: -3;
+}
+
+/* line 13, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-4 {
+  background-image: url("main_header_4.JPG");
+  z-index: -3;
+}
+
+/* line 17, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-5 {
+  background-image: url("main_header_5.JPG");
+  z-index: -3;
+}
+
+/* line 21, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-6 {
+  background-image: url("main_header_6.JPG");
+  z-index: -3;
+}
+
+/* line 25, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-7 {
+  background-image: url("main_header_7.JPG");
+  z-index: -3;
+}
+
+/* line 29, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.background-image-8 {
+  background-image: url("main_header_8.JPG");
+  z-index: -3;
+}
+
+/* line 33, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.photos {
+  background: rgba(21, 21, 21, 0.8);
+}
+/* line 36, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.photos img {
+  display: none;
+  width: 100%;
+  max-height: 600px;
+}
+/* line 42, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/main_background.scss */
+.photos > img:first-of-type {
+  display: block;
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/mobile.scss */
+.mobile-link {
+  display: none;
+}
+
+@media only screen and (max-device-width: 768px) {
+  /* line 6, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/mobile.scss */
+  .mobile-link {
+    position: relative;
+    width: 29em;
+    top: -58em;
+    left: 22em;
+    display: block;
+    margin: 0;
+  }
+  /* line 14, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/mobile.scss */
+  .mobile-link .text {
+    position: relative;
+    left: -1.7em;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  /* line 22, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/mobile.scss */
+  .mobile-link button {
+    padding: 1em;
+    background: none;
+    border: none;
+    font-size: 2.5em;
+    background-color: rgba(201, 201, 201, 0.3);
+  }
+  /* line 28, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/mobile.scss */
+  .mobile-link button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.video_modal {
+  height: 0;
+  width: 0;
+}
+
+/* line 6, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 24, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container iframe {
+  width: 64vw;
+  height: 36vw;
+}
+/* line 29, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 29, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+  .modal-container .overlay {
+    cursor: pointer;
+  }
+}
+/* line 44, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .modal {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  min-width: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+  margin: auto;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 44, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+  .modal-container .modal {
+    top: 24em;
+    left: 0.8em;
+  }
+}
+/* line 59, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .video {
+  width: 64vw;
+}
+/* line 63, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .hidden {
+  display: none;
+}
+/* line 67, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .content {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 2vw;
+}
+/* line 75, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .pagination {
+  text-align: center;
+  color: #fff;
+}
+/* line 78, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .pagination .previous {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 81, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .pagination .previous:hover {
+  cursor: pointer;
+}
+/* line 85, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .pagination .next {
+  display: inline-block;
+}
+/* line 87, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/modal.css.scss */
+.modal-container .pagination .next:hover {
+  cursor: pointer;
+}
+/* line 14, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation {
+  min-height: 48px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: -10px;
+  margin-top: 0;
+  width: 100%;
+  padding: 1em 1em 1.8em 1em;
+  z-index: 2;
+}
+/* line 37, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .normal-view-media i {
+  position: relative;
+  padding-left: 1.2em;
+  color: #525252;
+  font-size: 1.5em;
+  top: 0.15em;
+  left: -.6em;
+}
+/* line 45, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .normal-view-media > i:first-of-type {
+  padding-left: 2.2em;
+}
+/* line 50, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .navigation-menu-button {
+  position: relative;
+  top: 10px;
+  font-size: 17px;
+  display: block;
+  line-height: 48px;
+  padding-right: 1.8vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #525252;
+}
+/* line 60, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .navigation-menu-button:focus, .nav-container header.navigation .navigation-menu-button:hover {
+  cursor: pointer;
+  color: #1a1a1a;
+}
+/* line 64, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .navigation-menu-button a {
+  text-decoration: none;
+}
+/* line 69, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .fa-bars {
+  position: relative;
+  left: -.4em;
+  top: 0.32em;
+}
+/* line 74, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .left-navigation-wrapper, .nav-container header.navigation .right-navigation-wrapper {
+  font-size: 14px;
+  font-family: arial;
+  font-weight: bold;
+  position: relative;
+  z-index: 9999;
+}
+/* line 82, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .right-navigation-wrapper {
+  float: right;
+  width: 60%;
+}
+/* line 87, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .left-navigation-wrapper {
+  float: left;
+}
+/* line 91, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation img {
+  width: 6em;
+  height: 6em;
+}
+/* line 96, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation p {
+  float: right;
+  padding-left: 5px;
+}
+/* line 101, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .menu-button {
+  float: right;
+}
+/* line 103, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .menu-button:hover {
+  cursor: pointer;
+}
+/* line 108, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .menu-button {
+  display: inline-block;
+  padding: .5vw;
+}
+/* line 113, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .links {
+  position: relative;
+  top: 0.4vw;
+}
+/* line 118, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .hidden {
+  display: none;
+}
+/* line 122, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .dropdown {
+  display: none;
+}
+/* line 124, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .dropdown .items {
+  display: none;
+}
+/* line 129, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .logo {
+  position: relative;
+  float: left;
+  height: 48px;
+  max-height: 48px;
+}
+/* line 134, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+.nav-container header.navigation .logo img {
+  width: 250px;
+  height: 67px;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 140, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .logo {
+    width: 5em;
+  }
+  /* line 142, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .logo img {
+    width: 500px;
+    height: 133px;
+  }
+  /* line 147, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .navigation-menu-button .fa {
+    font-size: 5em;
+  }
+  /* line 150, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .normal-view-media {
+    display: none;
+  }
+  /* line 153, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown {
+    display: block;
+    width: 100%;
+  }
+  /* line 156, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown ul {
+    position: relative;
+    top: -3.0em;
+  }
+  /* line 159, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown ul .items {
+    position: relative;
+    left: .5em;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 98.2vw;
+    background: rgba(201, 201, 201, 0.7);
+  }
+  /* line 166, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown ul .items i {
+    position: relative;
+    left: .4em;
+    font-size: 1.5em;
+    padding-right: 1em;
+  }
+  /* line 173, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown ul a {
+    color: #525252;
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+  }
+  /* line 179, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown ul li {
+    padding: 1.45em 0;
+    font-size: 2.6em;
+    text-align: center;
+    border-top: 1px solid #000;
+    list-style-type: none;
+    width: 100%;
+  }
+  /* line 187, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .dropdown ul > li:first-of-type {
+    border-top: none;
+  }
+}
+@media only screen and (min-device-width: 769px) {
+  /* line 14, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation {
+    background-color: rgba(201, 201, 201, 0.6);
+  }
+  /* line 196, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .hidden {
+    display: block;
+  }
+  /* line 199, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  .nav-container header.navigation .fa-bars {
+    display: none;
+  }
+}
+
+/* line 206, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+#special-nav {
+  display: none;
+  width: 100%;
+  height: 51vw;
+  background-image: url("main_header_1.JPG");
+  background-size: 100% 51vw;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-device-width: 1200px) {
+  /* line 206, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #special-nav {
+    height: 176vw;
+    background-size: cover;
+    background-position: -65.2em;
+    width: 100%;
+  }
+  /* line 215, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #special-nav .nav-styles {
+    display: none;
+  }
+  /* line 223, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #special-nav .logo-text {
+    display: none;
+  }
+  /* line 227, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #special-nav .navigation {
+    width: 97%;
+    padding: 1em;
+  }
+  /* line 231, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #special-nav .navigation .navigation-menu-button {
+    position: relative;
+    top: -5px;
+  }
+}
+
+/* line 241, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+#normal-nav .navigation-menu-button {
+  position: relative;
+  top: 11px;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 247, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #normal-nav .navigation {
+    width: 96.8%;
+    padding: 1em 1em 1.6em 1em;
+  }
+  /* line 250, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #normal-nav .navigation .logo-text {
+    display: none;
+  }
+  /* line 253, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/navigation.css.scss */
+  #normal-nav .navigation .navigation-menu-button {
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+  }
+}
+/* line 14, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos .category-form h1 {
+  text-align: left;
+  font-size: 24px;
+  margin-left: .9em;
+}
+/* line 21, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos .categories-container {
+  padding-left: 0;
+  width: 100%;
+}
+@media only screen and (min-device-width: 769px) {
+  /* line 27, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .row {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flow-start;
+    width: 100%;
+  }
+  /* line 42, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .category {
+    margin: 0;
+    width: 25%;
+    height: 13.8vw;
+  }
+  /* line 46, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .category img {
+    width: 100%;
+  }
+  /* line 49, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .category .text {
+    color: #fff;
+    position: relative;
+    top: -3em;
+    left: 1em;
+    font-size: 1.3vw;
+    width: 70%;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1300px) {
+  /* line 61, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .category {
+    margin: 0;
+    width: 50%;
+    height: 27.32vw;
+  }
+  /* line 65, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .category img {
+    width: 100%;
+  }
+  /* line 68, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .category .text {
+    color: #fff;
+    position: relative;
+    top: -3em;
+    left: 1em;
+    font-size: 2em;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 79, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .row {
+    padding: 0;
+    width: 100%;
+  }
+  /* line 83, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .row .category {
+    margin: 0;
+    width: 100%;
+    height: 31.38em;
+  }
+  /* line 89, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .row .text {
+    color: #fff;
+    width: 70%;
+    font-size: 3.0em;
+    position: relative;
+    top: -2.9em;
+    left: 0.8em;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 99, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+  #photos .row img {
+    width: 100%;
+  }
+}
+/* line 105, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos h1 {
+  text-align: center;
+}
+/* line 109, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos ul {
+  margin: 0;
+}
+/* line 111, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos ul li {
+  width: 380px;
+  height: 216px;
+}
+/* line 114, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos ul li h1 {
+  width: 90%;
+  text-align: left;
+  position: relative;
+  top: 210px;
+  left: 16px;
+  background-color: transparent;
+  font-size: 32px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  opacity: 0.9;
+}
+/* line 128, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos ul li img {
+  width: 100%;
+  height: 100%;
+}
+/* line 133, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/photos.css.scss */
+#photos ul li:hover {
+  cursor: pointer;
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/recent_work.css.scss */
+#recent_work {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #f9f9f9;
+  color: #297A8C;
+  width: 100%;
+  margin: 0;
+}
+/* line 21, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/recent_work.css.scss */
+#recent_work h1 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 26, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/recent_work.css.scss */
+#recent_work .top-row, #recent_work .bottom-row {
+  margin: 0;
+}
+/* line 30, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/recent_work.css.scss */
+#recent_work .edit-video {
+  margin: 0;
+  border: 1px solid #FF9308;
+  background-color: #FF9308;
+  position: relative;
+  top: 40px;
+  left: 19px;
+  width: 20%;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  text-decoration: none;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 45, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/recent_work.css.scss */
+  #recent_work h1 {
+    font-size: 3em;
+  }
+}
+/* line 17, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos .video-form h1 {
+  text-align: left;
+  font-size: 24px;
+  margin-left: 1em;
+}
+/* line 23, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos h1 {
+  text-align: center;
+}
+/* line 26, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos .video-container {
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flow-start;
+}
+/* line 40, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos ul {
+  margin: 0;
+}
+/* line 42, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos ul li {
+  width: 380px;
+  height: 216px;
+}
+/* line 46, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos ul li:hover {
+  cursor: pointer;
+}
+/* line 49, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos ul li h1 {
+  width: 90%;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  top: 210px;
+  left: 16px;
+  background-color: transparent;
+  font-size: 32px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  opacity: 0.9;
+}
+/* line 64, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/videos.css.scss */
+#videos ul li img {
+  width: 100%;
+  height: 100%;
+}
+/* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+#vision {
+  position: relative;
+  min-height: 20vw;
+  max-height: 40vw;
+  min-width: 900px;
+  max-width: 1200px;
+  max-height: 700px;
+  min-height: 430px;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+@media only screen and (min-device-width: 769px) {
+  /* line 1, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+  #vision {
+    background-image: url("lighthouse.jpg");
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+  }
+}
+/* line 30, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+#vision p {
+  margin-top: 0;
+  padding: 30px;
+  margin-right: 0;
+}
+/* line 36, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+#vision .header {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 1.8em;
+  padding-right: 1em;
+  padding-bottom: 1.3em;
+  left: 63%;
+  top: 60px;
+  color: #297A8C;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  width: 27%;
+}
+/* line 50, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+#vision .subheader {
+  background-color: #fff;
+  position: relative;
+  top: 0.8em;
+  padding: 0 2em 2em 2em;
+  left: 63%;
+  color: #737373;
+  width: 30%;
+  font-size: 16px;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 62, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+  #vision .header {
+    display: inline-block;
+    width: 70%;
+    padding: 0 0 30px 0;
+    position: relative;
+    font-size: 45px;
+    left: 150px;
+  }
+  /* line 71, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/vision.css.scss */
+  #vision .subheader {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    top: -1em;
+    left: 150px;
+    font-size: 35px;
+    width: 70%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+  @import "font-awesome-sprockets";
+  @import "font-awesome";
+  @import "bourbon";
+  @import "base/base";
+  @import "slick";
+  @import "slick-theme";
+
+
+ */
+/* line 24, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+.hidden {
+  display: none;
+}
+
+/* line 28, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* line 31, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+html ::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* line 37, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main {
+  font-family: "PT Sans", sans-serfif;
+  margin: 0;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 37, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+  /* line 52, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main #home-page {
+    position: relative;
+    top: -20.8em;
+  }
+}
+/* line 61, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .main-content {
+  margin-top: 90px;
+}
+/* line 65, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .delete {
+  background-color: #FA3434;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* line 73, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .edit {
+  background-color: #FF9308;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* line 81, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .body-wrapper {
+  min-height: 450px;
+}
+/* line 85, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .video {
+  margin: 4em 0;
+}
+/* line 87, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .video iframe {
+  width: 96vw;
+  height: 54vw;
+}
+/* line 93, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .right {
+  float: right;
+}
+/* line 97, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .left {
+  float: left;
+}
+/* line 101, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .misc-header {
+  text-transform: uppercase;
+  color: #297A8C;
+}
+/* line 106, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form {
+  margin-top: 5em;
+  text-align: left;
+}
+/* line 109, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form .preview {
+  padding: 0 1vw;
+  font-size: 1.2vw;
+  height: 2vw;
+  border-radius: .5em;
+  color: #FF9308;
+  border: 1px solid #FF9308;
+  background: #fff;
+  font-weight: bold;
+}
+/* line 118, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form .preview:hover {
+  cursor: pointer;
+  color: #ee8600;
+  border: 1px solid #ee8600;
+}
+/* line 127, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form .field-left {
+  float: left;
+}
+/* line 131, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form fieldset {
+  border: none;
+}
+/* line 135, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form dd {
+  margin: 1em 0;
+}
+/* line 139, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form label {
+  font-size: 1.5vw;
+}
+/* line 143, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form input[type=text], #main .form input[type=password] {
+  padding: 0.3vw;
+  width: 40%;
+  height: 2vw;
+  font-size: 1.5vw;
+  border-radius: 4px;
+}
+/* line 151, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form select {
+  margin: 0;
+  padding: 0.5vw;
+  width: 20%;
+  height: 3vw;
+  font-size: 1.2vw;
+}
+/* line 159, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form input[type=submit] {
+  padding: 0 1vw;
+  font-size: 1.2vw;
+  height: 2vw;
+  border-radius: .5em;
+  color: #28AADC;
+  border: 1px solid #28AADC;
+  background: #fff;
+  font-weight: bold;
+}
+/* line 168, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .form input[type=submit]:hover {
+  cursor: pointer;
+  color: #166888;
+  border: 1px solid #166888;
+}
+/* line 176, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .admin-links {
+  margin-top: 10vw;
+  text-align: center;
+}
+/* line 179, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .admin-links a {
+  margin-right: 4vw;
+  color: #517a9e;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* line 184, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .admin-links a:hover {
+  text-decoration: underline;
+  color: #486d8d;
+}
+/* line 191, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .mobile-link {
+  display: none;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 196, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .mobile-link {
+    position: relative;
+    width: 29em;
+    top: -58em;
+    left: 22em;
+    display: block;
+    margin: 0;
+  }
+  /* line 204, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .mobile-link .text {
+    position: relative;
+    left: -1.7em;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  /* line 212, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .mobile-link button {
+    padding: 1em;
+    background: none;
+    border: none;
+    font-size: 2.5em;
+    background-color: rgba(201, 201, 201, 0.3);
+  }
+  /* line 218, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .mobile-link button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+@media only screen and (min-device-width: 769px) {
+  /* line 229, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .video-click {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+  }
+  /* line 244, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail {
+    width: 25%;
+    height: 13.8vw;
+  }
+  /* line 248, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail .text {
+    margin: 0;
+    font-size: 1.3vw;
+    width: 80%;
+    margin: 0;
+    color: #fff;
+    position: relative;
+    top: -120px;
+    left: 19px;
+  }
+  /* line 259, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail .fa {
+    position: relative;
+    top: -9.7vw;
+    left: 11vw;
+    font-size: 4.0em;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    opacity: 0;
+  }
+  /* line 270, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail img {
+    width: 100%;
+  }
+  /* line 274, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail:hover {
+    cursor: pointer;
+  }
+  /* line 276, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail:hover img {
+    filter: brightness(60%);
+  }
+  /* line 279, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail:hover .fa {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media only screen and (min-width: 769px) and (max-device-width: 1300px) {
+  /* line 291, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 27.32vw;
+  }
+  /* line 296, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail .text {
+    margin-right: 0;
+    color: #fff;
+    font-size: 2.0em;
+    position: relative;
+    top: -2.2em;
+    left: 0.5em;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 306, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail img {
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 313, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 34.38em;
+  }
+  /* line 319, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail .fa {
+    display: none;
+  }
+  /* line 322, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail .text {
+    color: #fff;
+    width: 60%;
+    font-size: 3.0em;
+    position: relative;
+    top: -1.9em;
+    left: 0.5em;
+    display: inline;
+  }
+  /* line 331, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+  #main .video-container .thumb-nail img {
+    width: 100%;
+  }
+}
+/* line 338, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .nav-styles {
+  width: 100%;
+  height: 51vw;
+  background-size: 100% 51vw;
+  background-repeat: no-repeat;
+}
+/* line 345, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-1 {
+  background-image: url("main_header_1.JPG");
+  z-index: -3;
+}
+/* line 349, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-2 {
+  background-image: url("main_header_2.JPG");
+  z-index: -3;
+}
+/* line 353, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-3 {
+  background-image: url("main_header_3.JPG");
+  z-index: -3;
+}
+/* line 357, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-4 {
+  background-image: url("main_header_4.JPG");
+  z-index: -3;
+}
+/* line 361, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-5 {
+  background-image: url("main_header_5.JPG");
+  z-index: -3;
+}
+/* line 365, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-6 {
+  background-image: url("main_header_6.JPG");
+  z-index: -3;
+}
+/* line 369, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-7 {
+  background-image: url("main_header_7.JPG");
+  z-index: -3;
+}
+/* line 373, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .background-image-8 {
+  background-image: url("main_header_8.JPG");
+  z-index: -3;
+}
+/* line 377, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .photos {
+  background: rgba(21, 21, 21, 0.8);
+}
+/* line 380, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .photos img {
+  display: none;
+  width: 100%;
+  max-height: 600px;
+}
+/* line 386, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .photos > img:first-of-type {
+  display: block;
+}
+/* line 393, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#main .admin-view li {
+  display: inline-block;
+}
+
+/* line 399, /home/luke/hashrocket/destyn_patera/app/assets/stylesheets/application.css.scss */
+#edit-thumbnails {
+  margin-top: 5em;
+}
