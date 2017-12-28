@@ -20,7 +20,7 @@ $(document).ready(function() {
       $('.loading-screen').fadeOut(1000, function(){
         $(this).remove();
       });
-    }, 7000);
+    }, 100);
 
     window.setInterval( function() {
       if( $(".loading-screen").css("display") === "block") {
