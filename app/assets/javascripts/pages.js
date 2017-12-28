@@ -1,6 +1,13 @@
 $(document).ready(function() {
   // Loading Screen
+  var is_safari = navigator.userAgent.indexOf("Safari") > -1;
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#special-nav').fadeIn(1000);
+    $('#special-nav img').fadeIn(1000);
+    $('.loading-screen').fadeOut(1000, function(){
+      $(this).remove();
+    });
+  } else if( is_safari ){
     $('#special-nav').fadeIn(1000);
     $('#special-nav img').fadeIn(1000);
     $('.loading-screen').fadeOut(1000, function(){
