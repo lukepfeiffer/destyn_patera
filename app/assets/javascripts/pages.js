@@ -113,28 +113,28 @@ $(document).ready(function() {
   $(window).on('scroll', function(){
     var scrollDistance = $(this).scrollTop();
     if(!($(window).width() < 1201)) {
-      if(scrollDistance < 50){
+      if(scrollDistance < 30){
         $('.nav-styles').css('display', 'none');
         $('.background-image-1').css('display', 'block');
-      } else if(scrollDistance >= 50 && scrollDistance < 100 ){
+      } else if(scrollDistance >= 30 && scrollDistance < 60 ){
         $('.nav-styles').css('display', 'none');
         $('.background-image-2').css('display', 'block');
-      } else if(scrollDistance >= 100 && scrollDistance < 150 ){
+      } else if(scrollDistance >= 60 && scrollDistance < 90 ){
         $('.nav-styles').css('display', 'none');
         $('.background-image-3').css('display', 'block');
-      } else if(scrollDistance >= 150 && scrollDistance < 200 ){
+      } else if(scrollDistance >= 90 && scrollDistance < 120 ){
         $('.nav-styles').css('display', 'none');
         $('.background-image-4').css('display', 'block');
-      } else if(scrollDistance >= 200 && scrollDistance < 250 ){
+      } else if(scrollDistance >= 120 && scrollDistance < 150 ){
         $('.nav-styles').css('display', 'none');
         $('.background-image-5').css('display', 'block');
-      } else if(scrollDistance >= 250 && scrollDistance < 300 ){
+      } else if(scrollDistance >= 150 && scrollDistance < 180 ){
         $('.nav-styles').css('display', 'none');
         $('.background-image-6').css('display', 'block');
-      } else if(scrollDistance >= 300 && scrollDistance < 350 ){
+      } else if(scrollDistance >= 180 && scrollDistance < 210 ){
         $('.nav-styles').css('display', 'none');
         $('.background-image-7').css('display', 'block');
-      } else if(scrollDistance >= 350){
+      } else if(scrollDistance >= 240){
         $('.nav-styles').css('display', 'none');
         $('.background-image-8').css('display', 'block');
       }
