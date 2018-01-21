@@ -13,7 +13,7 @@
         = render "layouts/special_nav"
       - else
         = render "layouts/normal_nav"
-        - if current_user.present?
-          = render "layouts/admin_nav"
+        -# - if current_user.present?
+        -#   = render "layouts/admin_nav"
       = yield
   = render "layouts/footer"

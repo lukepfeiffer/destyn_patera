@@ -103,7 +103,13 @@ html{
   }
 
   .form{
-    margin-top: 5em;
+    margin-top: 6em;
+    border: 1px solid #ccc;
+    box-shadow: -5px 5px 30px #efefef;
+    border-radius: 4px;
+    h1{
+      margin-left: .5em;
+    }
 
     .preview{
       padding: 0 1vw;
@@ -136,15 +142,22 @@ html{
     }
 
     label{
-      font-size: 1.5vw;
+      display: inline-block;
+      font-size: 1.2em;
     }
 
     input[type=text], input[type=password]{
-      padding: 0.3vw;
-      width: 40%;
-      height: 2vw;
-      font-size: 1.5vw;
-      border-radius: 4px;
+      display: block;
+      width: 100%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     }
 
     select{
@@ -218,117 +231,6 @@ html{
           text-transform: uppercase;
           text-decoration: none;
           color: #fff;
-        }
-      }
-    }
-  }
-
-  .video-container{
-    @media only screen and (min-device-width: 769px){
-      .video-click{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-flow: row wrap;
-        justify-content: center;
-      }
-
-      .thumb-nail{
-        width: 25%;
-        height: 13.8vw;
-
-        .text{
-          margin: 0;
-          font-size: 1.3vw;
-          width: 80%;
-          margin: 0;
-          color: #fff;
-          position: relative;
-          top: -120px;
-          left: 19px;
-        }
-
-        .fa{
-          position: relative;
-          top: -9.7vw;
-          left: 11vw;
-          font-size: 4.0em;
-          padding: 0;
-          margin: 0;
-          color: #fff;
-          opacity: 0;
-        }
-
-        img{
-          width: 100%;
-        }
-
-        &:hover{
-          cursor: pointer;
-          img{
-            filter: brightness(60%);
-          }
-          .fa{
-            opacity: 1;
-            -webkit-transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out;
-            -o-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-          }
-        }
-      }
-    }
-
-    @media only screen and (min-width: 769px) and (max-device-width: 1300px){
-      .thumb-nail{
-        margin: 0;
-        padding: 0;
-        width: 50%;
-        height: 27.32vw;
-        .text{
-          margin-right: 0;
-          color: #fff;
-          font-size: 2.0em;
-          position: relative;
-          top: -2.2em;
-          left: 0.5em;
-          margin: 0;
-          padding: 0;
-        }
-        img{
-          width: 100%;
-        }
-      }
-    }
-
-    @media only screen and (max-device-width: 768px) {
-      .thumb-nail{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 34.38em;
-
-        .fa{
-          display: none;
-        }
-        .text{
-          color: #fff;
-          width: 60%;
-          font-size: 3.0em;
-          position: relative;
-          top: -1.9em;
-          left: 0.5em;
-          display: inline;
-        }
-        img{
-          width: 100%;
         }
       }
     }

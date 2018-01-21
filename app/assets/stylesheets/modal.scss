@@ -18,8 +18,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
 
   iframe{
     width: 64vw;
@@ -42,18 +42,16 @@
   }
 
   .modal {
-    position: relative;
-    z-index: 2;
-    width: 80%;
-    min-width: 50%;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(50%, -50%);
     background:rgba(0,0,0,0.2);
     border-radius: 8px;
     padding: 8px;
-    margin: auto;
-    @media only screen and (max-device-width: 768px) {
-      top: 24em;
-      left: 0.8em;
-    }
+    width: 50%;
+    // height: 50%;
   }
 
   .video{
