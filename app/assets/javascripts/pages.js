@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Loading Screen
   var is_safari = navigator.userAgent.indexOf("Safari") > -1;
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent || window.screen.width < 1400) ) {
     $('#special-nav').fadeIn(1000);
     $('#special-nav img').fadeIn(1000);
     $('.loading-screen').fadeOut(1000, function(){
@@ -100,8 +100,7 @@ $(document).ready(function() {
     var mobileTopOfScreen = $(window).scrollTop() - 4470;
     var divam = 4;
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    }
-    else{
+    } else{
       $('.footer-top').css({
         "background-position": "-300px -" + topOfScreen/divam + "px"
       });
@@ -151,7 +150,7 @@ $(document).ready(function() {
     var topOfScreen = $(window).scrollTop() - 590;
     var scrollPercent = window.scrollY/windowHeight;
 
-    if ( !($(window).width() < 1201) ) {
+    if ( !($(window).width() < 1601) ) {
       if( window.scrollY < 600 ){
         target.css('opacity', scrollPercent*5.2);
         targetHeader.css('opacity', scrollPercent*4.8);

@@ -239,34 +239,44 @@ html{
     background-image:  url('main_header_1.JPG');
     z-index: -3;
   }
-  .background-image-2{
-    background-image:  url('main_header_2.JPG');
-    z-index: -3;
+
+  @media only screen and (max-device-width: 1600px) {
+    .background-image-2{
+      display: none;
+    }
   }
-  .background-image-3{
-    background-image:  url('main_header_3.JPG');
-    z-index: -3;
+
+  @media only screen and (min-device-width: 1601px) {
+    .background-image-2{
+      background-image:  url('main_header_2.JPG');
+      z-index: -3;
+    }
+    .background-image-3{
+      background-image:  url('main_header_3.JPG');
+      z-index: -3;
+    }
+    .background-image-4{
+      background-image:  url('main_header_4.JPG');
+      z-index: -3;
+    }
+    .background-image-5{
+      background-image:  url('main_header_5.JPG');
+      z-index: -3;
+    }
+    .background-image-6{
+      background-image:  url('main_header_6.JPG');
+      z-index: -3;
+    }
+    .background-image-7{
+      background-image:  url('main_header_7.JPG');
+      z-index: -3;
+    }
+    .background-image-8{
+      background-image:  url('main_header_8.JPG');
+      z-index: -3;
+    }
   }
-  .background-image-4{
-    background-image:  url('main_header_4.JPG');
-    z-index: -3;
-  }
-  .background-image-5{
-    background-image:  url('main_header_5.JPG');
-    z-index: -3;
-  }
-  .background-image-6{
-    background-image:  url('main_header_6.JPG');
-    z-index: -3;
-  }
-  .background-image-7{
-    background-image:  url('main_header_7.JPG');
-    z-index: -3;
-  }
-  .background-image-8{
-    background-image:  url('main_header_8.JPG');
-    z-index: -3;
-  }
+
   .photos{
     background:rgba(21,21,21,.8);
 
