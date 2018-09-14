@@ -14,3 +14,8 @@
     caption: "Caption"
   )
 end
+
+User.create(
+  email: "admin@example.com",
+  password: "password"
+)
