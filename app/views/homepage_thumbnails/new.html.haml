@@ -1,0 +1,17 @@
+#edit-thumbnails
+  .form
+    %h1 New Homepage Video
+    = form_for homepage_thumbnail do |f|
+      %fieldset
+        %dl
+          %dt= f.label :thumbnail_url
+          %dd= f.text_field :image_url, id: 'image_field'
+
+          %dt= f.label :video_url
+          %dd= f.text_field :video_url, id: 'video_field'
+
+          %dt= f.label :caption
+          %dd= f.text_field :caption, id: 'caption_field'
+      %fieldset.actions
+        = f.submit 'Save'
+        %button.preview{data: {url: preview_route_path}} Preview

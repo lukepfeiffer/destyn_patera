@@ -19,6 +19,17 @@ class HomepageThumbnailsController < ApplicationController
     end
   end
 
+  def new
+    unless current_user.present?
+      redirect_to root_path
+    end
+  end
+
+  def create
+    homepage_thumbnail.update(homepage_thumbnail_params)
+    redirect_to root_path
+  end
+
   def homepage_thumbnail_params
     params.require(:homepage_thumbnail).permit(
       :video_url,

@@ -41,6 +41,24 @@
     text-decoration: none;
   }
 
+  .add-video{
+    border: 1px solid darken($link-color, 15);
+    background-color: $link-color;
+    position: relative;
+    top: 40px;
+    padding: 1em;
+    width: 5em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+
+    &:hover{
+      background-color: darken($link-color, 15); 
+    }
+  }
+
   @media only screen and (max-device-width: 768px) {
     h1{
       font-size: 3em;

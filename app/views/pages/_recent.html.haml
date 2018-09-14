@@ -11,3 +11,6 @@
             = image_tag video.image_url
             %i.fa.fa-play
             %p.text= video.caption
+  = link_to new_homepage_thumbnail_path do
+    - if current_user.present?
+      %p.add-video Add Video
