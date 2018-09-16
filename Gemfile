@@ -16,6 +16,7 @@ gem 'rails', '5.0.0'
 gem 'sass-burger'
 gem 'sass-rails'
 gem 'sdoc'
+gem 'sprockets', '~>3.7.2'
 gem 'uglifier'
 gem 'will_paginate'
 
