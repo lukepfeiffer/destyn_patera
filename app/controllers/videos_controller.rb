@@ -6,10 +6,7 @@ class VideosController < ApplicationController
   end
 
   def create
-    url_first_half = video.vimeo_url.split('//').second.split('/').first.prepend('//player.')
-    url_second_half = video.vimeo_url.split('//').second.split('/').second.prepend('/video/')
-    whole_url = url_first_half + url_second_half
-    video.vimeo_url = whole_url
+    video.vimeo_url = UrlHelper.update_vimeo(video.vimeo_url)
     if video.save(video_params)
       redirect_to videos_path
     else
