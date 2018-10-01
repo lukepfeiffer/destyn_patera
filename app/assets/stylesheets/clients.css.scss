@@ -50,6 +50,19 @@
         width: 7vw;
       }
     }
+    .jj_law{
+      position: relative;
+      top: 1.9em;
+      img{
+	width: 8vw;
+      }
+    }
+    .lacour{
+      position: relative;
+      top: 0.5em;
+    }
+    .island_culture{
+    }
     .ahero{
       position: relative;
       top: 1.5em;
@@ -87,7 +100,11 @@
     }
     .revitalists{
       position: relative;
-      top: 54px;
+      top: 14px;
+      left: -2em;
+      img{
+        width: 12vw;
+      }
     }
     .jake-peavy{
       position: relative;
@@ -144,12 +161,12 @@
       .fa-arrow-circle-left{
         position: relative;
         left: -7.8em;
-        top: 1.7em;
+        top: -2.0em;
       }
       .fa-arrow-circle-right{
         position: relative;
         left: 8.2em;
-        top: -2.15em;
+        top: -3.15em;
       }
       .sr-only{
         display: none;
@@ -202,9 +219,26 @@
         }
         .revitalists{
           position: relative;
-          top: 3.6em;
+          top: 1.6em;
           width: 9em;
         }
+	.jj_law{
+          position: relative;
+	  top: 2em;
+	  left: -1em;
+	  img{
+            width: 120%;
+	  }
+	}
+	.lacour{
+          position: relative;
+	  top: -0.5em;
+	}
+	.island_culture{
+          img{
+	    width: 85%;
+	  }
+	}
         .digi-pro{
           width: 8em;
           position: relative;

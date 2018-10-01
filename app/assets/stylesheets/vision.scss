@@ -22,6 +22,9 @@
   margin-bottom: 0;
 
   @media only screen and (min-device-width: 769px) {
+    .header {
+      display: block;
+    }
     background-image: url('lighthouse.jpg');
     background-size: 95% 100%;
     background-repeat: no-repeat;
@@ -60,18 +63,13 @@
 
   @media only screen and (max-device-width: 768px) {
     .header{
-      display: inline-block;
-      width: 70%;
-      padding: 0 0 30px 0;
-      position: relative;
-      font-size: 45px;
-      left: 150px;
+      display: none;
     }
 
     .subheader{
       display: inline-block;
       position: relative;
-      padding: 0;
+      padding: 5em 0 2em 0;
       top: -1em;
       left: 150px;
       font-size: 35px;

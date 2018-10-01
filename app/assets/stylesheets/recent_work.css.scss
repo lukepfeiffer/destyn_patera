@@ -68,6 +68,9 @@
 
 .video-container{
   @media only screen and (min-device-width: 769px){
+    .desktop{
+      display: block;
+    }
     .video-click{
       padding: 0;
       margin: 0;
@@ -173,6 +176,12 @@
       img{
         width: 100%;
       }
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
     }
   }
 }
