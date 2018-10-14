@@ -39,6 +39,12 @@ class HomepageThumbnailsController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    homepage_thumbnail.delete
+    redirect_to :root
+  end
+
+  private
   def homepage_thumbnail_params
     params.require(:homepage_thumbnail).permit(
       :video_url,

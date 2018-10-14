@@ -9,6 +9,9 @@
               = link_to edit_homepage_thumbnail_path(video.id) do
                 - if current_user.present?
                   %p.edit-video Edit
+              = link_to homepage_thumbnail_path(video.id), method: :delete do
+                - if current_user.present?
+                  %p.delete-video Delete
               = image_tag video.image_url
               %i.fa.fa-play
               %p.text= video.caption
@@ -20,6 +23,9 @@
               = link_to edit_homepage_thumbnail_path(video.id) do
                 - if current_user.present?
                   %p.edit-video Edit
+              = link_to homepage_thumbnail_path(video.id), method: :delete do
+                - if current_user.present?
+                  %p.delete-video Delete
               = image_tag video.image_url
               %i.fa.fa-play
               %p.text= video.caption
